@@ -53,7 +53,7 @@ public class Comment extends turnkeye2.pages.TestBase {
     driver.get(baseUrl + "index.php/secretzone51/"); 
     TimeUnit.SECONDS.sleep(5);
     actions.moveToElement(driver.findElement(By.xpath("//ul[@id='nav']/li[8]/a/span"))).build().perform();
-    TimeUnit.SECONDS.sleep(3);
+    TimeUnit.SECONDS.sleep(5);
     driver.findElement(By.xpath("//ul[@id='nav']/li[8]/ul/li[4]/a/span")).click();
     
     driver.findElement(By.cssSelector("td.a-left")).click();
@@ -62,7 +62,8 @@ public class Comment extends turnkeye2.pages.TestBase {
     TimeUnit.SECONDS.sleep(5);
     assertTrue(closeAlertAndGetItsText().matches("^Are you sure you want to do this[\\s\\S]$"));
     TimeUnit.SECONDS.sleep(5);
-    actions.moveToElement(driver.findElement(By.xpath("//ul[@id='nav']/li[10]/a/span"))).build().perform();    
+    actions.moveToElement(driver.findElement(By.xpath("//ul[@id='nav']/li[10]/a/span"))).build().perform();   
+    TimeUnit.SECONDS.sleep(5);
     driver.findElement(By.xpath("//ul[@id='nav']/li[10]/ul/li[11]/a/span")).click();
     driver.findElement(By.linkText("Select All")).click();
     driver.findElement(By.cssSelector("button[title=\"Submit\"]")).click();
