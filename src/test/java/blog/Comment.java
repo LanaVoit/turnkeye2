@@ -53,6 +53,7 @@ public class Comment extends turnkeye2.pages.TestBase {
     driver.get(baseUrl + "index.php/secretzone51/"); 
     TimeUnit.SECONDS.sleep(5);
     actions.moveToElement(driver.findElement(By.xpath("//ul[@id='nav']/li[8]/a/span"))).build().perform();
+    TimeUnit.SECONDS.sleep(3);
     driver.findElement(By.xpath("//ul[@id='nav']/li[8]/ul/li[4]/a/span")).click();
     
     driver.findElement(By.cssSelector("td.a-left")).click();
