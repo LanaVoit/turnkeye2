@@ -38,7 +38,7 @@ public class Tabs extends turnkeye2.pages.TestBase {
     driver.findElement(By.cssSelector("a[href=\"http://turnkeye.ru/about/vacancy.html\"]")).click();
     assertEquals("Наши вакансии", driver.findElement(By.cssSelector("h1")).getText());
     assertEquals("Стать частью нашей команды легко.\nНа данный момент нам нужны на постоянную работу в Ульяновске:", driver.findElement(By.cssSelector("h4")).getText());
-    assertEquals("Интегратор-верстальщик", driver.findElement(By.cssSelector("h4.list-header")).getText());
+    assertEquals("ИНТЕГРАТОР-ВЕРСТАЛЬЩИК", driver.findElement(By.cssSelector("h2.list-header")).getText());
     
   //  driver.quit();
   }
