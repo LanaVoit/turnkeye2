@@ -26,7 +26,6 @@ public class Details_page extends turnkeye2.pages.TestBase {
     driver.findElement(By.cssSelector("a[href=\"http://turnkeye.ru/blog/usability-testing/\"]")).click();
         assertEquals("ÞÇÀÁÈËÈÒÈ-ÒÅÑÒÈÐÎÂÀÍÈÅ: ÊÀÊ ÓÂÅËÈ×ÈÒÜ ÏÐÈÁÛËÜÍÎÑÒÜ ÈÍÒÅÐÍÅÒ-ÌÀÃÀÇÈÍÀ?", driver.findElement(By.cssSelector("h1")).getText());
         assertEquals("", driver.findElement(By.cssSelector("img[alt=\"Þçàáèëèòè-òåñòèðîâàíèå èíòåðíåò-ìàãàçèíà\"]")).getText());
-        assertEquals("", driver.findElement(By.id("b-google-search")).getText());
         assertEquals("", driver.findElement(By.cssSelector("input.gsc-search-button.gsc-search-button-v2")).getText());
         assertEquals("Ðàçäåëû", driver.findElement(By.cssSelector("div.block-title > span")).getText());
         assertEquals("Ìåòêè", driver.findElement(By.cssSelector("div.block-tags > div.block-title > span")).getText());
