@@ -85,8 +85,8 @@
         <artifactId>maven-resources-plugin</artifactId>
         <version>2.6</version>
         <configuration>
-          <encoding>UTF-8</encoding>
-        </configuration>
+	       <encoding>Cp1252</encoding>
+	   </configuration>
       </plugin> 
       <plugin>
         <artifactId>maven-surefire-plugin</artifactId>
