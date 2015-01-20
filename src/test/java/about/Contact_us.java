@@ -20,20 +20,19 @@ public class Contact_us extends turnkeye2.pages.TestBase {
 
     @Test
   public void testUntitled6() throws Exception {
-   // final WebDriver driver = new ChromeDriver();
-    driver.manage().window().maximize();
+    driver.manage().window().setSize(new Dimension(1366, 1050));
     driver.get(baseUrl + "/about");
     assertEquals("СВЯЗАТЬСЯ С НАМИ", driver.findElement(By.cssSelector("a.see-more")).getText());
     
     driver.findElement(By.cssSelector("a.see-more")).click();
     assertEquals("Обратная связь", driver.findElement(By.cssSelector("h1")).getText());
-    assertEquals("Вы можете использовать форму, приведенную ниже, чтобы связаться с нами. Вы также можете отправлять вопросы на электронную почту info@turnkeye.com.", driver.findElement(By.cssSelector("h4")).getText());
+    assertEquals("Вы можете использовать форму, приведенную ниже, чтобы связаться с нами. Вы также можете отправлять вопросы на электронную почту hello@turnkeye.com.", driver.findElement(By.cssSelector("h4")).getText());
     assertEquals("", driver.findElement(By.id("name")).getText());
     assertEquals("", driver.findElement(By.id("email")).getText());
     assertEquals("", driver.findElement(By.id("comment")).getText());
     assertEquals("ОТПРАВИТЬ", driver.findElement(By.cssSelector("button.button")).getText());
     
-  //  driver.quit();
+    driver.quit();
   }
 
    private boolean isElementPresent(By by) {

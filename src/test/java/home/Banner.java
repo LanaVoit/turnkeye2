@@ -20,8 +20,7 @@ public class Banner extends turnkeye2.pages.TestBase {
 
     @Test
   public void testUntitled4() throws Exception {
-    //	final WebDriver driver = new ChromeDriver();
-    	driver.manage().window().maximize();
+    	driver.manage().window().setSize(new Dimension(1366, 1050));
     driver.get(baseUrl);
 
     String img1 = "http://cdn.turnkeye.ru/skin/frontend/default/turnkeye/images/main-banner/large/slide1.jpg";
@@ -37,7 +36,7 @@ public class Banner extends turnkeye2.pages.TestBase {
     String img4 = "http://cdn.turnkeye.ru/skin/frontend/default/turnkeye/images/main-banner/large/slide5.jpg";
     assertEquals("", img4, driver.findElement(By.cssSelector("img[src=\"http://cdn.turnkeye.ru/skin/frontend/default/turnkeye/images/main-banner/large/slide5.jpg\"]")).getAttribute("src")); 
     
-   // driver.quit();
+    driver.quit();
   }
 
     private boolean isElementPresent(By by) {

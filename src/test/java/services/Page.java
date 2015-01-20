@@ -20,8 +20,7 @@ public class Page extends turnkeye2.pages.TestBase {
 
     @Test
   public void testUntitled2() throws Exception {
-    	//final WebDriver driver = new ChromeDriver();
-    	driver.manage().window().maximize();
+    	driver.manage().window().setSize(new Dimension(1366, 1050));
     driver.get(baseUrl + "/services/magento_development.html");
         assertEquals("Разработка сайтов на Magento", driver.findElement(By.cssSelector("h1")).getText());
         assertEquals("РАЗРАБОТКА САЙТОВ НА MAGENTO", driver.findElement(By.cssSelector("li.active > span")).getText());
@@ -36,7 +35,7 @@ public class Page extends turnkeye2.pages.TestBase {
         assertEquals("КОМАНДА РАЗРАБОТЧИКОВ", driver.findElement(By.cssSelector("div.development-team > h3")).getText());
         assertEquals("Мы являемся официальными партнерами Magento в России.\nНаши специалисты прошли международную сертификацию по Magento разработке.", driver.findElement(By.cssSelector("div.development-team > h4")).getText());       
     
-   // driver.quit();
+    driver.quit();
   }
 
    private boolean isElementPresent(By by) {

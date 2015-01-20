@@ -27,9 +27,8 @@ public class JS_error extends turnkeye2.pages.TestBase {
 	
     @Test
   public void testUntitled4() throws Exception { 
-    	//final WebDriver driver = new ChromeDriver();
-    	driver.manage().window().maximize();
-    	 driver.get(baseUrl + "/about");
+    	driver.manage().window().setSize(new Dimension(1366, 1050));
+    	driver.get(baseUrl + "/about");
         Logs log = driver.manage().logs();
         List<LogEntry> logsEntries = log.get("browser").getAll();    
         List<String> list = new ArrayList<String>();
@@ -39,7 +38,7 @@ public class JS_error extends turnkeye2.pages.TestBase {
     		//driver.quit();
         }
 		    assertEquals(list, logsEntries);
-		  //  driver.quit();
+		    driver.quit();
   	    }    
 }
 

@@ -20,9 +20,9 @@ public class Blog_page extends turnkeye2.pages.TestBase {
 
     @Test
   public void testUntitled2() throws Exception {
-    	//final WebDriver driver = new ChromeDriver();
-    	driver.manage().window().maximize();
-    driver.get(baseUrl + "blog/");
+    	driver.manage().window().setSize(new Dimension(1366, 1050));
+    	driver.get(baseUrl + "blog/");
+    TimeUnit.SECONDS.sleep(5);
         assertEquals("Статьи", driver.findElement(By.cssSelector("h1")).getText());
         assertEquals("", driver.findElement(By.id("gsc-i-id1")).getText());
         assertEquals("", driver.findElement(By.cssSelector("input.gsc-search-button.gsc-search-button-v2")).getText());
@@ -37,7 +37,7 @@ public class Blog_page extends turnkeye2.pages.TestBase {
         assertEquals("РАЗДЕЛЫ:", driver.findElement(By.cssSelector("div.post-posted-title")).getText());
         assertEquals("Авторы", driver.findElement(By.cssSelector("div.block-blog-authors > div.block-title")).getText());
         assertEquals("", driver.findElement(By.cssSelector("img[alt=\"Magento разработка\"]")).getText());
-   // driver.quit();
+    driver.quit();
   }
 
    private boolean isElementPresent(By by) {

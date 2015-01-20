@@ -1,4 +1,12 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 30, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 236.852 sec - in TestSuite
+Tests run: 30, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 273.336 sec <<< FAILURE! - in TestSuite
+testUntitled4(blog.JS_error_blog)  Time elapsed: 2.037 sec  <<< FAILURE!
+java.lang.AssertionError: expected:<[]> but was:<[[2015-01-20T15:13:57+0400] [SEVERE] http://www.google.com/uds/?file=ads&v=3&packages=search&async=2 0:0 Failed to load resource: the server responded with a status of 404 (Not Found)]>
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.failNotEquals(Assert.java:743)
+	at org.junit.Assert.assertEquals(Assert.java:118)
+	at org.junit.Assert.assertEquals(Assert.java:144)
+	at blog.JS_error_blog.testUntitled4(JS_error_blog.java:41)
+

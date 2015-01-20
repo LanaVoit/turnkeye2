@@ -12,6 +12,7 @@ import static org.hamcrest.CoreMatchers.*;
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.Select;
 
 public class Details extends turnkeye2.pages.TestBase {
@@ -20,17 +21,49 @@ public class Details extends turnkeye2.pages.TestBase {
 
     @Test
   public void testUntitled8() throws Exception {
-    //	final WebDriver driver = new ChromeDriver();
-    	driver.manage().window().maximize();
-    driver.get(baseUrl + "/portfolio");
-    assertEquals("ONECA", driver.findElement(By.cssSelector("p.client-name")).getText());
-    assertEquals("One Click Away", driver.findElement(By.linkText("One Click Away")).getText());
-    driver.findElement(By.linkText("One Click Away")).click();
-    assertEquals("One Click Away", driver.findElement(By.cssSelector("h1")).getText());
-    assertEquals("", driver.findElement(By.cssSelector("img[alt=\"OneCA\"]")).getText());
-    assertEquals("OneCA.ru, магазин одежды, обуви и аксессуаров", driver.findElement(By.cssSelector("ul.key-options.cols-4 > li > span")).getText());
-    
-   // driver.quit();
+    	driver.manage().window().setSize(new Dimension(1366, 1050));
+    	Actions actions = new Actions(driver);
+        driver.get(baseUrl + "index.php/secretzone51");
+        driver.findElement(By.id("username")).clear();
+        driver.findElement(By.id("username")).sendKeys("admin");
+        driver.findElement(By.id("login")).clear();
+        driver.findElement(By.id("login")).sendKeys("gbpljrhzxrf1530");
+        driver.findElement(By.cssSelector("input.form-button")).click();
+        actions.moveToElement(driver.findElement(By.xpath("//ul[@id='nav']/li[8]/a/span"))).build().perform();
+        driver.findElement(By.xpath("//ul[@id='nav']/li[8]/ul/li/a/span")).click();
+        TimeUnit.SECONDS.sleep(5);
+        driver.findElement(By.cssSelector("a[name=\"position\"] > span.sort-title")).click();
+        TimeUnit.SECONDS.sleep(5);
+        driver.findElement(By.xpath("//table[@id='portfolio_set_id_table']/tbody/tr/td[2]")).click();
+        String store = driver.findElement(By.cssSelector("select[title='Store View'] optgroup option[selected='selected']")).getText();
+        String client = null;
+		    if(store == "Russian Store View"){
+		    	driver.findElement(By.cssSelector("button[title='Back']")).click();
+		    	TimeUnit.SECONDS.sleep(5);
+		    	client = driver.findElement(By.xpath("//table[@id='portfolio_set_id_table']/tbody/tr/td[2]")).getText(); 	 
+		    	 
+		    }else{
+	    		 driver.findElement(By.cssSelector("button[title='Back']")).click();
+		    	 TimeUnit.SECONDS.sleep(5);
+		    	 driver.findElement(By.xpath("//*[@id='portfolio_set_id_table']/tbody/tr[2]/td[2]")).click();
+		    	 TimeUnit.SECONDS.sleep(5);
+		    	 driver.findElement(By.cssSelector("button[title='Back']")).click();
+		    	 TimeUnit.SECONDS.sleep(5);
+		    	 client = driver.findElement(By.xpath("//*[@id='portfolio_set_id_table']/tbody/tr[2]/td[2]")).getText();
+		    	 
+	    	 }
+            
+        driver.get(baseUrl + "clients");
+        TimeUnit.SECONDS.sleep(5);
+        driver.findElement(By.cssSelector("div.portfolio-item")).click();
+        String client_test = driver.findElement(By.cssSelector("h1")).getText();
+        assertEquals(client, client_test);
+        driver.get(baseUrl + "clients");
+        TimeUnit.SECONDS.sleep(5);
+        actions.moveToElement(driver.findElement(By.cssSelector("div.portfolio-item  > img"))).build().perform();
+        driver.findElement(By.linkText("Детали проекта")).click();
+        TimeUnit.SECONDS.sleep(5);
+        driver.quit();
   }
 
    private boolean isElementPresent(By by) {

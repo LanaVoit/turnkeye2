@@ -20,37 +20,35 @@ public class Details_elements extends turnkeye2.pages.TestBase {
 
     @Test
   public void testUntitled9() throws Exception {
-    //	final WebDriver driver = new ChromeDriver();
-    	driver.manage().window().maximize();
-    driver.get(baseUrl + "/portfolio");
-    assertEquals("ONECA", driver.findElement(By.cssSelector("p.client-name")).getText());
-    assertEquals("One Click Away", driver.findElement(By.linkText("One Click Away")).getText());
-    driver.findElement(By.linkText("One Click Away")).click();
-    assertEquals("One Click Away", driver.findElement(By.cssSelector("h1")).getText());
-    assertEquals("Посетить сайт >", driver.findElement(By.linkText("Посетить сайт >")).getText());
-    assertEquals("", driver.findElement(By.cssSelector("img[alt=\"OneCA\"]")).getText());
-    assertEquals("ICARPC >", driver.findElement(By.cssSelector(".next-project")).getText());
-    assertEquals("< VIKING 360", driver.findElement(By.cssSelector(".prev-project")).getText());
-    assertEquals("OneCA.ru, магазин одежды, обуви и аксессуаров", driver.findElement(By.cssSelector("ul.key-options.cols-4 > li > span")).getText());
-    assertEquals("ONECA.RU, ИНТЕРНЕТ-МАГАЗИН ОДЕЖДЫ, ОБУВИ, АКСЕССУАРОВ И МОДЫ, БЫЛ СОЗДАН ПРОФЕССИОНАЛАМИ, УСПЕШНО РАБОТАЮЩИМИ НА РЫНКЕ МОДЫ В РОССИИ С 1991 ГОДА.", driver.findElement(By.cssSelector("h3")).getText());
-    assertEquals("СОЗДАНИЕ УНИКАЛЬНОГО ДИЗАЙНА", driver.findElement(By.cssSelector("ul.list-services > li")).getText());
-    assertEquals("ИНТЕГРАЦИЯ ДИЗАЙНА В MAGENTO", driver.findElement(By.xpath("//div[@id='content']/div[2]/div[2]/ul/li[2]")).getText());
-    assertEquals("РАЗРАБОТКА MAGENTO МОДУЛЕЙ", driver.findElement(By.xpath("//div[@id='content']/div[2]/div[2]/ul/li[3]")).getText());
-    assertEquals("ОПТИМИЗАЦИЯ ПРОИЗВОДИТЕЛЬНОСТИ", driver.findElement(By.xpath("//div[@id='content']/div[2]/div[2]/ul/li[4]")).getText());
-    assertEquals("ПОДДЕРЖКА И КОНСУЛЬТИРОВАНИЕ", driver.findElement(By.xpath("//div[@id='content']/div[2]/div[2]/ul/li[5]")).getText());
-    assertEquals("", driver.findElement(By.cssSelector("img[alt=\"Главная страница\"]")).getText());
-    assertEquals("КОМАНДА ПРОЕКТА", driver.findElement(By.cssSelector("div.team-behind > h3")).getText());
-    assertEquals("Этот проект был создан нашими\nсертифицированными специалистами:", driver.findElement(By.cssSelector("div.team-behind > h4")).getText());
-    assertEquals("", driver.findElement(By.cssSelector("img[alt=\"Менеджер проекта\"]")).getText());
-    assertEquals("", driver.findElement(By.cssSelector("img[alt=\"Ведущий разработчик\"]")).getText());
-    assertEquals("", driver.findElement(By.xpath("(//img[@alt='Ведущий разработчик'])[2]")).getText());
-    assertEquals("", driver.findElement(By.cssSelector("img[alt=\"Разработчик\"]")).getText());
-    assertEquals("", driver.findElement(By.xpath("(//img[@alt='Разработчик'])[2]")).getText());
-    assertEquals("", driver.findElement(By.xpath("(//img[@alt='Разработчик'])[3]")).getText());
-    assertEquals("", driver.findElement(By.cssSelector("img[alt=\"QA-специалист\"]")).getText());    	
-    assertEquals("", driver.findElement(By.cssSelector("img[alt=\"oneca\"]")).getText());
-    
-  //  driver.quit();
+    	driver.manage().window().setSize(new Dimension(1366, 1050));
+    	    driver.get(baseUrl + "/clients/pinup-girl-clothing");
+    	    assertEquals("Наши клиенты - Pinup Girl Clothing", driver.getTitle());
+    	    assertEquals("Pinup Girl Clothing", driver.findElement(By.cssSelector("h1")).getText());
+    	    assertEquals("http://turnkeye.ru/media/wysiwyg/portfolio/PinupClothing/xtop-banner.jpg.pagespeed.ic.aR8LmQqed2.webp", driver.findElement(By.cssSelector("img.shadows-image")).getAttribute("src"));
+    	    assertEquals("http://turnkeye.ru/media/wysiwyg/portfolio/PinupClothing/xtop-mobile.png.pagespeed.ic.xUAJzyVDP3.png", driver.findElement(By.xpath("//div[@id='content']/div[2]/div[3]/img[2]")).getAttribute("src"));
+    	    assertEquals("Обзор проекта", driver.findElement(By.cssSelector("h3")).getText());
+    	    assertEquals("О проекте Pinup Girl Clothing", driver.findElement(By.cssSelector("div.block-about-project > h3")).getText());
+    	    assertEquals("Примеры реализации", driver.findElement(By.cssSelector("div.block-have-done > h3")).getText());
+    	    assertEquals("Адаптивный дизайн", driver.findElement(By.cssSelector("h4")).getText());
+    	    assertEquals("Вход через социальные сети", driver.findElement(By.xpath("//div[@id='content']/div[2]/div[6]/div[2]/div/div/h4")).getText());
+    	    assertEquals("Блок социальных активностей", driver.findElement(By.xpath("//div[@id='content']/div[2]/div[6]/div[3]/div/div/h4")).getText());
+    	    assertEquals("Amazon WishList", driver.findElement(By.xpath("//div[@id='content']/div[2]/div[6]/div[4]/div/div/h4")).getText());
+    	    assertEquals("The Look: подсказки для выбора комплекта к товару", driver.findElement(By.xpath("//div[@id='content']/div[2]/div[6]/div[5]/div/div/h4")).getText());
+    	    assertEquals("Love it", driver.findElement(By.xpath("//div[@id='content']/div[2]/div[6]/div[6]/div/div/h4")).getText());
+    	    assertEquals("LookBook", driver.findElement(By.xpath("//div[@id='content']/div[2]/div[6]/div[7]/div/div/h4")).getText());
+    	    assertEquals("ОТЗЫВ КЛИЕНТА", driver.findElement(By.cssSelector("h3 > span")).getText());
+    	    assertEquals("О НАШЕЙ РАБОТЕ", driver.findElement(By.xpath("//div[@id='content']/div[2]/div[7]/h3/span[2]/span")).getText());
+    	    assertEquals("Контакты", driver.findElement(By.linkText("Контакты")).getText());
+    	    assertEquals("EMAIL", driver.findElement(By.xpath("/html/body/div/section/div/div/div[2]/div[9]/div/a[2]")).getText());
+    	    assertEquals("Skype", driver.findElement(By.cssSelector("a.block-skype > span")).getText());
+    	    driver.findElement(By.cssSelector("span.icon-right-open")).click();
+    	    assertEquals("Фабрика интерьеров IFAB", driver.findElement(By.cssSelector("h1")).getText());    
+    	    driver.findElement(By.cssSelector("span.icon-left-open")).click();
+    	    assertEquals("Pinup Girl Clothing", driver.findElement(By.cssSelector("h1")).getText());
+  	    
+    	    
+    	    driver.quit();
+
   }
 
    private boolean isElementPresent(By by) {

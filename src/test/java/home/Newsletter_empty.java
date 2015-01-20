@@ -7,6 +7,7 @@ import org.testng.*;
 import org.testng.annotations.*;
 
 import static org.junit.Assert.*;
+import static org.testng.Assert.assertEquals;
 import static org.hamcrest.CoreMatchers.*;
 
 import org.openqa.selenium.*;
@@ -20,13 +21,17 @@ public class Newsletter_empty extends turnkeye2.pages.TestBase {
 
     @Test
   public void testUntitled() throws Exception {
-    //	final WebDriver driver = new ChromeDriver();
-    	driver.manage().window().maximize();
-    driver.get(baseUrl);
-    assertEquals("", driver.findElement(By.id("newsletter")).getText());
-    driver.findElement(By.cssSelector("button[type=\"submit\"]")).click();
-    assertEquals("", driver.findElement(By.cssSelector("input#newsletter.input-text.error")).getText());
-  //  driver.quit();
+    	driver.get(baseUrl);
+    	driver.manage().window().setSize(new Dimension(1366, 1050)); 
+        TimeUnit.SECONDS.sleep(5);
+        assertEquals("", driver.findElement(By.id("newsletter")).getText());
+        ((JavascriptExecutor)driver).executeScript("arguments[0].scrollIntoView();"
+                ,driver.findElement(By.cssSelector("button[type=\"submit\"]")));
+        driver.findElement(By.cssSelector("button[type=\"submit\"]")).click();
+        TimeUnit.SECONDS.sleep(3);
+        assertEquals("", driver.findElement(By.className("error")).getText());
+        driver.quit();    	
+
   }
 
    private boolean isElementPresent(By by) {

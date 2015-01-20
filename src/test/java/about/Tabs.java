@@ -20,8 +20,7 @@ public class Tabs extends turnkeye2.pages.TestBase {
 
     @Test
   public void testUntitled5() throws Exception {
-    //final WebDriver driver = new ChromeDriver();
-    driver.manage().window().maximize();
+    driver.manage().window().setSize(new Dimension(1366, 1050));
     driver.get(baseUrl + "/about");
     assertEquals("О нашей компании", driver.findElement(By.cssSelector("h1")).getText());
     assertEquals("Пять причин выбрать нашу команду для вашего Magento Enterprise & Magento Community проекта.", driver.findElement(By.cssSelector("h4")).getText());
@@ -40,7 +39,7 @@ public class Tabs extends turnkeye2.pages.TestBase {
     assertEquals("Стать частью нашей команды легко.\nНа данный момент нам нужны на постоянную работу в Ульяновске:", driver.findElement(By.cssSelector("h4")).getText());
     assertEquals("ИНТЕГРАТОР-ВЕРСТАЛЬЩИК", driver.findElement(By.cssSelector("h2.list-header")).getText());
     
-  //  driver.quit();
+    driver.quit();
   }
 
    private boolean isElementPresent(By by) {

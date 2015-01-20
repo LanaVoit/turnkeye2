@@ -61,5 +61,7 @@
 	<classpathentry kind="var" path="M2_REPO/javamail/lib/mailapi.jar"/>
 	<classpathentry kind="var" path="M2_REPO/javamail/lib/pop3.jar"/>
 	<classpathentry kind="var" path="M2_REPO/javamail/lib/smtp.jar"/>
+	<classpathentry kind="var" path="M2_REPO/com/saucelabs/sauce_java_common/2.1.9/sauce_java_common-2.1.9.jar"/>
+	<classpathentry kind="var" path="M2_REPO/com/saucelabs/sauce_testng/2.1.9/sauce_testng-2.1.9.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>

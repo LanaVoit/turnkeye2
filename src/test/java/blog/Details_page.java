@@ -20,8 +20,7 @@ public class Details_page extends turnkeye2.pages.TestBase {
 
     @Test
   public void testUntitled() throws Exception {
-    //	final WebDriver driver = new ChromeDriver();
-    	driver.manage().window().maximize();
+    driver.manage().window().setSize(new Dimension(1366, 1050));
     driver.get(baseUrl + "blog/");
     driver.findElement(By.linkText("“≈—“»–Œ¬¿Õ»≈")).click();
     driver.findElement(By.cssSelector("a[href=\"http://turnkeye.ru/blog/usability-testing/\"]")).click();
@@ -40,7 +39,7 @@ public class Details_page extends turnkeye2.pages.TestBase {
         assertEquals("", driver.findElement(By.id("email")).getText());
         assertEquals("", driver.findElement(By.id("comment")).getText());
         assertEquals("", driver.findElement(By.cssSelector("input.button.form-button")).getText());
- //   driver.quit();
+    driver.quit();
   }
 
    private boolean isElementPresent(By by) {

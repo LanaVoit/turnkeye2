@@ -5,6 +5,8 @@ import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 
 import org.apache.commons.io.FileUtils;
+import org.junit.Before;
+import org.openqa.selenium.Dimension;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
@@ -14,6 +16,46 @@ import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Parameters;
+import org.testng.annotations.Optional;
+
+import java.util.regex.Pattern;
+import java.util.concurrent.TimeUnit;
+
+import org.testng.*;
+import org.testng.annotations.*;
+
+import static org.junit.Assert.*;
+import static org.hamcrest.CoreMatchers.*;
+
+import org.openqa.selenium.*;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.support.ui.Select;
+
+import com.saucelabs.testng.SauceOnDemandTestListener;
+import com.saucelabs.common.SauceOnDemandAuthentication;
+import com.saucelabs.common.SauceOnDemandSessionIdProvider;
+import com.saucelabs.testng.SauceOnDemandAuthenticationProvider;
+import com.saucelabs.testng.SauceOnDemandTestListener;
+
+import org.openqa.selenium.Platform;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.remote.CapabilityType;
+import org.openqa.selenium.remote.RemoteWebDriver;
+import org.testng.annotations.DataProvider;
+import org.testng.annotations.Listeners;
+import org.testng.annotations.Test;
+
+import java.lang.reflect.Method;
+import java.net.MalformedURLException;
+import java.net.URL;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
+import static org.testng.Assert.assertEquals;
+
+import com.saucelabs.common.SauceOnDemandAuthentication;
 
 import turnkeye2.util.PropertyLoader;
 import turnkeye2.util.Browser;
@@ -36,9 +78,11 @@ public class TestBase {
 	protected String baseUrl;
 
 	protected Browser browser;
+	
+	 
 
 	@BeforeClass
-	public void init() {
+	public void init() throws MalformedURLException {
 		baseUrl = PropertyLoader.loadProperty("site.url");
 		gridHubUrl = PropertyLoader.loadProperty("grid2.hub");
 
@@ -50,11 +94,20 @@ public class TestBase {
 		String username = PropertyLoader.loadProperty("user.username");
 		String password = PropertyLoader.loadProperty("user.password");
 		
-		driver = WebDriverFactory.getInstance(gridHubUrl, browser, username,
-				password);
-		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-	}
+		 DesiredCapabilities capabillities = DesiredCapabilities.chrome();
+	        capabillities.setCapability("version", "39.0");
+	        capabillities.setCapability("platform", Platform.WIN8);	
+	        capabillities.setCapability("screen-resolution", "1280x1024");
+	        capabillities.setCapability("passed", "true");	 
+	        capabillities.setCapability("name", "turnkeye.com");	
+	        driver = new RemoteWebDriver(
+	                    new URL("http://qatestingtestqa:7d7d449c-27c0-45c7-9339-3aad563a5cc0@ondemand.saucelabs.com:80/wd/hub"),
+	                    capabillities);
 
+	}  
+	  
+	
+	
 	@AfterSuite(alwaysRun = true)
 	public void tearDown() {
 		if (driver != null) {
@@ -82,4 +135,5 @@ public class TestBase {
 //			}
 //		}
 //	}
+	
 }

@@ -21,39 +21,37 @@ public class Captcha_disable extends turnkeye2.pages.TestBase {
 
     @Test
   public void testUntitled3() throws Exception {
-    //	final WebDriver driver = new ChromeDriver();
-    	driver.manage().window().maximize();
-	Actions actions = new Actions(driver);
-   driver.get(baseUrl + "index.php/secretzone51");
-  /* driver.findElement(By.id("username")).clear();
-    driver.findElement(By.id("username")).sendKeys("admin");
-    driver.findElement(By.id("login")).clear();
-    driver.findElement(By.id("login")).sendKeys("gbpljrhzxrf1530");
-    driver.findElement(By.cssSelector("input.form-button")).click();*/
-    actions.moveToElement(driver.findElement(By.xpath("//ul[@id='nav']/li[8]/a/span"))).build().perform(); 
-    driver.findElement(By.xpath("//ul[@id='nav']/li[8]/ul/li[6]/a/span")).click();
-    new Select(driver.findElement(By.id("blog_recaptcha_enabled"))).selectByVisibleText("No");
-    driver.findElement(By.cssSelector("button[title=\"Save Config\"]")).click();
-    assertEquals("The configuration has been saved.", driver.findElement(By.cssSelector("li > span")).getText());
-    
-    actions.moveToElement(driver.findElement(By.xpath("//ul[@id='nav']/li[10]/a/span"))).build().perform();    
-    driver.findElement(By.xpath("//ul[@id='nav']/li[10]/ul/li[11]/a/span")).click();
-    driver.findElement(By.linkText("Select All")).click();
-    driver.findElement(By.cssSelector("button[title=\"Submit\"]")).click();
-    assertEquals("7 cache type(s) refreshed.", driver.findElement(By.cssSelector("li > span")).getText());
-    driver.get(baseUrl + "blog");
-    driver.findElement(By.linkText("ТЕСТИРОВАНИЕ")).click();
-    driver.findElement(By.cssSelector("a[href=\"http://turnkeye.ru/blog/usability-testing/\"]")).click();
-    driver.findElement(By.id("user")).clear();
-    driver.findElement(By.id("user")).sendKeys("test");
-    driver.findElement(By.id("email")).clear();
-    driver.findElement(By.id("email")).sendKeys("test@test.com");
-    driver.findElement(By.id("comment")).clear();
-    driver.findElement(By.id("comment")).sendKeys("test comment");
-    driver.findElement(By.cssSelector("input.button.form-button")).click();
-    TimeUnit.SECONDS.sleep(5);
-    assertEquals("Ваш комментарий отправлен и ожидает подтверждения администратором.", driver.findElement(By.cssSelector("li > span")).getText());
- //   driver.quit();
+    	driver.manage().window().setSize(new Dimension(1366, 1050));
+    	Actions actions = new Actions(driver);
+        driver.get(baseUrl + "index.php/secretzone51");
+        driver.findElement(By.id("username")).clear();
+        driver.findElement(By.id("username")).sendKeys("admin");
+        driver.findElement(By.id("login")).clear();
+        driver.findElement(By.id("login")).sendKeys("gbpljrhzxrf1530");
+        driver.findElement(By.cssSelector("input.form-button")).click();
+        actions.moveToElement(driver.findElement(By.xpath("//ul[@id='nav']/li[9]/a/span"))).build().perform(); 
+        driver.findElement(By.xpath("//ul[@id='nav']/li[9]/ul/li[6]/a/span")).click();
+        new Select(driver.findElement(By.id("blog_recaptcha_enabled"))).selectByVisibleText("No");
+        driver.findElement(By.cssSelector("button[title=\"Save Config\"]")).click();
+        assertEquals("The configuration has been saved.", driver.findElement(By.cssSelector("li > span")).getText());
+        
+        actions.moveToElement(driver.findElement(By.xpath("//ul[@id='nav']/li[11]/a/span"))).build().perform();    
+        driver.findElement(By.xpath("//ul[@id='nav']/li[11]/ul/li[11]/a/span")).click();
+        driver.findElement(By.linkText("Select All")).click();
+        driver.findElement(By.cssSelector("button[title=\"Submit\"]")).click();
+        assertEquals("7 cache type(s) refreshed.", driver.findElement(By.cssSelector("li > span")).getText());
+        driver.get(baseUrl + "blog/usability-testing/");        
+        driver.findElement(By.id("user")).clear();
+        driver.findElement(By.id("user")).sendKeys("test");
+        driver.findElement(By.id("email")).clear();
+        driver.findElement(By.id("email")).sendKeys("test@test.com");
+        driver.findElement(By.id("comment")).clear();
+        driver.findElement(By.id("comment")).sendKeys("test comment");
+        driver.findElement(By.cssSelector("input.button.form-button")).click();
+        TimeUnit.SECONDS.sleep(5);
+        assertEquals("Ваш комментарий отправлен и ожидает подтверждения администратором.", driver.findElement(By.cssSelector("li > span")).getText());
+        driver.quit();
+    	 	
   }
 
    private boolean isElementPresent(By by) {

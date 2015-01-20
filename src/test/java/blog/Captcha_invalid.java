@@ -20,8 +20,7 @@ public class Captcha_invalid extends turnkeye2.pages.TestBase {
 
     @Test
   public void testUntitled2() throws Exception {
-    	//final WebDriver driver = new ChromeDriver();
-    	driver.manage().window().maximize();
+    driver.manage().window().setSize(new Dimension(1366, 1050));
     driver.get(baseUrl + "/blog");
     driver.findElement(By.linkText("ÒÅÑÒÈÐÎÂÀÍÈÅ")).click();
     driver.findElement(By.cssSelector("a[href=\"http://turnkeye.ru/blog/usability-testing/\"]")).click();
@@ -37,7 +36,7 @@ public class Captcha_invalid extends turnkeye2.pages.TestBase {
     TimeUnit.SECONDS.sleep(5);
     assertEquals("Your Recaptcha solution was incorrect, please try again", driver.findElement(By.cssSelector("li > span")).getText());
     TimeUnit.SECONDS.sleep(5);
- //   driver.quit();
+    driver.quit();
   }
 
    private boolean isElementPresent(By by) {

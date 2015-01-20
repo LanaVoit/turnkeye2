@@ -39,7 +39,8 @@
 		     <class name="blog.Captche_enable"/>
 		    <class name="blog.Details_page"/>
 			<class name="blog.Blog_page"/>	
-			<class name="blog.Search"/>						
+			<class name="blog.Search"/>		
+		    				
 		</classes>
 	</test>  
 </suite>

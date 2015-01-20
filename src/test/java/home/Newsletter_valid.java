@@ -20,15 +20,14 @@ public class Newsletter_valid extends turnkeye2.pages.TestBase {
 
     @Test
   public void testUntitled3() throws Exception {
-    //	final WebDriver driver = new ChromeDriver();
-    	driver.manage().window().maximize();
+    	driver.manage().window().setSize(new Dimension(1366, 1050));
     driver.get(baseUrl);
     driver.findElement(By.id("newsletter")).click();
     driver.findElement(By.id("newsletter")).clear();
     driver.findElement(By.id("newsletter")).sendKeys("testqa@test.com");
     driver.findElement(By.cssSelector("button[type=\"submit\"]")).click();
     assertEquals("Запрос на подтверждение был отправлен.", driver.findElement(By.cssSelector("li > span")).getText());
-  //  driver.quit();
+    driver.quit();
   }
 
    private boolean isElementPresent(By by) {

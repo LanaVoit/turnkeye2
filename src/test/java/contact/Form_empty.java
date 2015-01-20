@@ -20,14 +20,13 @@ public class Form_empty extends turnkeye2.pages.TestBase {
 
     @Test
   public void testUntitled4() throws Exception {
-    //	final WebDriver driver = new ChromeDriver();
-    	driver.manage().window().maximize();
+    driver.manage().window().setSize(new Dimension(1366, 1050));
     driver.get(baseUrl + "/contact_us.html");
     driver.findElement(By.cssSelector("button.button")).click();
     assertEquals("Name can't be empty", driver.findElement(By.cssSelector("label.error")).getText());
     assertEquals("Please enter your email", driver.findElement(By.xpath("//form[@id='contactForm']/div/ul/li/div[2]/div/label")).getText());
     assertEquals("Comment can't be empty", driver.findElement(By.cssSelector("li.wide > div.input-box > label.error")).getText());
-  //  driver.quit();
+    driver.quit();
   }
 
    private boolean isElementPresent(By by) {

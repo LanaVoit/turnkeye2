@@ -20,8 +20,7 @@ public class Form_invalid extends turnkeye2.pages.TestBase {
 
     @Test
   public void testUntitled3() throws Exception {
-    //	final WebDriver driver = new ChromeDriver();
-    	driver.manage().window().maximize();
+    	driver.manage().window().setSize(new Dimension(1366, 1050));
     driver.get(baseUrl + "/contact_us.html");
     driver.findElement(By.id("name")).clear();
     driver.findElement(By.id("name")).sendKeys("<script>alert();</script>");
@@ -31,7 +30,7 @@ public class Form_invalid extends turnkeye2.pages.TestBase {
     driver.findElement(By.id("email")).sendKeys("<script>alert();</script>");
     driver.findElement(By.cssSelector("button.button")).click();
     assertEquals("Please enter a valid email address", driver.findElement(By.cssSelector("label.error")).getText());
-   // driver.quit();
+    driver.quit();
   }
 
    private boolean isElementPresent(By by) {
