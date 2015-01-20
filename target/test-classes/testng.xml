@@ -4,43 +4,9 @@
 	<test name="Test1">
 		<parameter name="path" value="/"/>
 		<classes>
-			<class name="home.JS_error"/>
-			<class name="about.JS_error"/>	
-			<class name="clients.JS_error"/>
-			<class name="services.JS_error"/>
-			<class name="contact.JS_error"/>
-			<class name="blog.JS_error_blog"/>	
-			<class name="blog.JS_error_post"/>
 		
-			<class name="home.Newsletter_empty"/>
-		    <class name="home.Newsletter_invalid"/>
-		    <class name="home.Newsletter_valid"/>
-		    <class name="home.Banner"/>		   
-		    
-		    <class name="about.Tabs"/>
-		    <class name="about.Contact_us"/>		    		    
-		   			
-		    <class name="clients.Details"/>
-		    <class name="clients.Details_elements"/>
-		    <class name="clients.Navigation"/>
-		    <class name="clients.Website"/>	
-		    
-		    <class name="services.Page"/>
-		    			    
-		    <class name="contact.Form_invalid"/>
-		    <class name="contact.Form_empty"/>
-		    <class name="contact.Form_valid"/>
-		    <class name="contact.Contact_email_change"/>
-		    			    
-		    <class name="blog.Captcha_empty"/>
-			<class name="blog.Captcha_invalid"/>
-		    <class name="blog.Captcha_disable"/>
-		    <class name="blog.Comment"/>
-		     <class name="blog.Captche_enable"/>
 		    <class name="blog.Details_page"/>
-			<class name="blog.Blog_page"/>	
-			<class name="blog.Search"/>		
-		    				
+	
 		</classes>
 	</test>  
 </suite>
