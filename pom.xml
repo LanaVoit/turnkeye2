@@ -22,21 +22,36 @@
       <version>4.11</version>
     </dependency>
     <dependency>
-      <groupId>org.seleniumhq.selenium</groupId>
-      <artifactId>selenium-java</artifactId>
-      <version>2.40.0</version>
-    </dependency>
-    <dependency>
-      <groupId>javamail</groupId>
-      <artifactId>mail</artifactId>
-      <version>1.4.7</version>
+      <groupId>javax.mail</groupId>
+	  <artifactId>mail</artifactId>
+	  <version>1.4</version>
     </dependency>
     <dependency>
 		<groupId>net.jsourcerer.webdriver</groupId>
 	    <artifactId>JSErrorCollector</artifactId>
 	    <version>0.5</version>	    	    
 	</dependency>
+    <dependency>
+      <groupId>org.seleniumhq.selenium</groupId>
+      <artifactId>selenium-java</artifactId>
+      <version>2.44.0</version>
+    </dependency> 
+    <dependency>  
+      <groupId>org.seleniumhq.selenium</groupId>
+      <artifactId>selenium-server</artifactId>
+      <version>2.44.0</version>
+	</dependency>  
+	<dependency>  
+	      <groupId>org.seleniumhq.selenium</groupId>
+	      <artifactId>selenium-api</artifactId>
+	      <version>2.44.0</version>
+	</dependency>  
 	<dependency>
+            <groupId>org.seleniumhq.selenium</groupId>
+            <artifactId>selenium-remote-driver</artifactId>
+            <version>2.44.0</version>
+     </dependency>  
+   <dependency>
          <groupId>com.saucelabs</groupId>
          <artifactId>sauce_testng</artifactId>
          <version>[1.0.0,)</version>
@@ -48,20 +63,10 @@
       <version>1.5</version>
     </dependency>
     <dependency>
-      <groupId>com.github.detro.ghostdriver</groupId>
-      <artifactId>phantomjsdriver</artifactId>
-      <version>1.1.0</version>
-      <exclusions>
-        <exclusion>
-          <groupId>org.seleniumhq.selenium</groupId>
-          <artifactId>selenium-remote-driver</artifactId>
-        </exclusion>
-        <exclusion>
-          <groupId>org.seleniumhq.selenium</groupId>
-          <artifactId>selenium-server</artifactId>
-        </exclusion>
-      </exclusions>
-    </dependency>
+	    <groupId>com.codeborne</groupId>
+	    <artifactId>phantomjsdriver</artifactId>
+	    <version>1.2.1</version>
+	</dependency>
   </dependencies>
   <build>
     <resources> 
@@ -100,15 +105,15 @@
   </build>
   <!-- profiles -->
   <profiles>
-    <profile>
-      <id>local</id>
+     <profile>
+      <id>firefox</id>
       <properties>
-        <env>local</env>
+        <env>firefox</env>
         <user.username></user.username>
         <user.password></user.password>
         <grid2.hub></grid2.hub>
-        <site.url></site.url>
-        <browser.name></browser.name>
+        <site.url>http://turnkeye.com/</site.url>
+        <browser.name>firefox</browser.name>
         <browser.version></browser.version>
         <browser.platform></browser.platform>
       </properties>
@@ -117,27 +122,14 @@
       </activation>
     </profile>
     <profile>
-      <id>dev</id>
+      <id>chrome</id>
       <properties>
-        <env>dev</env>
+        <env>chrome</env>
         <user.username></user.username>
         <user.password></user.password>
         <grid2.hub></grid2.hub>
-        <site.url></site.url>
-        <browser.name></browser.name>
-        <browser.version></browser.version>
-        <browser.platform></browser.platform>
-      </properties>
-    </profile>
-    <profile>
-      <id>test</id>
-      <properties>
-        <env>test</env>
-        <user.username></user.username>
-        <user.password></user.password>
-        <grid2.hub></grid2.hub>
-        <site.url></site.url>
-        <browser.name></browser.name>
+        <site.url>http://turnkeye.com/</site.url>
+        <browser.name>chrome</browser.name>
         <browser.version></browser.version>
         <browser.platform></browser.platform>
       </properties>
@@ -162,4 +154,16 @@
       </properties>
     </profile>
   </profiles>
+  <repositories>
+        <repository>
+            <id>saucelabs-repository</id>
+            <url>http://repository-saucelabs.forge.cloudbees.com/release</url>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
+        </repository>
+    </repositories>
 </project>
