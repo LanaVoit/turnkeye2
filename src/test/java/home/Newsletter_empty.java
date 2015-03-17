@@ -30,7 +30,7 @@ public class Newsletter_empty extends turnkeye2.pages.TestBase {
         driver.findElement(By.cssSelector("button[type=\"submit\"]")).click();
         TimeUnit.SECONDS.sleep(3);
         assertEquals("", driver.findElement(By.className("error")).getText());
-        driver.quit();    	
+    	
 
   }
 

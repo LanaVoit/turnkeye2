@@ -38,7 +38,7 @@ public class Details_page extends turnkeye2.pages.TestBase {
         assertEquals("", driver.findElement(By.id("email")).getText());
         assertEquals("", driver.findElement(By.id("comment")).getText());
         assertEquals("", driver.findElement(By.cssSelector("input.button.form-button")).getText());
-    driver.quit();
+ 
   }
 
    private boolean isElementPresent(By by) {

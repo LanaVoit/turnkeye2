@@ -36,7 +36,7 @@ public class Captcha_invalid extends turnkeye2.pages.TestBase {
     TimeUnit.SECONDS.sleep(5);
     assertEquals("Your Recaptcha solution was incorrect, please try again", driver.findElement(By.cssSelector("li > span")).getText());
     TimeUnit.SECONDS.sleep(5);
-    driver.quit();
+  
   }
 
    private boolean isElementPresent(By by) {

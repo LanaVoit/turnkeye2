@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="TestSuite" time="0.033" tests="30" errors="0" skipped="0" failures="30">
+<testsuite name="TestSuite" time="16.574" tests="88" errors="0" skipped="86" failures="1">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_25\jre\bin"/>
@@ -62,159 +62,302 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase name="testUntitled4" classname="home.JS_error" time="0.017">
-    <failure type="java.lang.NullPointerException:">java.lang.NullPointerException: null
-	at home.JS_error.testUntitled4(JS_error.java:30)
+  <testcase name="testUntitled4" classname="home.JS_error" time="7.272"/>
+  <testcase name="init" classname="about.JS_error" time="9.302">
+    <failure message="Session ID is null. Using WebDriver after calling quit()?&#10;Build info: version: &apos;2.44.0&apos;, revision: &apos;76d78cf&apos;, time: &apos;2014-10-23 20:03:00&apos;&#10;System info: host: &apos;PC-SBARANOVA&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 8&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.2&apos;, java.version: &apos;1.8.0_25&apos;&#10;Driver info: driver.version: RemoteWebDriver" type="org.openqa.selenium.remote.SessionNotFoundException">org.openqa.selenium.remote.SessionNotFoundException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '2.44.0', revision: '76d78cf', time: '2014-10-23 20:03:00'
+System info: host: 'PC-SBARANOVA', ip: '192.168.56.1', os.name: 'Windows 8', os.arch: 'amd64', os.version: '6.2', java.version: '1.8.0_25'
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:66)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:572)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteTimeouts.implicitlyWait(RemoteWebDriver.java:770)
+	at turnkeye2.pages.TestBase.init(TestBase.java:98)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:138)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:175)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:107)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:348)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:343)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:305)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:254)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:217)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:84)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:92)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
 </failure>
-    <system-out><![CDATA[...
-... TestNG 6.8.9beta by C?dric Beust (cedric@beust.com)
-...
-
-]]></system-out>
   </testcase>
-  <testcase name="testUntitled4" classname="about.JS_error" time="0.001">
-    <failure type="java.lang.NullPointerException:">java.lang.NullPointerException: null
-	at about.JS_error.testUntitled4(JS_error.java:30)
-</failure>
+  <testcase name="testUntitled4" classname="about.JS_error" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="init2" classname="about.JS_error" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="init" classname="clients.JS_error" time="0">
+    <skipped/>
   </testcase>
   <testcase name="testUntitled4" classname="clients.JS_error" time="0">
-    <failure type="java.lang.NullPointerException:">java.lang.NullPointerException: null
-	at clients.JS_error.testUntitled4(JS_error.java:30)
-</failure>
+    <skipped/>
+  </testcase>
+  <testcase name="init2" classname="clients.JS_error" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="init" classname="services.JS_error" time="0">
+    <skipped/>
   </testcase>
   <testcase name="testUntitled4" classname="services.JS_error" time="0">
-    <failure type="java.lang.NullPointerException:">java.lang.NullPointerException: null
-	at services.JS_error.testUntitled4(JS_error.java:30)
-</failure>
+    <skipped/>
+  </testcase>
+  <testcase name="init2" classname="services.JS_error" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="init" classname="contact.JS_error" time="0">
+    <skipped/>
   </testcase>
   <testcase name="testUntitled4" classname="contact.JS_error" time="0">
-    <failure type="java.lang.NullPointerException:">java.lang.NullPointerException: null
-	at contact.JS_error.testUntitled4(JS_error.java:30)
-</failure>
+    <skipped/>
+  </testcase>
+  <testcase name="init2" classname="contact.JS_error" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="init" classname="blog.JS_error_blog" time="0">
+    <skipped/>
   </testcase>
   <testcase name="testUntitled4" classname="blog.JS_error_blog" time="0">
-    <failure type="java.lang.NullPointerException:">java.lang.NullPointerException: null
-	at blog.JS_error_blog.testUntitled4(JS_error_blog.java:30)
-</failure>
+    <skipped/>
+  </testcase>
+  <testcase name="init2" classname="blog.JS_error_blog" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="init" classname="blog.JS_error_post" time="0">
+    <skipped/>
   </testcase>
   <testcase name="testUntitled4" classname="blog.JS_error_post" time="0">
-    <failure type="java.lang.NullPointerException:">java.lang.NullPointerException: null
-	at blog.JS_error_post.testUntitled4(JS_error_post.java:30)
-</failure>
+    <skipped/>
+  </testcase>
+  <testcase name="init2" classname="blog.JS_error_post" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="init" classname="home.Newsletter_empty" time="0">
+    <skipped/>
   </testcase>
   <testcase name="testUntitled" classname="home.Newsletter_empty" time="0">
-    <failure type="java.lang.NullPointerException:">java.lang.NullPointerException: null
-	at home.Newsletter_empty.testUntitled(Newsletter_empty.java:24)
-</failure>
+    <skipped/>
+  </testcase>
+  <testcase name="init2" classname="home.Newsletter_empty" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="init" classname="home.Newsletter_invalid" time="0">
+    <skipped/>
   </testcase>
   <testcase name="testUntitled2" classname="home.Newsletter_invalid" time="0">
-    <failure type="java.lang.NullPointerException:">java.lang.NullPointerException: null
-	at home.Newsletter_invalid.testUntitled2(Newsletter_invalid.java:23)
-</failure>
+    <skipped/>
+  </testcase>
+  <testcase name="init2" classname="home.Newsletter_invalid" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="init" classname="home.Newsletter_valid" time="0">
+    <skipped/>
   </testcase>
   <testcase name="testUntitled3" classname="home.Newsletter_valid" time="0">
-    <failure type="java.lang.NullPointerException:">java.lang.NullPointerException: null
-	at home.Newsletter_valid.testUntitled3(Newsletter_valid.java:23)
-</failure>
+    <skipped/>
+  </testcase>
+  <testcase name="init2" classname="home.Newsletter_valid" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="init" classname="home.Banner" time="0">
+    <skipped/>
   </testcase>
   <testcase name="testUntitled4" classname="home.Banner" time="0">
-    <failure type="java.lang.NullPointerException:">java.lang.NullPointerException: null
-	at home.Banner.testUntitled4(Banner.java:23)
-</failure>
+    <skipped/>
+  </testcase>
+  <testcase name="init2" classname="home.Banner" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="init" classname="about.Tabs" time="0">
+    <skipped/>
   </testcase>
   <testcase name="testUntitled5" classname="about.Tabs" time="0">
-    <failure type="java.lang.NullPointerException:">java.lang.NullPointerException: null
-	at about.Tabs.testUntitled5(Tabs.java:23)
-</failure>
+    <skipped/>
+  </testcase>
+  <testcase name="init2" classname="about.Tabs" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="init" classname="about.Contact_us" time="0">
+    <skipped/>
   </testcase>
   <testcase name="testUntitled6" classname="about.Contact_us" time="0">
-    <failure type="java.lang.NullPointerException:">java.lang.NullPointerException: null
-	at about.Contact_us.testUntitled6(Contact_us.java:23)
-</failure>
+    <skipped/>
+  </testcase>
+  <testcase name="init2" classname="about.Contact_us" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="init" classname="clients.Details" time="0">
+    <skipped/>
   </testcase>
   <testcase name="testUntitled8" classname="clients.Details" time="0">
-    <failure type="java.lang.NullPointerException:">java.lang.NullPointerException: null
-	at clients.Details.testUntitled8(Details.java:24)
-</failure>
+    <skipped/>
+  </testcase>
+  <testcase name="init2" classname="clients.Details" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="init" classname="clients.Details_elements" time="0">
+    <skipped/>
   </testcase>
   <testcase name="testUntitled9" classname="clients.Details_elements" time="0">
-    <failure type="java.lang.NullPointerException:">java.lang.NullPointerException: null
-	at clients.Details_elements.testUntitled9(Details_elements.java:23)
-</failure>
+    <skipped/>
+  </testcase>
+  <testcase name="init2" classname="clients.Details_elements" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="init" classname="clients.Navigation" time="0">
+    <skipped/>
   </testcase>
   <testcase name="testUntitled10" classname="clients.Navigation" time="0">
-    <failure type="java.lang.NullPointerException:">java.lang.NullPointerException: null
-	at clients.Navigation.testUntitled10(Navigation.java:24)
-</failure>
+    <skipped/>
+  </testcase>
+  <testcase name="init2" classname="clients.Navigation" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="init" classname="clients.Website" time="0">
+    <skipped/>
   </testcase>
   <testcase name="testUntitled7" classname="clients.Website" time="0">
-    <failure type="java.lang.NullPointerException:">java.lang.NullPointerException: null
-	at clients.Website.testUntitled7(Website.java:23)
-</failure>
+    <skipped/>
   </testcase>
-  <testcase name="testUntitled2" classname="services.Page" time="0.015">
-    <failure type="java.lang.NullPointerException:">java.lang.NullPointerException: null
-	at services.Page.testUntitled2(Page.java:23)
-</failure>
+  <testcase name="init2" classname="clients.Website" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="init" classname="services.Page" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="testUntitled2" classname="services.Page" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="init2" classname="services.Page" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="init" classname="contact.Form_invalid" time="0">
+    <skipped/>
   </testcase>
   <testcase name="testUntitled3" classname="contact.Form_invalid" time="0">
-    <failure type="java.lang.NullPointerException:">java.lang.NullPointerException: null
-	at contact.Form_invalid.testUntitled3(Form_invalid.java:23)
-</failure>
+    <skipped/>
+  </testcase>
+  <testcase name="init2" classname="contact.Form_invalid" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="init" classname="contact.Form_empty" time="0">
+    <skipped/>
   </testcase>
   <testcase name="testUntitled4" classname="contact.Form_empty" time="0">
-    <failure type="java.lang.NullPointerException:">java.lang.NullPointerException: null
-	at contact.Form_empty.testUntitled4(Form_empty.java:23)
-</failure>
+    <skipped/>
+  </testcase>
+  <testcase name="init2" classname="contact.Form_empty" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="init" classname="contact.Form_valid" time="0">
+    <skipped/>
   </testcase>
   <testcase name="testUntitled6" classname="contact.Form_valid" time="0">
-    <failure type="java.lang.NullPointerException:">java.lang.NullPointerException: null
-	at contact.Form_valid.testUntitled6(Form_valid.java:44)
-</failure>
+    <skipped/>
+  </testcase>
+  <testcase name="init2" classname="contact.Form_valid" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="init" classname="contact.Contact_email_change" time="0">
+    <skipped/>
   </testcase>
   <testcase name="testUntitled6" classname="contact.Contact_email_change" time="0">
-    <failure type="java.lang.NullPointerException:">java.lang.NullPointerException: null
-	at contact.Contact_email_change.testUntitled6(Contact_email_change.java:38)
-</failure>
+    <skipped/>
+  </testcase>
+  <testcase name="init2" classname="contact.Contact_email_change" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="init" classname="blog.Captcha_empty" time="0">
+    <skipped/>
   </testcase>
   <testcase name="testUntitled" classname="blog.Captcha_empty" time="0">
-    <failure type="java.lang.NullPointerException:">java.lang.NullPointerException: null
-	at blog.Captcha_empty.testUntitled(Captcha_empty.java:23)
-</failure>
+    <skipped/>
+  </testcase>
+  <testcase name="init2" classname="blog.Captcha_empty" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="init" classname="blog.Captcha_invalid" time="0">
+    <skipped/>
   </testcase>
   <testcase name="testUntitled2" classname="blog.Captcha_invalid" time="0">
-    <failure type="java.lang.NullPointerException:">java.lang.NullPointerException: null
-	at blog.Captcha_invalid.testUntitled2(Captcha_invalid.java:23)
-</failure>
+    <skipped/>
+  </testcase>
+  <testcase name="init2" classname="blog.Captcha_invalid" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="init" classname="blog.Captcha_disable" time="0">
+    <skipped/>
   </testcase>
   <testcase name="testUntitled3" classname="blog.Captcha_disable" time="0">
-    <failure type="java.lang.NullPointerException:">java.lang.NullPointerException: null
-	at blog.Captcha_disable.testUntitled3(Captcha_disable.java:24)
-</failure>
+    <skipped/>
+  </testcase>
+  <testcase name="init2" classname="blog.Captcha_disable" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="init" classname="blog.Comment" time="0">
+    <skipped/>
   </testcase>
   <testcase name="testUntitled4" classname="blog.Comment" time="0">
-    <failure type="java.lang.NullPointerException:">java.lang.NullPointerException: null
-	at blog.Comment.testUntitled4(Comment.java:24)
-</failure>
+    <skipped/>
+  </testcase>
+  <testcase name="init2" classname="blog.Comment" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="init" classname="blog.Captche_enable" time="0">
+    <skipped/>
   </testcase>
   <testcase name="testUntitled3" classname="blog.Captche_enable" time="0">
-    <failure type="java.lang.NullPointerException:">java.lang.NullPointerException: null
-	at blog.Captche_enable.testUntitled3(Captche_enable.java:24)
-</failure>
+    <skipped/>
+  </testcase>
+  <testcase name="init2" classname="blog.Captche_enable" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="init" classname="blog.Details_page" time="0">
+    <skipped/>
   </testcase>
   <testcase name="testUntitled" classname="blog.Details_page" time="0">
-    <failure type="java.lang.NullPointerException:">java.lang.NullPointerException: null
-	at blog.Details_page.testUntitled(Details_page.java:23)
-</failure>
+    <skipped/>
+  </testcase>
+  <testcase name="init2" classname="blog.Details_page" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="init" classname="blog.Blog_page" time="0">
+    <skipped/>
   </testcase>
   <testcase name="testUntitled2" classname="blog.Blog_page" time="0">
-    <failure type="java.lang.NullPointerException:">java.lang.NullPointerException: null
-	at blog.Blog_page.testUntitled2(Blog_page.java:23)
-</failure>
+    <skipped/>
+  </testcase>
+  <testcase name="init2" classname="blog.Blog_page" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="init" classname="blog.Search" time="0">
+    <skipped/>
   </testcase>
   <testcase name="testUntitled3" classname="blog.Search" time="0">
-    <failure type="java.lang.NullPointerException:">java.lang.NullPointerException: null
-	at blog.Search.testUntitled3(Search.java:23)
-</failure>
+    <skipped/>
+  </testcase>
+  <testcase name="init2" classname="blog.Search" time="0">
+    <skipped/>
   </testcase>
 </testsuite>

@@ -34,8 +34,7 @@ public class Page extends turnkeye2.pages.TestBase {
         assertEquals("Вы можете просмотреть проекты, над которыми мы работали, в нашем портфолио.", driver.findElement(By.cssSelector("h4.list-header")).getText());
         assertEquals("КОМАНДА РАЗРАБОТЧИКОВ", driver.findElement(By.cssSelector("div.development-team > h3")).getText());
         assertEquals("Мы являемся официальными партнерами Magento в России.\nНаши специалисты прошли международную сертификацию по Magento разработке.", driver.findElement(By.cssSelector("div.development-team > h4")).getText());       
-    
-    driver.quit();
+
   }
 
    private boolean isElementPresent(By by) {

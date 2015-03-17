@@ -61,7 +61,7 @@ public class Contact_email_change extends turnkeye2.pages.TestBase {
         driver.findElement(By.cssSelector("button[title=\"Submit\"]")).click();
         assertEquals("7 cache type(s) refreshed.", driver.findElement(By.cssSelector("li > span")).getText());
         
-        driver.quit();
+  
   }
 
    private boolean isElementPresent(By by) {

@@ -20,7 +20,7 @@ public class Contact_us extends turnkeye2.pages.TestBase {
 
     @Test
   public void testUntitled6() throws Exception {
-    driver.manage().window().setSize(new Dimension(1366, 1050));
+   // driver.manage().window().setSize(new Dimension(1366, 1050));
     driver.get(baseUrl + "/about");
     assertEquals("—¬ﬂ«¿“‹—ﬂ — Õ¿Ã»", driver.findElement(By.cssSelector("a.see-more")).getText());
     
@@ -32,7 +32,7 @@ public class Contact_us extends turnkeye2.pages.TestBase {
     assertEquals("", driver.findElement(By.id("comment")).getText());
     assertEquals("Œ“œ–¿¬»“‹", driver.findElement(By.cssSelector("button.button")).getText());
     
-    driver.quit();
+   
   }
 
    private boolean isElementPresent(By by) {

@@ -37,7 +37,7 @@ public class Blog_page extends turnkeye2.pages.TestBase {
         assertEquals("РАЗДЕЛЫ:", driver.findElement(By.cssSelector("div.post-posted-title")).getText());
         assertEquals("Авторы", driver.findElement(By.cssSelector("div.block-blog-authors > div.block-title")).getText());
         assertEquals("", driver.findElement(By.cssSelector("img[alt=\"Magento разработка\"]")).getText());
-    driver.quit();
+
   }
 
    private boolean isElementPresent(By by) {

@@ -50,7 +50,7 @@ public class Captcha_disable extends turnkeye2.pages.TestBase {
         driver.findElement(By.cssSelector("input.button.form-button")).click();
         TimeUnit.SECONDS.sleep(5);
         assertEquals("Ваш комментарий отправлен и ожидает подтверждения администратором.", driver.findElement(By.cssSelector("li > span")).getText());
-        driver.quit();
+  
     	 	
   }
 

@@ -39,7 +39,7 @@ public class Tabs extends turnkeye2.pages.TestBase {
     assertEquals("Стать частью нашей команды легко.\nНа данный момент нам нужны на постоянную работу в Ульяновске:", driver.findElement(By.cssSelector("h4")).getText());
     assertEquals("ИНТЕГРАТОР-ВЕРСТАЛЬЩИК", driver.findElement(By.cssSelector("h2.list-header")).getText());
     
-    driver.quit();
+  
   }
 
    private boolean isElementPresent(By by) {

@@ -38,7 +38,7 @@ public class Website extends turnkeye2.pages.TestBase {
       
         driver.close();
         driver.switchTo().window(parentHandle);
-        driver.quit();
+     
   }
 
    private boolean isElementPresent(By by) {

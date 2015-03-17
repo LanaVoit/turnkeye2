@@ -31,7 +31,7 @@ public class Search extends turnkeye2.pages.TestBase {
       assertEquals("Юзабилити-тестирование: как увеличить прибыльность ...", driver.findElement(By.linkText("Юзабилити-тестирование: как увеличить прибыльность ...")).getText());
       driver.findElement(By.cssSelector("div.gsc-results-close-btn.gsc-results-close-btn-visible")).click();
       assertEquals("Статьи", driver.findElement(By.cssSelector("h1")).getText());
-    driver.quit();
+
   }
 
    private boolean isElementPresent(By by) {

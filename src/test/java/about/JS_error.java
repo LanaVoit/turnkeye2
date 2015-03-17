@@ -27,6 +27,7 @@ public class JS_error extends turnkeye2.pages.TestBase {
 	
     @Test
   public void testUntitled4() throws Exception { 
+
     	driver.manage().window().setSize(new Dimension(1366, 1050));
     	driver.get(baseUrl + "/about");
         Logs log = driver.manage().logs();
@@ -38,7 +39,7 @@ public class JS_error extends turnkeye2.pages.TestBase {
     		//driver.quit();
         }
 		    assertEquals(list, logsEntries);
-		    driver.quit();
+		   
   	    }    
 }
 

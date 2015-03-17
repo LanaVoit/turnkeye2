@@ -63,7 +63,7 @@ public class Details extends turnkeye2.pages.TestBase {
         actions.moveToElement(driver.findElement(By.cssSelector("div.portfolio-item  > img"))).build().perform();
         driver.findElement(By.linkText("Детали проекта")).click();
         TimeUnit.SECONDS.sleep(5);
-        driver.quit();
+    
   }
 
    private boolean isElementPresent(By by) {

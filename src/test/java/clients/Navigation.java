@@ -45,7 +45,7 @@ public class Navigation extends turnkeye2.pages.TestBase {
     
     	    assertEquals("Magento Enterprise", store);    
     	   
-        driver.quit(); 
+   
   }
 
    private boolean isElementPresent(By by) {

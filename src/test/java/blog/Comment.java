@@ -69,7 +69,7 @@ public class Comment extends turnkeye2.pages.TestBase {
     	    assertEquals("7 cache type(s) refreshed.", driver.findElement(By.cssSelector("li > span")).getText());
     	    driver.get(baseUrl + "blog/usability-testing/");
     	    assertEquals("0 комментарии", driver.findElement(By.cssSelector("div.comment-box > div.post-title")).getText());
-    	    driver.quit();
+    	 
   }
 
    private boolean isElementPresent(By by) {

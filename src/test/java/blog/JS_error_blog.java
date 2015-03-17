@@ -38,7 +38,7 @@ public class JS_error_blog extends turnkeye2.pages.TestBase {
     		//driver.quit();
         }
 		    assertEquals(list, logsEntries);
-		    driver.quit();
+		   
   	    }    
 }
 
