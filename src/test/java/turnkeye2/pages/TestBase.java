@@ -79,10 +79,9 @@ public class TestBase {
 
 	protected Browser browser;
 	
-	 
 
 	@BeforeClass
-	public void init() throws MalformedURLException {
+	public void init() {
 		baseUrl = PropertyLoader.loadProperty("site.url");
 		gridHubUrl = PropertyLoader.loadProperty("grid2.hub");
 
@@ -93,6 +92,11 @@ public class TestBase {
 
 		String username = PropertyLoader.loadProperty("user.username");
 		String password = PropertyLoader.loadProperty("user.password");
+		
+		driver = WebDriverFactory.getInstance(gridHubUrl, browser, username,
+				password);
+		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+	
 		
 		/* DesiredCapabilities capabillities = DesiredCapabilities.chrome();
 	        capabillities.setCapability("version", "39.0");

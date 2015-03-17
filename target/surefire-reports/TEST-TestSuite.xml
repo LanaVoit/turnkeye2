@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="TestSuite" time="0.171" tests="30" errors="0" skipped="0" failures="30">
+<testsuite name="TestSuite" time="0.033" tests="30" errors="0" skipped="0" failures="30">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_25\jre\bin"/>
@@ -62,7 +62,7 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase name="testUntitled4" classname="home.JS_error" time="0.148">
+  <testcase name="testUntitled4" classname="home.JS_error" time="0.017">
     <failure type="java.lang.NullPointerException:">java.lang.NullPointerException: null
 	at home.JS_error.testUntitled4(JS_error.java:30)
 </failure>
@@ -132,7 +132,7 @@
 	at about.Contact_us.testUntitled6(Contact_us.java:23)
 </failure>
   </testcase>
-  <testcase name="testUntitled8" classname="clients.Details" time="0.016">
+  <testcase name="testUntitled8" classname="clients.Details" time="0">
     <failure type="java.lang.NullPointerException:">java.lang.NullPointerException: null
 	at clients.Details.testUntitled8(Details.java:24)
 </failure>
@@ -152,7 +152,7 @@
 	at clients.Website.testUntitled7(Website.java:23)
 </failure>
   </testcase>
-  <testcase name="testUntitled2" classname="services.Page" time="0">
+  <testcase name="testUntitled2" classname="services.Page" time="0.015">
     <failure type="java.lang.NullPointerException:">java.lang.NullPointerException: null
 	at services.Page.testUntitled2(Page.java:23)
 </failure>
@@ -177,12 +177,12 @@
 	at contact.Contact_email_change.testUntitled6(Contact_email_change.java:38)
 </failure>
   </testcase>
-  <testcase name="testUntitled" classname="blog.Captcha_empty" time="0.002">
+  <testcase name="testUntitled" classname="blog.Captcha_empty" time="0">
     <failure type="java.lang.NullPointerException:">java.lang.NullPointerException: null
 	at blog.Captcha_empty.testUntitled(Captcha_empty.java:23)
 </failure>
   </testcase>
-  <testcase name="testUntitled2" classname="blog.Captcha_invalid" time="0.001">
+  <testcase name="testUntitled2" classname="blog.Captcha_invalid" time="0">
     <failure type="java.lang.NullPointerException:">java.lang.NullPointerException: null
 	at blog.Captcha_invalid.testUntitled2(Captcha_invalid.java:23)
 </failure>
@@ -192,12 +192,12 @@
 	at blog.Captcha_disable.testUntitled3(Captcha_disable.java:24)
 </failure>
   </testcase>
-  <testcase name="testUntitled4" classname="blog.Comment" time="0.001">
+  <testcase name="testUntitled4" classname="blog.Comment" time="0">
     <failure type="java.lang.NullPointerException:">java.lang.NullPointerException: null
 	at blog.Comment.testUntitled4(Comment.java:24)
 </failure>
   </testcase>
-  <testcase name="testUntitled3" classname="blog.Captche_enable" time="0.001">
+  <testcase name="testUntitled3" classname="blog.Captche_enable" time="0">
     <failure type="java.lang.NullPointerException:">java.lang.NullPointerException: null
 	at blog.Captche_enable.testUntitled3(Captche_enable.java:24)
 </failure>
@@ -212,7 +212,7 @@
 	at blog.Blog_page.testUntitled2(Blog_page.java:23)
 </failure>
   </testcase>
-  <testcase name="testUntitled3" classname="blog.Search" time="0.001">
+  <testcase name="testUntitled3" classname="blog.Search" time="0">
     <failure type="java.lang.NullPointerException:">java.lang.NullPointerException: null
 	at blog.Search.testUntitled3(Search.java:23)
 </failure>

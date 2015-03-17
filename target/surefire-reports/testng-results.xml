@@ -2,16 +2,12 @@
 <testng-results skipped="0" failed="30" total="30" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Tests" duration-ms="429" started-at="2015-03-17T07:03:34Z" finished-at="2015-03-17T07:03:34Z">
+  <suite name="Tests" duration-ms="215" started-at="2015-03-17T07:08:29Z" finished-at="2015-03-17T07:08:29Z">
     <groups>
     </groups>
-    <test name="Test1" duration-ms="429" started-at="2015-03-17T07:03:34Z" finished-at="2015-03-17T07:03:34Z">
+    <test name="Test1" duration-ms="215" started-at="2015-03-17T07:08:29Z" finished-at="2015-03-17T07:08:29Z">
       <class name="blog.Comment">
-        <test-method status="PASS" signature="init()[pri:0, instance:blog.Comment@61dc03ce]" name="init" is-config="true" duration-ms="2" started-at="2015-03-17T11:03:34Z" finished-at="2015-03-17T11:03:34Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- init -->
-        <test-method status="FAIL" signature="testUntitled4()[pri:0, instance:blog.Comment@61dc03ce]" name="testUntitled4" duration-ms="0" started-at="2015-03-17T11:03:34Z" finished-at="2015-03-17T11:03:34Z">
+        <test-method status="FAIL" signature="testUntitled4()[pri:0, instance:blog.Comment@61dc03ce]" name="testUntitled4" duration-ms="0" started-at="2015-03-17T11:08:29Z" finished-at="2015-03-17T11:08:29Z">
           <exception class="java.lang.NullPointerException">
             <full-stacktrace>
               <![CDATA[java.lang.NullPointerException
@@ -49,13 +45,17 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testUntitled4 -->
-      </class> <!-- blog.Comment -->
-      <class name="blog.Captcha_empty">
-        <test-method status="PASS" signature="init()[pri:0, instance:blog.Captcha_empty@337d0578]" name="init" is-config="true" duration-ms="16" started-at="2015-03-17T11:03:34Z" finished-at="2015-03-17T11:03:34Z">
+        <test-method status="PASS" signature="init()[pri:0, instance:blog.Comment@61dc03ce]" name="init" is-config="true" duration-ms="0" started-at="2015-03-17T11:08:29Z" finished-at="2015-03-17T11:08:29Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method status="FAIL" signature="testUntitled()[pri:0, instance:blog.Captcha_empty@337d0578]" name="testUntitled" duration-ms="0" started-at="2015-03-17T11:03:34Z" finished-at="2015-03-17T11:03:34Z">
+      </class> <!-- blog.Comment -->
+      <class name="blog.Captcha_empty">
+        <test-method status="PASS" signature="init()[pri:0, instance:blog.Captcha_empty@337d0578]" name="init" is-config="true" duration-ms="0" started-at="2015-03-17T11:08:29Z" finished-at="2015-03-17T11:08:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="FAIL" signature="testUntitled()[pri:0, instance:blog.Captcha_empty@337d0578]" name="testUntitled" duration-ms="0" started-at="2015-03-17T11:08:29Z" finished-at="2015-03-17T11:08:29Z">
           <exception class="java.lang.NullPointerException">
             <full-stacktrace>
               <![CDATA[java.lang.NullPointerException
@@ -95,11 +95,11 @@
         </test-method> <!-- testUntitled -->
       </class> <!-- blog.Captcha_empty -->
       <class name="home.JS_error">
-        <test-method status="PASS" signature="init()[pri:0, instance:home.JS_error@6615435c]" name="init" is-config="true" duration-ms="156" started-at="2015-03-17T11:03:34Z" finished-at="2015-03-17T11:03:34Z">
+        <test-method status="PASS" signature="init()[pri:0, instance:home.JS_error@6615435c]" name="init" is-config="true" duration-ms="80" started-at="2015-03-17T11:08:29Z" finished-at="2015-03-17T11:08:29Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method status="FAIL" signature="testUntitled4()[pri:0, instance:home.JS_error@6615435c]" name="testUntitled4" duration-ms="140" started-at="2015-03-17T11:03:34Z" finished-at="2015-03-17T11:03:34Z">
+        <test-method status="FAIL" signature="testUntitled4()[pri:0, instance:home.JS_error@6615435c]" name="testUntitled4" duration-ms="0" started-at="2015-03-17T11:08:29Z" finished-at="2015-03-17T11:08:29Z">
           <exception class="java.lang.NullPointerException">
             <full-stacktrace>
               <![CDATA[java.lang.NullPointerException
@@ -137,13 +137,13 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testUntitled4 -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:home.JS_error@6615435c]" name="tearDown" is-config="true" duration-ms="0" started-at="2015-03-17T11:03:36Z" finished-at="2015-03-17T11:03:36Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:home.JS_error@6615435c]" name="tearDown" is-config="true" duration-ms="0" started-at="2015-03-17T11:08:29Z" finished-at="2015-03-17T11:08:29Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- home.JS_error -->
       <class name="home.Newsletter_invalid">
-        <test-method status="FAIL" signature="testUntitled2()[pri:0, instance:home.Newsletter_invalid@234bef66]" name="testUntitled2" duration-ms="0" started-at="2015-03-17T11:03:34Z" finished-at="2015-03-17T11:03:34Z">
+        <test-method status="FAIL" signature="testUntitled2()[pri:0, instance:home.Newsletter_invalid@234bef66]" name="testUntitled2" duration-ms="0" started-at="2015-03-17T11:08:29Z" finished-at="2015-03-17T11:08:29Z">
           <exception class="java.lang.NullPointerException">
             <full-stacktrace>
               <![CDATA[java.lang.NullPointerException
@@ -181,17 +181,17 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testUntitled2 -->
-        <test-method status="PASS" signature="init()[pri:0, instance:home.Newsletter_invalid@234bef66]" name="init" is-config="true" duration-ms="0" started-at="2015-03-17T11:03:34Z" finished-at="2015-03-17T11:03:34Z">
+        <test-method status="PASS" signature="init()[pri:0, instance:home.Newsletter_invalid@234bef66]" name="init" is-config="true" duration-ms="0" started-at="2015-03-17T11:08:29Z" finished-at="2015-03-17T11:08:29Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
       </class> <!-- home.Newsletter_invalid -->
       <class name="blog.Captcha_invalid">
-        <test-method status="PASS" signature="init()[pri:0, instance:blog.Captcha_invalid@2cb4c3ab]" name="init" is-config="true" duration-ms="3" started-at="2015-03-17T11:03:34Z" finished-at="2015-03-17T11:03:34Z">
+        <test-method status="PASS" signature="init()[pri:0, instance:blog.Captcha_invalid@2cb4c3ab]" name="init" is-config="true" duration-ms="0" started-at="2015-03-17T11:08:29Z" finished-at="2015-03-17T11:08:29Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method status="FAIL" signature="testUntitled2()[pri:0, instance:blog.Captcha_invalid@2cb4c3ab]" name="testUntitled2" duration-ms="0" started-at="2015-03-17T11:03:34Z" finished-at="2015-03-17T11:03:34Z">
+        <test-method status="FAIL" signature="testUntitled2()[pri:0, instance:blog.Captcha_invalid@2cb4c3ab]" name="testUntitled2" duration-ms="0" started-at="2015-03-17T11:08:29Z" finished-at="2015-03-17T11:08:29Z">
           <exception class="java.lang.NullPointerException">
             <full-stacktrace>
               <![CDATA[java.lang.NullPointerException
@@ -231,11 +231,11 @@
         </test-method> <!-- testUntitled2 -->
       </class> <!-- blog.Captcha_invalid -->
       <class name="home.Newsletter_valid">
-        <test-method status="PASS" signature="init()[pri:0, instance:home.Newsletter_valid@26f67b76]" name="init" is-config="true" duration-ms="15" started-at="2015-03-17T11:03:34Z" finished-at="2015-03-17T11:03:34Z">
+        <test-method status="PASS" signature="init()[pri:0, instance:home.Newsletter_valid@26f67b76]" name="init" is-config="true" duration-ms="0" started-at="2015-03-17T11:08:29Z" finished-at="2015-03-17T11:08:29Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method status="FAIL" signature="testUntitled3()[pri:0, instance:home.Newsletter_valid@26f67b76]" name="testUntitled3" duration-ms="0" started-at="2015-03-17T11:03:34Z" finished-at="2015-03-17T11:03:34Z">
+        <test-method status="FAIL" signature="testUntitled3()[pri:0, instance:home.Newsletter_valid@26f67b76]" name="testUntitled3" duration-ms="0" started-at="2015-03-17T11:08:29Z" finished-at="2015-03-17T11:08:29Z">
           <exception class="java.lang.NullPointerException">
             <full-stacktrace>
               <![CDATA[java.lang.NullPointerException
@@ -275,7 +275,11 @@
         </test-method> <!-- testUntitled3 -->
       </class> <!-- home.Newsletter_valid -->
       <class name="contact.JS_error">
-        <test-method status="FAIL" signature="testUntitled4()[pri:0, instance:contact.JS_error@69d9c55]" name="testUntitled4" duration-ms="0" started-at="2015-03-17T11:03:34Z" finished-at="2015-03-17T11:03:34Z">
+        <test-method status="PASS" signature="init()[pri:0, instance:contact.JS_error@69d9c55]" name="init" is-config="true" duration-ms="2" started-at="2015-03-17T11:08:29Z" finished-at="2015-03-17T11:08:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="FAIL" signature="testUntitled4()[pri:0, instance:contact.JS_error@69d9c55]" name="testUntitled4" duration-ms="0" started-at="2015-03-17T11:08:29Z" finished-at="2015-03-17T11:08:29Z">
           <exception class="java.lang.NullPointerException">
             <full-stacktrace>
               <![CDATA[java.lang.NullPointerException
@@ -313,17 +317,13 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testUntitled4 -->
-        <test-method status="PASS" signature="init()[pri:0, instance:contact.JS_error@69d9c55]" name="init" is-config="true" duration-ms="0" started-at="2015-03-17T11:03:34Z" finished-at="2015-03-17T11:03:34Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- init -->
       </class> <!-- contact.JS_error -->
       <class name="home.Newsletter_empty">
-        <test-method status="PASS" signature="init()[pri:0, instance:home.Newsletter_empty@7946e1f4]" name="init" is-config="true" duration-ms="0" started-at="2015-03-17T11:03:34Z" finished-at="2015-03-17T11:03:34Z">
+        <test-method status="PASS" signature="init()[pri:0, instance:home.Newsletter_empty@7946e1f4]" name="init" is-config="true" duration-ms="0" started-at="2015-03-17T11:08:29Z" finished-at="2015-03-17T11:08:29Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method status="FAIL" signature="testUntitled()[pri:0, instance:home.Newsletter_empty@7946e1f4]" name="testUntitled" duration-ms="0" started-at="2015-03-17T11:03:34Z" finished-at="2015-03-17T11:03:34Z">
+        <test-method status="FAIL" signature="testUntitled()[pri:0, instance:home.Newsletter_empty@7946e1f4]" name="testUntitled" duration-ms="0" started-at="2015-03-17T11:08:29Z" finished-at="2015-03-17T11:08:29Z">
           <exception class="java.lang.NullPointerException">
             <full-stacktrace>
               <![CDATA[java.lang.NullPointerException
@@ -363,7 +363,7 @@
         </test-method> <!-- testUntitled -->
       </class> <!-- home.Newsletter_empty -->
       <class name="contact.Form_invalid">
-        <test-method status="FAIL" signature="testUntitled3()[pri:0, instance:contact.Form_invalid@9f70c54]" name="testUntitled3" duration-ms="0" started-at="2015-03-17T11:03:34Z" finished-at="2015-03-17T11:03:34Z">
+        <test-method status="FAIL" signature="testUntitled3()[pri:0, instance:contact.Form_invalid@9f70c54]" name="testUntitled3" duration-ms="0" started-at="2015-03-17T11:08:29Z" finished-at="2015-03-17T11:08:29Z">
           <exception class="java.lang.NullPointerException">
             <full-stacktrace>
               <![CDATA[java.lang.NullPointerException
@@ -401,17 +401,13 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testUntitled3 -->
-        <test-method status="PASS" signature="init()[pri:0, instance:contact.Form_invalid@9f70c54]" name="init" is-config="true" duration-ms="0" started-at="2015-03-17T11:03:34Z" finished-at="2015-03-17T11:03:34Z">
+        <test-method status="PASS" signature="init()[pri:0, instance:contact.Form_invalid@9f70c54]" name="init" is-config="true" duration-ms="0" started-at="2015-03-17T11:08:29Z" finished-at="2015-03-17T11:08:29Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
       </class> <!-- contact.Form_invalid -->
       <class name="blog.Details_page">
-        <test-method status="PASS" signature="init()[pri:0, instance:blog.Details_page@59e84876]" name="init" is-config="true" duration-ms="1" started-at="2015-03-17T11:03:34Z" finished-at="2015-03-17T11:03:34Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- init -->
-        <test-method status="FAIL" signature="testUntitled()[pri:0, instance:blog.Details_page@59e84876]" name="testUntitled" duration-ms="1" started-at="2015-03-17T11:03:34Z" finished-at="2015-03-17T11:03:34Z">
+        <test-method status="FAIL" signature="testUntitled()[pri:0, instance:blog.Details_page@59e84876]" name="testUntitled" duration-ms="0" started-at="2015-03-17T11:08:29Z" finished-at="2015-03-17T11:08:29Z">
           <exception class="java.lang.NullPointerException">
             <full-stacktrace>
               <![CDATA[java.lang.NullPointerException
@@ -449,13 +445,17 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testUntitled -->
-      </class> <!-- blog.Details_page -->
-      <class name="blog.JS_error_blog">
-        <test-method status="PASS" signature="init()[pri:0, instance:blog.JS_error_blog@737996a0]" name="init" is-config="true" duration-ms="4" started-at="2015-03-17T11:03:34Z" finished-at="2015-03-17T11:03:34Z">
+        <test-method status="PASS" signature="init()[pri:0, instance:blog.Details_page@59e84876]" name="init" is-config="true" duration-ms="0" started-at="2015-03-17T11:08:29Z" finished-at="2015-03-17T11:08:29Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method status="FAIL" signature="testUntitled4()[pri:0, instance:blog.JS_error_blog@737996a0]" name="testUntitled4" duration-ms="0" started-at="2015-03-17T11:03:34Z" finished-at="2015-03-17T11:03:34Z">
+      </class> <!-- blog.Details_page -->
+      <class name="blog.JS_error_blog">
+        <test-method status="PASS" signature="init()[pri:0, instance:blog.JS_error_blog@737996a0]" name="init" is-config="true" duration-ms="1" started-at="2015-03-17T11:08:29Z" finished-at="2015-03-17T11:08:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="FAIL" signature="testUntitled4()[pri:0, instance:blog.JS_error_blog@737996a0]" name="testUntitled4" duration-ms="0" started-at="2015-03-17T11:08:29Z" finished-at="2015-03-17T11:08:29Z">
           <exception class="java.lang.NullPointerException">
             <full-stacktrace>
               <![CDATA[java.lang.NullPointerException
@@ -495,7 +495,7 @@
         </test-method> <!-- testUntitled4 -->
       </class> <!-- blog.JS_error_blog -->
       <class name="about.Tabs">
-        <test-method status="FAIL" signature="testUntitled5()[pri:0, instance:about.Tabs@3dd3bcd]" name="testUntitled5" duration-ms="0" started-at="2015-03-17T11:03:34Z" finished-at="2015-03-17T11:03:34Z">
+        <test-method status="FAIL" signature="testUntitled5()[pri:0, instance:about.Tabs@3dd3bcd]" name="testUntitled5" duration-ms="0" started-at="2015-03-17T11:08:29Z" finished-at="2015-03-17T11:08:29Z">
           <exception class="java.lang.NullPointerException">
             <full-stacktrace>
               <![CDATA[java.lang.NullPointerException
@@ -533,13 +533,13 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testUntitled5 -->
-        <test-method status="PASS" signature="init()[pri:0, instance:about.Tabs@3dd3bcd]" name="init" is-config="true" duration-ms="0" started-at="2015-03-17T11:03:34Z" finished-at="2015-03-17T11:03:34Z">
+        <test-method status="PASS" signature="init()[pri:0, instance:about.Tabs@3dd3bcd]" name="init" is-config="true" duration-ms="0" started-at="2015-03-17T11:08:29Z" finished-at="2015-03-17T11:08:29Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
       </class> <!-- about.Tabs -->
       <class name="blog.JS_error_post">
-        <test-method status="FAIL" signature="testUntitled4()[pri:0, instance:blog.JS_error_post@13a57a3b]" name="testUntitled4" duration-ms="0" started-at="2015-03-17T11:03:34Z" finished-at="2015-03-17T11:03:34Z">
+        <test-method status="FAIL" signature="testUntitled4()[pri:0, instance:blog.JS_error_post@13a57a3b]" name="testUntitled4" duration-ms="0" started-at="2015-03-17T11:08:29Z" finished-at="2015-03-17T11:08:29Z">
           <exception class="java.lang.NullPointerException">
             <full-stacktrace>
               <![CDATA[java.lang.NullPointerException
@@ -577,17 +577,17 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testUntitled4 -->
-        <test-method status="PASS" signature="init()[pri:0, instance:blog.JS_error_post@13a57a3b]" name="init" is-config="true" duration-ms="0" started-at="2015-03-17T11:03:34Z" finished-at="2015-03-17T11:03:34Z">
+        <test-method status="PASS" signature="init()[pri:0, instance:blog.JS_error_post@13a57a3b]" name="init" is-config="true" duration-ms="0" started-at="2015-03-17T11:08:29Z" finished-at="2015-03-17T11:08:29Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
       </class> <!-- blog.JS_error_post -->
       <class name="blog.Search">
-        <test-method status="PASS" signature="init()[pri:0, instance:blog.Search@97e1986]" name="init" is-config="true" duration-ms="1" started-at="2015-03-17T11:03:34Z" finished-at="2015-03-17T11:03:34Z">
+        <test-method status="PASS" signature="init()[pri:0, instance:blog.Search@97e1986]" name="init" is-config="true" duration-ms="16" started-at="2015-03-17T11:08:29Z" finished-at="2015-03-17T11:08:29Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method status="FAIL" signature="testUntitled3()[pri:0, instance:blog.Search@97e1986]" name="testUntitled3" duration-ms="0" started-at="2015-03-17T11:03:34Z" finished-at="2015-03-17T11:03:34Z">
+        <test-method status="FAIL" signature="testUntitled3()[pri:0, instance:blog.Search@97e1986]" name="testUntitled3" duration-ms="1" started-at="2015-03-17T11:08:29Z" finished-at="2015-03-17T11:08:29Z">
           <exception class="java.lang.NullPointerException">
             <full-stacktrace>
               <![CDATA[java.lang.NullPointerException
@@ -627,11 +627,11 @@
         </test-method> <!-- testUntitled3 -->
       </class> <!-- blog.Search -->
       <class name="contact.Form_valid">
-        <test-method status="PASS" signature="init()[pri:0, instance:contact.Form_valid@3c09711b]" name="init" is-config="true" duration-ms="0" started-at="2015-03-17T11:03:34Z" finished-at="2015-03-17T11:03:34Z">
+        <test-method status="PASS" signature="init()[pri:0, instance:contact.Form_valid@3c09711b]" name="init" is-config="true" duration-ms="0" started-at="2015-03-17T11:08:29Z" finished-at="2015-03-17T11:08:29Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method status="FAIL" signature="testUntitled6()[pri:0, instance:contact.Form_valid@3c09711b]" name="testUntitled6" duration-ms="0" started-at="2015-03-17T11:03:34Z" finished-at="2015-03-17T11:03:34Z">
+        <test-method status="FAIL" signature="testUntitled6()[pri:0, instance:contact.Form_valid@3c09711b]" name="testUntitled6" duration-ms="0" started-at="2015-03-17T11:08:29Z" finished-at="2015-03-17T11:08:29Z">
           <exception class="java.lang.NullPointerException">
             <full-stacktrace>
               <![CDATA[java.lang.NullPointerException
@@ -671,11 +671,11 @@
         </test-method> <!-- testUntitled6 -->
       </class> <!-- contact.Form_valid -->
       <class name="clients.Website">
-        <test-method status="PASS" signature="init()[pri:0, instance:clients.Website@32e6e9c3]" name="init" is-config="true" duration-ms="0" started-at="2015-03-17T11:03:34Z" finished-at="2015-03-17T11:03:34Z">
+        <test-method status="PASS" signature="init()[pri:0, instance:clients.Website@32e6e9c3]" name="init" is-config="true" duration-ms="0" started-at="2015-03-17T11:08:29Z" finished-at="2015-03-17T11:08:29Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method status="FAIL" signature="testUntitled7()[pri:0, instance:clients.Website@32e6e9c3]" name="testUntitled7" duration-ms="0" started-at="2015-03-17T11:03:34Z" finished-at="2015-03-17T11:03:34Z">
+        <test-method status="FAIL" signature="testUntitled7()[pri:0, instance:clients.Website@32e6e9c3]" name="testUntitled7" duration-ms="0" started-at="2015-03-17T11:08:29Z" finished-at="2015-03-17T11:08:29Z">
           <exception class="java.lang.NullPointerException">
             <full-stacktrace>
               <![CDATA[java.lang.NullPointerException
@@ -715,11 +715,11 @@
         </test-method> <!-- testUntitled7 -->
       </class> <!-- clients.Website -->
       <class name="contact.Form_empty">
-        <test-method status="PASS" signature="init()[pri:0, instance:contact.Form_empty@4590c9c3]" name="init" is-config="true" duration-ms="0" started-at="2015-03-17T11:03:34Z" finished-at="2015-03-17T11:03:34Z">
+        <test-method status="PASS" signature="init()[pri:0, instance:contact.Form_empty@4590c9c3]" name="init" is-config="true" duration-ms="0" started-at="2015-03-17T11:08:29Z" finished-at="2015-03-17T11:08:29Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method status="FAIL" signature="testUntitled4()[pri:0, instance:contact.Form_empty@4590c9c3]" name="testUntitled4" duration-ms="0" started-at="2015-03-17T11:03:34Z" finished-at="2015-03-17T11:03:34Z">
+        <test-method status="FAIL" signature="testUntitled4()[pri:0, instance:contact.Form_empty@4590c9c3]" name="testUntitled4" duration-ms="15" started-at="2015-03-17T11:08:29Z" finished-at="2015-03-17T11:08:29Z">
           <exception class="java.lang.NullPointerException">
             <full-stacktrace>
               <![CDATA[java.lang.NullPointerException
@@ -759,11 +759,11 @@
         </test-method> <!-- testUntitled4 -->
       </class> <!-- contact.Form_empty -->
       <class name="clients.Details_elements">
-        <test-method status="PASS" signature="init()[pri:0, instance:clients.Details_elements@50f8360d]" name="init" is-config="true" duration-ms="0" started-at="2015-03-17T11:03:34Z" finished-at="2015-03-17T11:03:34Z">
+        <test-method status="PASS" signature="init()[pri:0, instance:clients.Details_elements@50f8360d]" name="init" is-config="true" duration-ms="0" started-at="2015-03-17T11:08:29Z" finished-at="2015-03-17T11:08:29Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method status="FAIL" signature="testUntitled9()[pri:0, instance:clients.Details_elements@50f8360d]" name="testUntitled9" duration-ms="0" started-at="2015-03-17T11:03:34Z" finished-at="2015-03-17T11:03:34Z">
+        <test-method status="FAIL" signature="testUntitled9()[pri:0, instance:clients.Details_elements@50f8360d]" name="testUntitled9" duration-ms="0" started-at="2015-03-17T11:08:29Z" finished-at="2015-03-17T11:08:29Z">
           <exception class="java.lang.NullPointerException">
             <full-stacktrace>
               <![CDATA[java.lang.NullPointerException
@@ -803,11 +803,11 @@
         </test-method> <!-- testUntitled9 -->
       </class> <!-- clients.Details_elements -->
       <class name="clients.Details">
-        <test-method status="PASS" signature="init()[pri:0, instance:clients.Details@b97c004]" name="init" is-config="true" duration-ms="0" started-at="2015-03-17T11:03:34Z" finished-at="2015-03-17T11:03:34Z">
+        <test-method status="PASS" signature="init()[pri:0, instance:clients.Details@b97c004]" name="init" is-config="true" duration-ms="0" started-at="2015-03-17T11:08:29Z" finished-at="2015-03-17T11:08:29Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method status="FAIL" signature="testUntitled8()[pri:0, instance:clients.Details@b97c004]" name="testUntitled8" duration-ms="0" started-at="2015-03-17T11:03:34Z" finished-at="2015-03-17T11:03:34Z">
+        <test-method status="FAIL" signature="testUntitled8()[pri:0, instance:clients.Details@b97c004]" name="testUntitled8" duration-ms="0" started-at="2015-03-17T11:08:29Z" finished-at="2015-03-17T11:08:29Z">
           <exception class="java.lang.NullPointerException">
             <full-stacktrace>
               <![CDATA[java.lang.NullPointerException
@@ -847,11 +847,11 @@
         </test-method> <!-- testUntitled8 -->
       </class> <!-- clients.Details -->
       <class name="about.Contact_us">
-        <test-method status="PASS" signature="init()[pri:0, instance:about.Contact_us@153f5a29]" name="init" is-config="true" duration-ms="0" started-at="2015-03-17T11:03:34Z" finished-at="2015-03-17T11:03:34Z">
+        <test-method status="PASS" signature="init()[pri:0, instance:about.Contact_us@153f5a29]" name="init" is-config="true" duration-ms="0" started-at="2015-03-17T11:08:29Z" finished-at="2015-03-17T11:08:29Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method status="FAIL" signature="testUntitled6()[pri:0, instance:about.Contact_us@153f5a29]" name="testUntitled6" duration-ms="0" started-at="2015-03-17T11:03:34Z" finished-at="2015-03-17T11:03:34Z">
+        <test-method status="FAIL" signature="testUntitled6()[pri:0, instance:about.Contact_us@153f5a29]" name="testUntitled6" duration-ms="0" started-at="2015-03-17T11:08:29Z" finished-at="2015-03-17T11:08:29Z">
           <exception class="java.lang.NullPointerException">
             <full-stacktrace>
               <![CDATA[java.lang.NullPointerException
@@ -891,11 +891,11 @@
         </test-method> <!-- testUntitled6 -->
       </class> <!-- about.Contact_us -->
       <class name="blog.Captche_enable">
-        <test-method status="PASS" signature="init()[pri:0, instance:blog.Captche_enable@7f560810]" name="init" is-config="true" duration-ms="3" started-at="2015-03-17T11:03:34Z" finished-at="2015-03-17T11:03:34Z">
+        <test-method status="PASS" signature="init()[pri:0, instance:blog.Captche_enable@7f560810]" name="init" is-config="true" duration-ms="0" started-at="2015-03-17T11:08:29Z" finished-at="2015-03-17T11:08:29Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method status="FAIL" signature="testUntitled3()[pri:0, instance:blog.Captche_enable@7f560810]" name="testUntitled3" duration-ms="1" started-at="2015-03-17T11:03:34Z" finished-at="2015-03-17T11:03:34Z">
+        <test-method status="FAIL" signature="testUntitled3()[pri:0, instance:blog.Captche_enable@7f560810]" name="testUntitled3" duration-ms="0" started-at="2015-03-17T11:08:29Z" finished-at="2015-03-17T11:08:29Z">
           <exception class="java.lang.NullPointerException">
             <full-stacktrace>
               <![CDATA[java.lang.NullPointerException
@@ -935,11 +935,11 @@
         </test-method> <!-- testUntitled3 -->
       </class> <!-- blog.Captche_enable -->
       <class name="blog.Blog_page">
-        <test-method status="PASS" signature="init()[pri:0, instance:blog.Blog_page@6276ae34]" name="init" is-config="true" duration-ms="1" started-at="2015-03-17T11:03:34Z" finished-at="2015-03-17T11:03:34Z">
+        <test-method status="PASS" signature="init()[pri:0, instance:blog.Blog_page@6276ae34]" name="init" is-config="true" duration-ms="0" started-at="2015-03-17T11:08:29Z" finished-at="2015-03-17T11:08:29Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method status="FAIL" signature="testUntitled2()[pri:0, instance:blog.Blog_page@6276ae34]" name="testUntitled2" duration-ms="1" started-at="2015-03-17T11:03:34Z" finished-at="2015-03-17T11:03:34Z">
+        <test-method status="FAIL" signature="testUntitled2()[pri:0, instance:blog.Blog_page@6276ae34]" name="testUntitled2" duration-ms="0" started-at="2015-03-17T11:08:29Z" finished-at="2015-03-17T11:08:29Z">
           <exception class="java.lang.NullPointerException">
             <full-stacktrace>
               <![CDATA[java.lang.NullPointerException
@@ -979,11 +979,11 @@
         </test-method> <!-- testUntitled2 -->
       </class> <!-- blog.Blog_page -->
       <class name="services.Page">
-        <test-method status="PASS" signature="init()[pri:0, instance:services.Page@7ca48474]" name="init" is-config="true" duration-ms="16" started-at="2015-03-17T11:03:34Z" finished-at="2015-03-17T11:03:34Z">
+        <test-method status="PASS" signature="init()[pri:0, instance:services.Page@7ca48474]" name="init" is-config="true" duration-ms="0" started-at="2015-03-17T11:08:29Z" finished-at="2015-03-17T11:08:29Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method status="FAIL" signature="testUntitled2()[pri:0, instance:services.Page@7ca48474]" name="testUntitled2" duration-ms="0" started-at="2015-03-17T11:03:34Z" finished-at="2015-03-17T11:03:34Z">
+        <test-method status="FAIL" signature="testUntitled2()[pri:0, instance:services.Page@7ca48474]" name="testUntitled2" duration-ms="0" started-at="2015-03-17T11:08:29Z" finished-at="2015-03-17T11:08:29Z">
           <exception class="java.lang.NullPointerException">
             <full-stacktrace>
               <![CDATA[java.lang.NullPointerException
@@ -1023,7 +1023,11 @@
         </test-method> <!-- testUntitled2 -->
       </class> <!-- services.Page -->
       <class name="home.Banner">
-        <test-method status="FAIL" signature="testUntitled4()[pri:0, instance:home.Banner@12843fce]" name="testUntitled4" duration-ms="0" started-at="2015-03-17T11:03:34Z" finished-at="2015-03-17T11:03:34Z">
+        <test-method status="PASS" signature="init()[pri:0, instance:home.Banner@12843fce]" name="init" is-config="true" duration-ms="16" started-at="2015-03-17T11:08:29Z" finished-at="2015-03-17T11:08:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="FAIL" signature="testUntitled4()[pri:0, instance:home.Banner@12843fce]" name="testUntitled4" duration-ms="0" started-at="2015-03-17T11:08:29Z" finished-at="2015-03-17T11:08:29Z">
           <exception class="java.lang.NullPointerException">
             <full-stacktrace>
               <![CDATA[java.lang.NullPointerException
@@ -1061,17 +1065,13 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testUntitled4 -->
-        <test-method status="PASS" signature="init()[pri:0, instance:home.Banner@12843fce]" name="init" is-config="true" duration-ms="0" started-at="2015-03-17T11:03:34Z" finished-at="2015-03-17T11:03:34Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- init -->
       </class> <!-- home.Banner -->
       <class name="clients.JS_error">
-        <test-method status="PASS" signature="init()[pri:0, instance:clients.JS_error@39fb3ab6]" name="init" is-config="true" duration-ms="3" started-at="2015-03-17T11:03:34Z" finished-at="2015-03-17T11:03:34Z">
+        <test-method status="PASS" signature="init()[pri:0, instance:clients.JS_error@39fb3ab6]" name="init" is-config="true" duration-ms="4" started-at="2015-03-17T11:08:29Z" finished-at="2015-03-17T11:08:29Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method status="FAIL" signature="testUntitled4()[pri:0, instance:clients.JS_error@39fb3ab6]" name="testUntitled4" duration-ms="0" started-at="2015-03-17T11:03:34Z" finished-at="2015-03-17T11:03:34Z">
+        <test-method status="FAIL" signature="testUntitled4()[pri:0, instance:clients.JS_error@39fb3ab6]" name="testUntitled4" duration-ms="1" started-at="2015-03-17T11:08:29Z" finished-at="2015-03-17T11:08:29Z">
           <exception class="java.lang.NullPointerException">
             <full-stacktrace>
               <![CDATA[java.lang.NullPointerException
@@ -1111,11 +1111,11 @@
         </test-method> <!-- testUntitled4 -->
       </class> <!-- clients.JS_error -->
       <class name="blog.Captcha_disable">
-        <test-method status="PASS" signature="init()[pri:0, instance:blog.Captcha_disable@61a485d2]" name="init" is-config="true" duration-ms="2" started-at="2015-03-17T11:03:34Z" finished-at="2015-03-17T11:03:34Z">
+        <test-method status="PASS" signature="init()[pri:0, instance:blog.Captcha_disable@61a485d2]" name="init" is-config="true" duration-ms="16" started-at="2015-03-17T11:08:29Z" finished-at="2015-03-17T11:08:29Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method status="FAIL" signature="testUntitled3()[pri:0, instance:blog.Captcha_disable@61a485d2]" name="testUntitled3" duration-ms="1" started-at="2015-03-17T11:03:34Z" finished-at="2015-03-17T11:03:34Z">
+        <test-method status="FAIL" signature="testUntitled3()[pri:0, instance:blog.Captcha_disable@61a485d2]" name="testUntitled3" duration-ms="0" started-at="2015-03-17T11:08:29Z" finished-at="2015-03-17T11:08:29Z">
           <exception class="java.lang.NullPointerException">
             <full-stacktrace>
               <![CDATA[java.lang.NullPointerException
@@ -1155,7 +1155,11 @@
         </test-method> <!-- testUntitled3 -->
       </class> <!-- blog.Captcha_disable -->
       <class name="clients.Navigation">
-        <test-method status="FAIL" signature="testUntitled10()[pri:0, instance:clients.Navigation@2096442d]" name="testUntitled10" duration-ms="0" started-at="2015-03-17T11:03:34Z" finished-at="2015-03-17T11:03:34Z">
+        <test-method status="PASS" signature="init()[pri:0, instance:clients.Navigation@2096442d]" name="init" is-config="true" duration-ms="16" started-at="2015-03-17T11:08:29Z" finished-at="2015-03-17T11:08:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="FAIL" signature="testUntitled10()[pri:0, instance:clients.Navigation@2096442d]" name="testUntitled10" duration-ms="0" started-at="2015-03-17T11:08:29Z" finished-at="2015-03-17T11:08:29Z">
           <exception class="java.lang.NullPointerException">
             <full-stacktrace>
               <![CDATA[java.lang.NullPointerException
@@ -1193,13 +1197,9 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testUntitled10 -->
-        <test-method status="PASS" signature="init()[pri:0, instance:clients.Navigation@2096442d]" name="init" is-config="true" duration-ms="0" started-at="2015-03-17T11:03:34Z" finished-at="2015-03-17T11:03:34Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- init -->
       </class> <!-- clients.Navigation -->
       <class name="contact.Contact_email_change">
-        <test-method status="FAIL" signature="testUntitled6()[pri:0, instance:contact.Contact_email_change@13c78c0b]" name="testUntitled6" duration-ms="0" started-at="2015-03-17T11:03:34Z" finished-at="2015-03-17T11:03:34Z">
+        <test-method status="FAIL" signature="testUntitled6()[pri:0, instance:contact.Contact_email_change@13c78c0b]" name="testUntitled6" duration-ms="0" started-at="2015-03-17T11:08:29Z" finished-at="2015-03-17T11:08:29Z">
           <exception class="java.lang.NullPointerException">
             <full-stacktrace>
               <![CDATA[java.lang.NullPointerException
@@ -1237,17 +1237,17 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testUntitled6 -->
-        <test-method status="PASS" signature="init()[pri:0, instance:contact.Contact_email_change@13c78c0b]" name="init" is-config="true" duration-ms="0" started-at="2015-03-17T11:03:34Z" finished-at="2015-03-17T11:03:34Z">
+        <test-method status="PASS" signature="init()[pri:0, instance:contact.Contact_email_change@13c78c0b]" name="init" is-config="true" duration-ms="0" started-at="2015-03-17T11:08:29Z" finished-at="2015-03-17T11:08:29Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
       </class> <!-- contact.Contact_email_change -->
       <class name="about.JS_error">
-        <test-method status="PASS" signature="init()[pri:0, instance:about.JS_error@52af6cff]" name="init" is-config="true" duration-ms="2" started-at="2015-03-17T11:03:34Z" finished-at="2015-03-17T11:03:34Z">
+        <test-method status="PASS" signature="init()[pri:0, instance:about.JS_error@52af6cff]" name="init" is-config="true" duration-ms="2" started-at="2015-03-17T11:08:29Z" finished-at="2015-03-17T11:08:29Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method status="FAIL" signature="testUntitled4()[pri:0, instance:about.JS_error@52af6cff]" name="testUntitled4" duration-ms="1" started-at="2015-03-17T11:03:34Z" finished-at="2015-03-17T11:03:34Z">
+        <test-method status="FAIL" signature="testUntitled4()[pri:0, instance:about.JS_error@52af6cff]" name="testUntitled4" duration-ms="1" started-at="2015-03-17T11:08:29Z" finished-at="2015-03-17T11:08:29Z">
           <exception class="java.lang.NullPointerException">
             <full-stacktrace>
               <![CDATA[java.lang.NullPointerException
@@ -1287,11 +1287,11 @@
         </test-method> <!-- testUntitled4 -->
       </class> <!-- about.JS_error -->
       <class name="services.JS_error">
-        <test-method status="PASS" signature="init()[pri:0, instance:services.JS_error@5cc7c2a6]" name="init" is-config="true" duration-ms="4" started-at="2015-03-17T11:03:34Z" finished-at="2015-03-17T11:03:34Z">
+        <test-method status="PASS" signature="init()[pri:0, instance:services.JS_error@5cc7c2a6]" name="init" is-config="true" duration-ms="2" started-at="2015-03-17T11:08:29Z" finished-at="2015-03-17T11:08:29Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method status="FAIL" signature="testUntitled4()[pri:0, instance:services.JS_error@5cc7c2a6]" name="testUntitled4" duration-ms="0" started-at="2015-03-17T11:03:34Z" finished-at="2015-03-17T11:03:34Z">
+        <test-method status="FAIL" signature="testUntitled4()[pri:0, instance:services.JS_error@5cc7c2a6]" name="testUntitled4" duration-ms="0" started-at="2015-03-17T11:08:29Z" finished-at="2015-03-17T11:08:29Z">
           <exception class="java.lang.NullPointerException">
             <full-stacktrace>
               <![CDATA[java.lang.NullPointerException
