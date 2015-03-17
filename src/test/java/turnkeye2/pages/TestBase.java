@@ -79,9 +79,10 @@ public class TestBase {
 
 	protected Browser browser;
 	
+	 
 
 	@BeforeClass
-	public void init() {
+	public void init() throws MalformedURLException {
 		baseUrl = PropertyLoader.loadProperty("site.url");
 		gridHubUrl = PropertyLoader.loadProperty("grid2.hub");
 
@@ -93,22 +94,17 @@ public class TestBase {
 		String username = PropertyLoader.loadProperty("user.username");
 		String password = PropertyLoader.loadProperty("user.password");
 		
-		driver = WebDriverFactory.getInstance(gridHubUrl, browser, username,
-				password);
-		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-	
-		
-		/* DesiredCapabilities capabillities = DesiredCapabilities.chrome();
-	        capabillities.setCapability("version", "39.0");
-	        capabillities.setCapability("platform", Platform.WIN8);	
+		 DesiredCapabilities capabillities = DesiredCapabilities.firefox();
+	        capabillities.setCapability("platform", Platform.LINUX);
 	        capabillities.setCapability("screen-resolution", "1280x1024");
 	        capabillities.setCapability("passed", "true");	 
 	        capabillities.setCapability("name", "turnkeye.ru");	
 	        driver = new RemoteWebDriver(
-	                    new URL("http://qatestingtestqa:7d7d449c-27c0-45c7-9339-3aad563a5cc0@ondemand.saucelabs.com:80/wd/hub"),
+	                    new URL("http://148.251.21.174:4444/wd/hub"),
 	                    capabillities);
-*/
+
 	}  
+	  
 	
 	
 	@AfterSuite(alwaysRun = true)
