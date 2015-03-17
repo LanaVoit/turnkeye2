@@ -1,12 +1,124 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 30, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 273.336 sec <<< FAILURE! - in TestSuite
-testUntitled4(blog.JS_error_blog)  Time elapsed: 2.037 sec  <<< FAILURE!
-java.lang.AssertionError: expected:<[]> but was:<[[2015-01-20T15:13:57+0400] [SEVERE] http://www.google.com/uds/?file=ads&v=3&packages=search&async=2 0:0 Failed to load resource: the server responded with a status of 404 (Not Found)]>
-	at org.junit.Assert.fail(Assert.java:88)
-	at org.junit.Assert.failNotEquals(Assert.java:743)
-	at org.junit.Assert.assertEquals(Assert.java:118)
-	at org.junit.Assert.assertEquals(Assert.java:144)
-	at blog.JS_error_blog.testUntitled4(JS_error_blog.java:41)
+Tests run: 30, Failures: 30, Errors: 0, Skipped: 0, Time elapsed: 5.425 sec <<< FAILURE! - in TestSuite
+testUntitled4(home.JS_error)  Time elapsed: 0.148 sec  <<< FAILURE!
+java.lang.NullPointerException: null
+	at home.JS_error.testUntitled4(JS_error.java:30)
+
+testUntitled4(about.JS_error)  Time elapsed: 0.001 sec  <<< FAILURE!
+java.lang.NullPointerException: null
+	at about.JS_error.testUntitled4(JS_error.java:30)
+
+testUntitled4(clients.JS_error)  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.NullPointerException: null
+	at clients.JS_error.testUntitled4(JS_error.java:30)
+
+testUntitled4(services.JS_error)  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.NullPointerException: null
+	at services.JS_error.testUntitled4(JS_error.java:30)
+
+testUntitled4(contact.JS_error)  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.NullPointerException: null
+	at contact.JS_error.testUntitled4(JS_error.java:30)
+
+testUntitled4(blog.JS_error_blog)  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.NullPointerException: null
+	at blog.JS_error_blog.testUntitled4(JS_error_blog.java:30)
+
+testUntitled4(blog.JS_error_post)  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.NullPointerException: null
+	at blog.JS_error_post.testUntitled4(JS_error_post.java:30)
+
+testUntitled(home.Newsletter_empty)  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.NullPointerException: null
+	at home.Newsletter_empty.testUntitled(Newsletter_empty.java:24)
+
+testUntitled2(home.Newsletter_invalid)  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.NullPointerException: null
+	at home.Newsletter_invalid.testUntitled2(Newsletter_invalid.java:23)
+
+testUntitled3(home.Newsletter_valid)  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.NullPointerException: null
+	at home.Newsletter_valid.testUntitled3(Newsletter_valid.java:23)
+
+testUntitled4(home.Banner)  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.NullPointerException: null
+	at home.Banner.testUntitled4(Banner.java:23)
+
+testUntitled5(about.Tabs)  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.NullPointerException: null
+	at about.Tabs.testUntitled5(Tabs.java:23)
+
+testUntitled6(about.Contact_us)  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.NullPointerException: null
+	at about.Contact_us.testUntitled6(Contact_us.java:23)
+
+testUntitled8(clients.Details)  Time elapsed: 0.016 sec  <<< FAILURE!
+java.lang.NullPointerException: null
+	at clients.Details.testUntitled8(Details.java:24)
+
+testUntitled9(clients.Details_elements)  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.NullPointerException: null
+	at clients.Details_elements.testUntitled9(Details_elements.java:23)
+
+testUntitled10(clients.Navigation)  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.NullPointerException: null
+	at clients.Navigation.testUntitled10(Navigation.java:24)
+
+testUntitled7(clients.Website)  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.NullPointerException: null
+	at clients.Website.testUntitled7(Website.java:23)
+
+testUntitled2(services.Page)  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.NullPointerException: null
+	at services.Page.testUntitled2(Page.java:23)
+
+testUntitled3(contact.Form_invalid)  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.NullPointerException: null
+	at contact.Form_invalid.testUntitled3(Form_invalid.java:23)
+
+testUntitled4(contact.Form_empty)  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.NullPointerException: null
+	at contact.Form_empty.testUntitled4(Form_empty.java:23)
+
+testUntitled6(contact.Form_valid)  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.NullPointerException: null
+	at contact.Form_valid.testUntitled6(Form_valid.java:44)
+
+testUntitled6(contact.Contact_email_change)  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.NullPointerException: null
+	at contact.Contact_email_change.testUntitled6(Contact_email_change.java:38)
+
+testUntitled(blog.Captcha_empty)  Time elapsed: 0.002 sec  <<< FAILURE!
+java.lang.NullPointerException: null
+	at blog.Captcha_empty.testUntitled(Captcha_empty.java:23)
+
+testUntitled2(blog.Captcha_invalid)  Time elapsed: 0.001 sec  <<< FAILURE!
+java.lang.NullPointerException: null
+	at blog.Captcha_invalid.testUntitled2(Captcha_invalid.java:23)
+
+testUntitled3(blog.Captcha_disable)  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.NullPointerException: null
+	at blog.Captcha_disable.testUntitled3(Captcha_disable.java:24)
+
+testUntitled4(blog.Comment)  Time elapsed: 0.001 sec  <<< FAILURE!
+java.lang.NullPointerException: null
+	at blog.Comment.testUntitled4(Comment.java:24)
+
+testUntitled3(blog.Captche_enable)  Time elapsed: 0.001 sec  <<< FAILURE!
+java.lang.NullPointerException: null
+	at blog.Captche_enable.testUntitled3(Captche_enable.java:24)
+
+testUntitled(blog.Details_page)  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.NullPointerException: null
+	at blog.Details_page.testUntitled(Details_page.java:23)
+
+testUntitled2(blog.Blog_page)  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.NullPointerException: null
+	at blog.Blog_page.testUntitled2(Blog_page.java:23)
+
+testUntitled3(blog.Search)  Time elapsed: 0.001 sec  <<< FAILURE!
+java.lang.NullPointerException: null
+	at blog.Search.testUntitled3(Search.java:23)
 

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="TestSuite" time="266.605" tests="30" errors="0" skipped="0" failures="1">
+<testsuite name="TestSuite" time="0.171" tests="30" errors="0" skipped="0" failures="30">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_25\jre\bin"/>
@@ -27,7 +27,7 @@
     <property name="os.name" value="Windows 8"/>
     <property name="classworlds.conf" value="C:\Program Files\maven\bin\m2.conf"/>
     <property name="sun.jnu.encoding" value="Cp1251"/>
-    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_25\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\nodejs\;%M2_HOME%\bin;C:\Program Files (x86)\Git\cmd;C:\Tools;C:\strawberry\c\bin;C:\strawberry\perl\bin;C:\Python27\sqlmap-dev\Python27;C:\Program Files\Microsoft SQL Server\110\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\110\Tools\Binn\;C:\Program Files\Microsoft SQL Server\110\DTS\Binn\;C:\Tools\Selenium;C:\Program Files\TortoiseSVN\bin;C:\Program Files\Java\jdk1.8.0_25\bin;C:\Users\Lana\AppData\Roaming\npm;C:\Tools;C:\Tools\apache-maven-3.2.1\bin;C:\Python27\sqlmap-dev\Python27;C:\Tools\Selenium;C:\Tools\apache-jmeter-2.11\lib;;."/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_25\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\nodejs\;%M2_HOME%\bin;C:\Program Files (x86)\Git\cmd;C:\Tools;C:\strawberry\c\bin;C:\strawberry\perl\bin;C:\Python27\sqlmap-dev\Python27;C:\Program Files\Microsoft SQL Server\110\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\110\Tools\Binn\;C:\Program Files\Microsoft SQL Server\110\DTS\Binn\;C:\Tools\Selenium;C:\Program Files\TortoiseSVN\bin;C:\Windows\Microsoft.NET\Framework\v2.0.50727;C:\Program Files\Java\jdk1.8.0_25\bin;C:\Users\Lana\AppData\Roaming\npm;C:\Tools;C:\Tools\apache-maven-3.2.1\bin;C:\Python27\sqlmap-dev\Python27;C:\Tools\Selenium;C:\Tools\apache-jmeter-2.11\lib;;."/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.class.version" value="52.0"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
@@ -62,44 +62,159 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase name="testUntitled4" classname="home.JS_error" time="5.462"/>
-  <testcase name="testUntitled4" classname="about.JS_error" time="1.046"/>
-  <testcase name="testUntitled4" classname="clients.JS_error" time="4.298"/>
-  <testcase name="testUntitled4" classname="services.JS_error" time="0.695"/>
-  <testcase name="testUntitled4" classname="contact.JS_error" time="0.627"/>
-  <testcase name="testUntitled4" classname="blog.JS_error_blog" time="2.037">
-    <failure message="expected:&lt;[]&gt; but was:&lt;[[2015-01-20T15:13:57+0400] [SEVERE] http://www.google.com/uds/?file=ads&amp;v=3&amp;packages=search&amp;async=2 0:0 Failed to load resource: the server responded with a status of 404 (Not Found)]&gt;" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: expected:<[]> but was:<[[2015-01-20T15:13:57+0400] [SEVERE] http://www.google.com/uds/?file=ads&v=3&packages=search&async=2 0:0 Failed to load resource: the server responded with a status of 404 (Not Found)]>
-	at org.junit.Assert.fail(Assert.java:88)
-	at org.junit.Assert.failNotEquals(Assert.java:743)
-	at org.junit.Assert.assertEquals(Assert.java:118)
-	at org.junit.Assert.assertEquals(Assert.java:144)
-	at blog.JS_error_blog.testUntitled4(JS_error_blog.java:41)
-]]></failure>
-    <system-out><![CDATA[http://www.google.com/uds/?file=ads&v=3&packages=search&async=2 0:0 Failed to load resource: the server responded with a status of 404 (Not Found)
+  <testcase name="testUntitled4" classname="home.JS_error" time="0.148">
+    <failure type="java.lang.NullPointerException:">java.lang.NullPointerException: null
+	at home.JS_error.testUntitled4(JS_error.java:30)
+</failure>
+    <system-out><![CDATA[...
+... TestNG 6.8.9beta by C?dric Beust (cedric@beust.com)
+...
+
 ]]></system-out>
   </testcase>
-  <testcase name="testUntitled4" classname="blog.JS_error_post" time="0.739"/>
-  <testcase name="testUntitled" classname="home.Newsletter_empty" time="8.966"/>
-  <testcase name="testUntitled2" classname="home.Newsletter_invalid" time="0.894"/>
-  <testcase name="testUntitled3" classname="home.Newsletter_valid" time="1.825"/>
-  <testcase name="testUntitled4" classname="home.Banner" time="5.711"/>
-  <testcase name="testUntitled5" classname="about.Tabs" time="2.084"/>
-  <testcase name="testUntitled6" classname="about.Contact_us" time="1.01"/>
-  <testcase name="testUntitled8" classname="clients.Details" time="54.457"/>
-  <testcase name="testUntitled9" classname="clients.Details_elements" time="4.483"/>
-  <testcase name="testUntitled10" classname="clients.Navigation" time="8.009"/>
-  <testcase name="testUntitled7" classname="clients.Website" time="3.044"/>
-  <testcase name="testUntitled2" classname="services.Page" time="1.294"/>
-  <testcase name="testUntitled3" classname="contact.Form_invalid" time="1.129"/>
-  <testcase name="testUntitled4" classname="contact.Form_empty" time="0.632"/>
-  <testcase name="testUntitled6" classname="contact.Form_valid" time="40.516"/>
-  <testcase name="testUntitled6" classname="contact.Contact_email_change" time="17.482"/>
-  <testcase name="testUntitled" classname="blog.Captcha_empty" time="11.635"/>
-  <testcase name="testUntitled2" classname="blog.Captcha_invalid" time="13.961"/>
-  <testcase name="testUntitled3" classname="blog.Captcha_disable" time="14.246"/>
-  <testcase name="testUntitled4" classname="blog.Comment" time="36.363"/>
-  <testcase name="testUntitled3" classname="blog.Captche_enable" time="11.787"/>
-  <testcase name="testUntitled" classname="blog.Details_page" time="3.283"/>
-  <testcase name="testUntitled2" classname="blog.Blog_page" time="7.057"/>
-  <testcase name="testUntitled3" classname="blog.Search" time="1.833"/>
+  <testcase name="testUntitled4" classname="about.JS_error" time="0.001">
+    <failure type="java.lang.NullPointerException:">java.lang.NullPointerException: null
+	at about.JS_error.testUntitled4(JS_error.java:30)
+</failure>
+  </testcase>
+  <testcase name="testUntitled4" classname="clients.JS_error" time="0">
+    <failure type="java.lang.NullPointerException:">java.lang.NullPointerException: null
+	at clients.JS_error.testUntitled4(JS_error.java:30)
+</failure>
+  </testcase>
+  <testcase name="testUntitled4" classname="services.JS_error" time="0">
+    <failure type="java.lang.NullPointerException:">java.lang.NullPointerException: null
+	at services.JS_error.testUntitled4(JS_error.java:30)
+</failure>
+  </testcase>
+  <testcase name="testUntitled4" classname="contact.JS_error" time="0">
+    <failure type="java.lang.NullPointerException:">java.lang.NullPointerException: null
+	at contact.JS_error.testUntitled4(JS_error.java:30)
+</failure>
+  </testcase>
+  <testcase name="testUntitled4" classname="blog.JS_error_blog" time="0">
+    <failure type="java.lang.NullPointerException:">java.lang.NullPointerException: null
+	at blog.JS_error_blog.testUntitled4(JS_error_blog.java:30)
+</failure>
+  </testcase>
+  <testcase name="testUntitled4" classname="blog.JS_error_post" time="0">
+    <failure type="java.lang.NullPointerException:">java.lang.NullPointerException: null
+	at blog.JS_error_post.testUntitled4(JS_error_post.java:30)
+</failure>
+  </testcase>
+  <testcase name="testUntitled" classname="home.Newsletter_empty" time="0">
+    <failure type="java.lang.NullPointerException:">java.lang.NullPointerException: null
+	at home.Newsletter_empty.testUntitled(Newsletter_empty.java:24)
+</failure>
+  </testcase>
+  <testcase name="testUntitled2" classname="home.Newsletter_invalid" time="0">
+    <failure type="java.lang.NullPointerException:">java.lang.NullPointerException: null
+	at home.Newsletter_invalid.testUntitled2(Newsletter_invalid.java:23)
+</failure>
+  </testcase>
+  <testcase name="testUntitled3" classname="home.Newsletter_valid" time="0">
+    <failure type="java.lang.NullPointerException:">java.lang.NullPointerException: null
+	at home.Newsletter_valid.testUntitled3(Newsletter_valid.java:23)
+</failure>
+  </testcase>
+  <testcase name="testUntitled4" classname="home.Banner" time="0">
+    <failure type="java.lang.NullPointerException:">java.lang.NullPointerException: null
+	at home.Banner.testUntitled4(Banner.java:23)
+</failure>
+  </testcase>
+  <testcase name="testUntitled5" classname="about.Tabs" time="0">
+    <failure type="java.lang.NullPointerException:">java.lang.NullPointerException: null
+	at about.Tabs.testUntitled5(Tabs.java:23)
+</failure>
+  </testcase>
+  <testcase name="testUntitled6" classname="about.Contact_us" time="0">
+    <failure type="java.lang.NullPointerException:">java.lang.NullPointerException: null
+	at about.Contact_us.testUntitled6(Contact_us.java:23)
+</failure>
+  </testcase>
+  <testcase name="testUntitled8" classname="clients.Details" time="0.016">
+    <failure type="java.lang.NullPointerException:">java.lang.NullPointerException: null
+	at clients.Details.testUntitled8(Details.java:24)
+</failure>
+  </testcase>
+  <testcase name="testUntitled9" classname="clients.Details_elements" time="0">
+    <failure type="java.lang.NullPointerException:">java.lang.NullPointerException: null
+	at clients.Details_elements.testUntitled9(Details_elements.java:23)
+</failure>
+  </testcase>
+  <testcase name="testUntitled10" classname="clients.Navigation" time="0">
+    <failure type="java.lang.NullPointerException:">java.lang.NullPointerException: null
+	at clients.Navigation.testUntitled10(Navigation.java:24)
+</failure>
+  </testcase>
+  <testcase name="testUntitled7" classname="clients.Website" time="0">
+    <failure type="java.lang.NullPointerException:">java.lang.NullPointerException: null
+	at clients.Website.testUntitled7(Website.java:23)
+</failure>
+  </testcase>
+  <testcase name="testUntitled2" classname="services.Page" time="0">
+    <failure type="java.lang.NullPointerException:">java.lang.NullPointerException: null
+	at services.Page.testUntitled2(Page.java:23)
+</failure>
+  </testcase>
+  <testcase name="testUntitled3" classname="contact.Form_invalid" time="0">
+    <failure type="java.lang.NullPointerException:">java.lang.NullPointerException: null
+	at contact.Form_invalid.testUntitled3(Form_invalid.java:23)
+</failure>
+  </testcase>
+  <testcase name="testUntitled4" classname="contact.Form_empty" time="0">
+    <failure type="java.lang.NullPointerException:">java.lang.NullPointerException: null
+	at contact.Form_empty.testUntitled4(Form_empty.java:23)
+</failure>
+  </testcase>
+  <testcase name="testUntitled6" classname="contact.Form_valid" time="0">
+    <failure type="java.lang.NullPointerException:">java.lang.NullPointerException: null
+	at contact.Form_valid.testUntitled6(Form_valid.java:44)
+</failure>
+  </testcase>
+  <testcase name="testUntitled6" classname="contact.Contact_email_change" time="0">
+    <failure type="java.lang.NullPointerException:">java.lang.NullPointerException: null
+	at contact.Contact_email_change.testUntitled6(Contact_email_change.java:38)
+</failure>
+  </testcase>
+  <testcase name="testUntitled" classname="blog.Captcha_empty" time="0.002">
+    <failure type="java.lang.NullPointerException:">java.lang.NullPointerException: null
+	at blog.Captcha_empty.testUntitled(Captcha_empty.java:23)
+</failure>
+  </testcase>
+  <testcase name="testUntitled2" classname="blog.Captcha_invalid" time="0.001">
+    <failure type="java.lang.NullPointerException:">java.lang.NullPointerException: null
+	at blog.Captcha_invalid.testUntitled2(Captcha_invalid.java:23)
+</failure>
+  </testcase>
+  <testcase name="testUntitled3" classname="blog.Captcha_disable" time="0">
+    <failure type="java.lang.NullPointerException:">java.lang.NullPointerException: null
+	at blog.Captcha_disable.testUntitled3(Captcha_disable.java:24)
+</failure>
+  </testcase>
+  <testcase name="testUntitled4" classname="blog.Comment" time="0.001">
+    <failure type="java.lang.NullPointerException:">java.lang.NullPointerException: null
+	at blog.Comment.testUntitled4(Comment.java:24)
+</failure>
+  </testcase>
+  <testcase name="testUntitled3" classname="blog.Captche_enable" time="0.001">
+    <failure type="java.lang.NullPointerException:">java.lang.NullPointerException: null
+	at blog.Captche_enable.testUntitled3(Captche_enable.java:24)
+</failure>
+  </testcase>
+  <testcase name="testUntitled" classname="blog.Details_page" time="0">
+    <failure type="java.lang.NullPointerException:">java.lang.NullPointerException: null
+	at blog.Details_page.testUntitled(Details_page.java:23)
+</failure>
+  </testcase>
+  <testcase name="testUntitled2" classname="blog.Blog_page" time="0">
+    <failure type="java.lang.NullPointerException:">java.lang.NullPointerException: null
+	at blog.Blog_page.testUntitled2(Blog_page.java:23)
+</failure>
+  </testcase>
+  <testcase name="testUntitled3" classname="blog.Search" time="0.001">
+    <failure type="java.lang.NullPointerException:">java.lang.NullPointerException: null
+	at blog.Search.testUntitled3(Search.java:23)
+</failure>
+  </testcase>
 </testsuite>
