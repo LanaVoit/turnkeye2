@@ -20,18 +20,17 @@ public class Newsletter_empty extends turnkeye2.pages.TestBase {
   private StringBuffer verificationErrors = new StringBuffer();
 
     @Test
-  public void testUntitled() throws Exception {
-    	driver.get(baseUrl);
+  public void testUntitled() throws Exception {    	
     	driver.manage().window().setSize(new Dimension(1366, 1050)); 
+    	
+    	driver.get(baseUrl);
         TimeUnit.SECONDS.sleep(5);
         assertEquals("", driver.findElement(By.id("newsletter")).getText());
         ((JavascriptExecutor)driver).executeScript("arguments[0].scrollIntoView();"
                 ,driver.findElement(By.cssSelector("button[type=\"submit\"]")));
         driver.findElement(By.cssSelector("button[type=\"submit\"]")).click();
         TimeUnit.SECONDS.sleep(3);
-        assertEquals("", driver.findElement(By.className("error")).getText());
-    	
-
+        assertEquals("", driver.findElement(By.className("error")).getText());       
   }
 
    private boolean isElementPresent(By by) {

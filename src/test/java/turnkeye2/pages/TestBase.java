@@ -94,23 +94,24 @@ public class TestBase {
 		String username = PropertyLoader.loadProperty("user.username");
 		String password = PropertyLoader.loadProperty("user.password");
 		
-		
-		 DesiredCapabilities capabillities = DesiredCapabilities.firefox();
-	        capabillities.setCapability("platform", Platform.LINUX);
+		DesiredCapabilities capabillities = DesiredCapabilities.chrome();
+	        //capabillities.setCapability("platform", Platform.LINUX);
 	        capabillities.setCapability("screen-resolution", "1280x1024");
 	        capabillities.setCapability("passed", "true");	 
 	        capabillities.setCapability("name", "turnkeye.ru");	
-	        capabillities.setCapability("key", "louShaeyu4lay6e");	
 	        driver = new RemoteWebDriver(
-	                    new URL("http://148.251.21.174:4444/wd/hub"),
+	                    new URL("http://148.251.21.174:9515/wd/hub"),
 	                    capabillities);
 	        driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 
 	}  
 	  
+	@AfterMethod
+	public void stopDriver()throws Exception{
+	driver.quit();
+	}
 	
-	
-	@AfterSuite(alwaysRun = true)
+	@AfterSuite
 	public void tearDown() {
 		if (driver != null) {
 			driver.quit();

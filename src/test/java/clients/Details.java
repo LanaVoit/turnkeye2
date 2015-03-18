@@ -21,37 +21,39 @@ public class Details extends turnkeye2.pages.TestBase {
 
     @Test
   public void testUntitled8() throws Exception {
-    	driver.manage().window().setSize(new Dimension(1366, 1050));
+    	driver.manage().window().maximize();
     	Actions actions = new Actions(driver);
+    	
         driver.get(baseUrl + "index.php/secretzone51");
         driver.findElement(By.id("username")).clear();
         driver.findElement(By.id("username")).sendKeys("admin");
         driver.findElement(By.id("login")).clear();
         driver.findElement(By.id("login")).sendKeys("gbpljrhzxrf1530");
         driver.findElement(By.cssSelector("input.form-button")).click();
+        TimeUnit.SECONDS.sleep(3);
         actions.moveToElement(driver.findElement(By.xpath("//ul[@id='nav']/li[8]/a/span"))).build().perform();
+        TimeUnit.SECONDS.sleep(3);
         driver.findElement(By.xpath("//ul[@id='nav']/li[8]/ul/li/a/span")).click();
         TimeUnit.SECONDS.sleep(5);
         driver.findElement(By.cssSelector("a[name=\"position\"] > span.sort-title")).click();
         TimeUnit.SECONDS.sleep(5);
-        driver.findElement(By.xpath("//table[@id='portfolio_set_id_table']/tbody/tr/td[2]")).click();
-        String store = driver.findElement(By.cssSelector("select[title='Store View'] optgroup option[selected='selected']")).getText();
         String client = null;
-		    if(store == "Russian Store View"){
-		    	driver.findElement(By.cssSelector("button[title='Back']")).click();
-		    	TimeUnit.SECONDS.sleep(5);
-		    	client = driver.findElement(By.xpath("//table[@id='portfolio_set_id_table']/tbody/tr/td[2]")).getText(); 	 
-		    	 
-		    }else{
-	    		 driver.findElement(By.cssSelector("button[title='Back']")).click();
-		    	 TimeUnit.SECONDS.sleep(5);
-		    	 driver.findElement(By.xpath("//*[@id='portfolio_set_id_table']/tbody/tr[2]/td[2]")).click();
-		    	 TimeUnit.SECONDS.sleep(5);
-		    	 driver.findElement(By.cssSelector("button[title='Back']")).click();
-		    	 TimeUnit.SECONDS.sleep(5);
-		    	 client = driver.findElement(By.xpath("//*[@id='portfolio_set_id_table']/tbody/tr[2]/td[2]")).getText();
-		    	 
-	    	 }
+        Integer n = 1;
+        Integer m;
+        
+        for (m=0;m>n;m++){	
+        	driver.findElement(By.xpath("//*[@id='portfolio_set_id_table']/tbody/tr["+n+"]/td[2]")).click();
+        	TimeUnit.SECONDS.sleep(5);
+        	String store = driver.findElement(By.cssSelector("select[title='Store View'] optgroup option[selected='selected']")).getText();
+        	TimeUnit.SECONDS.sleep(3);
+        	if(store == "Russian Store View"){    		
+        		break;
+            }
+            driver.findElement(By.cssSelector("button[title='Back']")).click();
+    	   	TimeUnit.SECONDS.sleep(5);
+    	   	n++;
+        }
+        client = driver.findElement(By.cssSelector("#base_name")).getAttribute("value");
             
         driver.get(baseUrl + "clients");
         TimeUnit.SECONDS.sleep(5);

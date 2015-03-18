@@ -21,15 +21,17 @@ public class Blog_page extends turnkeye2.pages.TestBase {
     @Test
   public void testUntitled2() throws Exception {
     	driver.manage().window().setSize(new Dimension(1366, 1050));
+    	
     	driver.get(baseUrl + "blog/");
-    TimeUnit.SECONDS.sleep(5);
+    	TimeUnit.SECONDS.sleep(5);
         assertEquals("Ñòàòüè", driver.findElement(By.cssSelector("h1")).getText());
         assertEquals("", driver.findElement(By.id("gsc-i-id1")).getText());
         assertEquals("", driver.findElement(By.cssSelector("input.gsc-search-button.gsc-search-button-v2")).getText());
         assertEquals("Ğàçäåëû", driver.findElement(By.cssSelector("div.block-title > span")).getText());
         assertEquals("Àğõèâ", driver.findElement(By.cssSelector("div.block-archives > div.block-title > span")).getText());
         assertEquals("Ìåòêè", driver.findElement(By.cssSelector("div.block-tags > div.block-title > span")).getText());
-      driver.findElement(By.linkText("ÒÅÑÒÈĞÎÂÀÍÈÅ")).click();
+        
+        driver.findElement(By.linkText("ÒÅÑÒÈĞÎÂÀÍÈÅ")).click();
         assertEquals("ŞÇÀÁÈËÈÒÈ-ÒÅÑÒÈĞÎÂÀÍÈÅ: ÊÀÊ ÓÂÅËÈ×ÈÒÜ ÏĞÈÁÛËÜÍÎÑÒÜ ÈÍÒÅĞÍÅÒ-ÌÀÃÀÇÈÍÀ?", driver.findElement(By.linkText("ŞÇÀÁÈËÈÒÈ-ÒÅÑÒÈĞÎÂÀÍÈÅ: ÊÀÊ ÓÂÅËÈ×ÈÒÜ ÏĞÈÁÛËÜÍÎÑÒÜ ÈÍÒÅĞÍÅÒ-ÌÀÃÀÇÈÍÀ?")).getText());   
         assertEquals("", driver.findElement(By.cssSelector("img[alt=\"Şçàáèëèòè-òåñòèğîâàíèå èíòåğíåò-ìàãàçèíà\"]")).getText());
         assertEquals("SEE MORE", driver.findElement(By.linkText("SEE MORE")).getText());
@@ -37,7 +39,6 @@ public class Blog_page extends turnkeye2.pages.TestBase {
         assertEquals("ĞÀÇÄÅËÛ:", driver.findElement(By.cssSelector("div.post-posted-title")).getText());
         assertEquals("Àâòîğû", driver.findElement(By.cssSelector("div.block-blog-authors > div.block-title")).getText());
         assertEquals("", driver.findElement(By.cssSelector("img[alt=\"Magento ğàçğàáîòêà\"]")).getText());
-
   }
 
    private boolean isElementPresent(By by) {

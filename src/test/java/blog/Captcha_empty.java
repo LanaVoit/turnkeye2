@@ -20,7 +20,8 @@ public class Captcha_empty extends turnkeye2.pages.TestBase {
 
     @Test
   public void testUntitled() throws Exception {
-    	driver.manage().window().setSize(new Dimension(1366, 1050));
+    driver.manage().window().setSize(new Dimension(1366, 1050));
+    
     driver.get(baseUrl + "/blog");
     driver.findElement(By.linkText("ÒÅÑÒÈÐÎÂÀÍÈÅ")).click();
     driver.findElement(By.cssSelector("a[href=\"http://turnkeye.ru/blog/usability-testing/\"]")).click();
@@ -33,7 +34,6 @@ public class Captcha_empty extends turnkeye2.pages.TestBase {
     driver.findElement(By.cssSelector("input.button.form-button")).click();
     TimeUnit.SECONDS.sleep(5);
     assertEquals("Your Recaptcha solution was incorrect, please try again", driver.findElement(By.cssSelector("li > span")).getText());
-
   }
 
    private boolean isElementPresent(By by) {

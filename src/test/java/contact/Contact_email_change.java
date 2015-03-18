@@ -37,14 +37,16 @@ public class Contact_email_change extends turnkeye2.pages.TestBase {
   public void testUntitled6() throws Exception {
     	driver.manage().window().setSize(new Dimension(1366, 1050));
         Actions actions = new Actions(driver);
+        
         driver.get(baseUrl + "contact_us.html");
         String contact_email = driver.findElement(By.xpath("//*[@id='content']/h4/a")).getText();    
+        
         driver.get(baseUrl + "index.php/secretzone51");
-        /*driver.findElement(By.id("username")).clear();
+        driver.findElement(By.id("username")).clear();
         driver.findElement(By.id("username")).sendKeys("admin");
         driver.findElement(By.id("login")).clear();
         driver.findElement(By.id("login")).sendKeys("gbpljrhzxrf1530");
-        driver.findElement(By.cssSelector("input.form-button")).click();*/
+        driver.findElement(By.cssSelector("input.form-button")).click();
         actions.moveToElement(driver.findElement(By.xpath("//ul[@id='nav']/li[11]/a/span"))).build().perform();    
         driver.findElement(By.xpath("//ul[@id='nav']/li[11]/ul/li[15]/a/span")).click();
         driver.findElement(By.xpath("//ul[@id='system_config_tabs']/li/dl/dd[6]/a/span")).click();
@@ -54,14 +56,13 @@ public class Contact_email_change extends turnkeye2.pages.TestBase {
         TimeUnit.SECONDS.sleep(3);
         assertEquals("The configuration has been saved.", driver.findElement(By.cssSelector("li > span")).getText());
         TimeUnit.SECONDS.sleep(3);
+        
         actions.moveToElement(driver.findElement(By.xpath("//ul[@id='nav']/li[11]/a/span"))).build().perform();  
         TimeUnit.SECONDS.sleep(3);
         driver.findElement(By.xpath("//ul[@id='nav']/li[11]/ul/li[11]/a/span")).click();
         driver.findElement(By.linkText("Select All")).click();
         driver.findElement(By.cssSelector("button[title=\"Submit\"]")).click();
         assertEquals("7 cache type(s) refreshed.", driver.findElement(By.cssSelector("li > span")).getText());
-        
-  
   }
 
    private boolean isElementPresent(By by) {

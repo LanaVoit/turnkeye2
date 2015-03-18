@@ -21,6 +21,7 @@ public class Form_empty extends turnkeye2.pages.TestBase {
     @Test
   public void testUntitled4() throws Exception {
     driver.manage().window().setSize(new Dimension(1366, 1050));
+    
     driver.get(baseUrl + "/contact_us.html");
     driver.findElement(By.cssSelector("button.button")).click();
     assertEquals("Name can't be empty", driver.findElement(By.cssSelector("label.error")).getText());

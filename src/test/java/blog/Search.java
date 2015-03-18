@@ -20,7 +20,8 @@ public class Search extends turnkeye2.pages.TestBase {
 
     @Test
   public void testUntitled3() throws Exception {
-    	driver.manage().window().setSize(new Dimension(1366, 1050));
+      driver.manage().window().setSize(new Dimension(1366, 1050));
+      
       driver.get(baseUrl + "blog/");
       assertEquals("", driver.findElement(By.id("gsc-i-id1")).getText());
       assertEquals("", driver.findElement(By.cssSelector("input.gsc-search-button.gsc-search-button-v2")).getText());
@@ -31,7 +32,6 @@ public class Search extends turnkeye2.pages.TestBase {
       assertEquals("Юзабилити-тестирование: как увеличить прибыльность ...", driver.findElement(By.linkText("Юзабилити-тестирование: как увеличить прибыльность ...")).getText());
       driver.findElement(By.cssSelector("div.gsc-results-close-btn.gsc-results-close-btn-visible")).click();
       assertEquals("Статьи", driver.findElement(By.cssSelector("h1")).getText());
-
   }
 
    private boolean isElementPresent(By by) {

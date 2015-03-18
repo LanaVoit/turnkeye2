@@ -20,7 +20,8 @@ public class Newsletter_valid extends turnkeye2.pages.TestBase {
 
     @Test
   public void testUntitled3() throws Exception {
-    	driver.manage().window().setSize(new Dimension(1366, 1050));
+    driver.manage().window().setSize(new Dimension(1366, 1050));
+    
     driver.get(baseUrl);
     driver.findElement(By.id("newsletter")).click();
     driver.findElement(By.id("newsletter")).clear();

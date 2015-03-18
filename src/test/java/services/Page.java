@@ -21,7 +21,8 @@ public class Page extends turnkeye2.pages.TestBase {
     @Test
   public void testUntitled2() throws Exception {
     	driver.manage().window().setSize(new Dimension(1366, 1050));
-    driver.get(baseUrl + "/services/magento_development.html");
+    	
+    	driver.get(baseUrl + "/services/magento_development.html");
         assertEquals("Разработка сайтов на Magento", driver.findElement(By.cssSelector("h1")).getText());
         assertEquals("РАЗРАБОТКА САЙТОВ НА MAGENTO", driver.findElement(By.cssSelector("li.active > span")).getText());
         assertEquals("MAGENTO ДЛЯ РОССИИ", driver.findElement(By.linkText("MAGENTO ДЛЯ РОССИИ")).getText());

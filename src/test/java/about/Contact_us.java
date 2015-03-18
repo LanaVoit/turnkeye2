@@ -20,9 +20,10 @@ public class Contact_us extends turnkeye2.pages.TestBase {
 
     @Test
   public void testUntitled6() throws Exception {
-   // driver.manage().window().setSize(new Dimension(1366, 1050));
+    driver.manage().window().setSize(new Dimension(1366, 1050));
+    
     driver.get(baseUrl + "/about");
-    assertEquals("ÑÂßÇÀÒÜÑß Ñ ÍÀÌÈ", driver.findElement(By.cssSelector("a.see-more")).getText());
+    assertEquals("ÑÂßÇÀÒÜÑß Ñ ÍÀÌÈ", driver.findElement(By.cssSelector("a.see-more")).getText());  
     
     driver.findElement(By.cssSelector("a.see-more")).click();
     assertEquals("Îáğàòíàÿ ñâÿçü", driver.findElement(By.cssSelector("h1")).getText());
@@ -30,9 +31,7 @@ public class Contact_us extends turnkeye2.pages.TestBase {
     assertEquals("", driver.findElement(By.id("name")).getText());
     assertEquals("", driver.findElement(By.id("email")).getText());
     assertEquals("", driver.findElement(By.id("comment")).getText());
-    assertEquals("ÎÒÏĞÀÂÈÒÜ", driver.findElement(By.cssSelector("button.button")).getText());
-    
-   
+    assertEquals("ÎÒÏĞÀÂÈÒÜ", driver.findElement(By.cssSelector("button.button")).getText());       
   }
 
    private boolean isElementPresent(By by) {
