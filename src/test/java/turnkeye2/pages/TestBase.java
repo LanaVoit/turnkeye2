@@ -94,6 +94,7 @@ public class TestBase {
 		String username = PropertyLoader.loadProperty("user.username");
 		String password = PropertyLoader.loadProperty("user.password");
 		
+		
 		 DesiredCapabilities capabillities = DesiredCapabilities.firefox();
 	        capabillities.setCapability("platform", Platform.LINUX);
 	        capabillities.setCapability("screen-resolution", "1280x1024");
