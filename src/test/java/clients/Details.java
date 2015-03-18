@@ -41,14 +41,10 @@ public class Details extends turnkeye2.pages.TestBase {
         Integer n = 1;
         Integer m;
         
-        for (m=0;m>n;m++){	
+        for (m=0;m<n;m++){	
         	driver.findElement(By.xpath("//*[@id='portfolio_set_id_table']/tbody/tr["+n+"]/td[2]")).click();
         	TimeUnit.SECONDS.sleep(5);
-        	String store = driver.findElement(By.cssSelector("select[title='Store View'] optgroup option[selected='selected']")).getText();
-        	TimeUnit.SECONDS.sleep(3);
-        	if(store == "Russian Store View"){    		
-        		break;
-            }
+        	if(driver.findElement(By.cssSelector("select[title='Store View'] optgroup option[selected='selected']")).getText().contains("Russian Store View")) break;
             driver.findElement(By.cssSelector("button[title='Back']")).click();
     	   	TimeUnit.SECONDS.sleep(5);
     	   	n++;

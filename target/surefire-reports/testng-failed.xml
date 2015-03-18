@@ -10,14 +10,12 @@
           <include name="stopDriver"/>
           <include name="init"/>
           <include name="tearDown"/>
-          <include name="testUntitled4"/>
         </methods>
       </class> <!-- home.JS_error -->
       <class name="about.JS_error">
         <methods>
           <include name="stopDriver"/>
           <include name="init"/>
-          <include name="testUntitled4"/>
         </methods>
       </class> <!-- about.JS_error -->
       <class name="clients.Navigation">
@@ -38,24 +36,22 @@
           <include name="init"/>
         </methods>
       </class> <!-- home.Newsletter_invalid -->
-      <class name="blog.JS_error_blog">
-        <methods>
-          <include name="testUntitled4"/>
-          <include name="stopDriver"/>
-          <include name="init"/>
-        </methods>
-      </class> <!-- blog.JS_error_blog -->
       <class name="blog.Comment">
         <methods>
           <include name="stopDriver"/>
           <include name="init"/>
         </methods>
       </class> <!-- blog.Comment -->
+      <class name="blog.JS_error_blog">
+        <methods>
+          <include name="stopDriver"/>
+          <include name="init"/>
+        </methods>
+      </class> <!-- blog.JS_error_blog -->
       <class name="clients.Details_elements">
         <methods>
           <include name="stopDriver"/>
           <include name="init"/>
-          <include name="testUntitled9"/>
         </methods>
       </class> <!-- clients.Details_elements -->
       <class name="blog.Captcha_invalid">
@@ -109,14 +105,12 @@
       <class name="contact.JS_error">
         <methods>
           <include name="stopDriver"/>
-          <include name="testUntitled4"/>
           <include name="init"/>
         </methods>
       </class> <!-- contact.JS_error -->
       <class name="blog.JS_error_post">
         <methods>
           <include name="stopDriver"/>
-          <include name="testUntitled4"/>
           <include name="init"/>
         </methods>
       </class> <!-- blog.JS_error_post -->
@@ -147,7 +141,6 @@
       <class name="clients.JS_error">
         <methods>
           <include name="stopDriver"/>
-          <include name="testUntitled4"/>
           <include name="init"/>
         </methods>
       </class> <!-- clients.JS_error -->
@@ -173,7 +166,6 @@
         <methods>
           <include name="stopDriver"/>
           <include name="init"/>
-          <include name="testUntitled4"/>
         </methods>
       </class> <!-- services.JS_error -->
       <class name="clients.Details">
