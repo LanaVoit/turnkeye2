@@ -96,16 +96,12 @@ public class TestBase {
 		
 		
 		 DesiredCapabilities capabillities = DesiredCapabilities.firefox();
-	        capabillities.setCapability("platform", Platform.LINUX);
-	        capabillities.setCapability("screen-resolution", "1280x1024");
-	        capabillities.setCapability("passed", "true");	 
-	        capabillities.setCapability("name", "turnkeye.ru");	
-	        capabillities.setCapability("name", "louShaeyu4lay6e");	
+	        
 	        /*driver = new RemoteWebDriver(
 	                    new URL("http://148.251.21.174:8080/wd/hub"),
 	                    capabillities);*/
 	        driver = new RemoteWebDriver(new URL("http://148.251.21.174:8080", "dev", "louShaeyu4lay6e"), capabillities, capabillities);
-	        driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+	        //driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 
 	}  
 	  
