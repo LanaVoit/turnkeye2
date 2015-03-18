@@ -100,7 +100,7 @@ public class TestBase {
 	        capabillities.setCapability("passed", "true");	 
 	        capabillities.setCapability("name", "turnkeye.ru");	
 	        driver = new RemoteWebDriver(
-	                    new URL("http://server.dev-mage.com:4444/wd/hub"),
+	                    new URL("http://148.251.21.174:8080/wd/hub"),
 	                    capabillities);
 
 	}  
