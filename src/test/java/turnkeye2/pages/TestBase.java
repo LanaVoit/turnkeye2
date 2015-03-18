@@ -100,7 +100,7 @@ public class TestBase {
 	        /*driver = new RemoteWebDriver(
 	                    new URL("http://148.251.21.174:8080/wd/hub"),
 	                    capabillities);*/
-	        driver = new RemoteWebDriver(new URL("http://148.251.21.174:4444", "dev", "louShaeyu4lay6e"), capabillities, capabillities);
+	        driver = new RemoteWebDriver(new URL("http://148.251.21.174:4444/wd/hub", "dev", "louShaeyu4lay6e"), capabillities, capabillities);
 	        //driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 
 	}  
