@@ -94,13 +94,14 @@ public class TestBase {
 		String username = PropertyLoader.loadProperty("user.username");
 		String password = PropertyLoader.loadProperty("user.password");
 		
-		System.setProperty("webdriver.chrome.driver", "/usr/bin/google-chrome");
+		
 		
 		DesiredCapabilities capabillities = DesiredCapabilities.chrome();
 	        //capabillities.setCapability("platform", Platform.LINUX);
 	        capabillities.setCapability("screen-resolution", "1280x1024");
 	        capabillities.setCapability("passed", "true");	 
 	        capabillities.setCapability("name", "turnkeye.ru");	
+	        capabillities.setCapability("chrome.binary", "/usr/bin/google-chrome");
 	        driver = new RemoteWebDriver(
 	                    new URL("http://148.251.21.174:4444/wd/hub"),
 	                    capabillities);
