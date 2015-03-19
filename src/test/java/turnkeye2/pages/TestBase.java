@@ -94,7 +94,7 @@ public class TestBase {
 		String username = PropertyLoader.loadProperty("user.username");
 		String password = PropertyLoader.loadProperty("user.password");
 		
-		System.setProperty("webdriver.chrome.driver", "/var/lib/jenkins/tools/chromedriver");
+		System.setProperty("webdriver.chrome.driver", "/tools/chromedriver");
 		
 		DesiredCapabilities capabillities = DesiredCapabilities.chrome();
 	        //capabillities.setCapability("platform", Platform.LINUX);
