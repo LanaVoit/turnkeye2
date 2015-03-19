@@ -100,7 +100,7 @@ public class TestBase {
 	        capabillities.setCapability("passed", "true");	 
 	        capabillities.setCapability("name", "turnkeye.ru");	
 	        driver = new RemoteWebDriver(
-	                    new URL("http://127.0.0.1:4444/wd/hub"),
+	                    new URL("http://148.251.21.174:4444/wd/hub"),
 	                    capabillities);
 	        driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 
