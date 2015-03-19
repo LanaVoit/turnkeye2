@@ -97,13 +97,12 @@ public class TestBase {
 		
 		
 		DesiredCapabilities capabillities = DesiredCapabilities.chrome();
-	        //capabillities.setCapability("platform", Platform.LINUX);
+	        /*capabillities.setCapability("platform", Platform.LINUX);
 	        capabillities.setCapability("screen-resolution", "1280x1024");
 	        capabillities.setCapability("passed", "true");	 
-	        capabillities.setCapability("name", "turnkeye.ru");	
-
+	        capabillities.setCapability("name", "turnkeye.ru");	*/
 	        driver = new RemoteWebDriver(
-	                    new URL("http://148.251.21.174:9515/wd/hub"),
+	                    new URL("http://148.251.21.174:4444/wd/hub"),
 	                    capabillities);
 	        driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 
