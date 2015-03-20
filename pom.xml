@@ -85,23 +85,22 @@
 	   </configuration>
 	   <executions>
             <execution>
-                <id>xvfb</id>
-                <phase>pre-integration-test</phase>
-                <goals>
-                    <goal>xvfb</goal>
-                </goals>
-            </execution>
-            
-            <execution>
-                <id>selenium</id>
-                <phase>pre-integration-test</phase>
-                <goals>
-                    <goal>start-server</goal>
-                </goals>
-                <configuration>
-                    <background>true</background>
-                </configuration>
-            </execution>
+                 <id>xvfb</id>
+                 <phase>pre-integration-test</phase>
+                 <goals>
+                     <goal>xvfb</goal>
+                 </goals>
+                 <configuration>
+                     <!-- display>:20</display -->
+                     <options>
+                        <option>:20</option>
+                        <option>-ac</option>
+                        <option>-screen</option>
+                        <option>0</option>
+                        <option>1366x1050x16</option>
+                     </options>                    
+                 </configuration>
+             </execution>
         </executions>
       </plugin> 
       <plugin>
@@ -121,6 +120,25 @@
           <target>1.6</target>
           <encoding>Cp1251</encoding>
         </configuration>
+        <executions>
+            <execution>
+                 <id>xvfb</id>
+                 <phase>pre-integration-test</phase>
+                 <goals>
+                     <goal>xvfb</goal>
+                 </goals>
+                 <configuration>
+                     <!-- display>:20</display -->
+                     <options>
+                        <option>:20</option>
+                        <option>-ac</option>
+                        <option>-screen</option>
+                        <option>0</option>
+                        <option>1366x1050x16</option>
+                     </options>                    
+                 </configuration>
+             </execution>
+        </executions>
       </plugin>
     </plugins>
   </build>
