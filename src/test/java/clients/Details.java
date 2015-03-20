@@ -56,12 +56,7 @@ public class Details extends turnkeye2.pages.TestBase {
         driver.findElement(By.cssSelector("div.portfolio-item")).click();
         String client_test = driver.findElement(By.cssSelector("h1")).getText();
         assertEquals(client, client_test);
-        driver.get(baseUrl + "clients");
-        TimeUnit.SECONDS.sleep(5);
-        actions.moveToElement(driver.findElement(By.cssSelector("#content > div.turnkeye-portfolio > div.portfolio_listing.isotope > div:nth-child(1) > img"))).build().perform();
-        TimeUnit.SECONDS.sleep(5);
-        driver.findElement(By.cssSelector("#content > div.turnkeye-portfolio > div.portfolio_listing.isotope > div:nth-child(1) > div.hide-content > div.button-wrap > a:nth-child(2)")).click();
-        TimeUnit.SECONDS.sleep(5);
+
     
   }
 
