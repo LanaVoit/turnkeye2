@@ -83,6 +83,26 @@
         <configuration>
 	       <encoding>UTF-8</encoding>
 	   </configuration>
+	   <executions>
+            <execution>
+                <id>xvfb</id>
+                <phase>pre-integration-test</phase>
+                <goals>
+                    <goal>xvfb</goal>
+                </goals>
+            </execution>
+            
+            <execution>
+                <id>selenium</id>
+                <phase>pre-integration-test</phase>
+                <goals>
+                    <goal>start-server</goal>
+                </goals>
+                <configuration>
+                    <background>true</background>
+                </configuration>
+            </execution>
+        </executions>
       </plugin> 
       <plugin>
         <artifactId>maven-surefire-plugin</artifactId>
