@@ -27,6 +27,7 @@ public class Newsletter_valid extends turnkeye2.pages.TestBase {
     driver.findElement(By.id("newsletter")).clear();
     driver.findElement(By.id("newsletter")).sendKeys("testqa@test.com");
     driver.findElement(By.cssSelector("button[type=\"submit\"]")).click();
+    TimeUnit.SECONDS.sleep(7);
     assertEquals("Запрос на подтверждение был отправлен.", driver.findElement(By.cssSelector("li > span")).getText());
 
   }
