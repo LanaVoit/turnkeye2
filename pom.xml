@@ -77,11 +77,7 @@
       <artifactId>operadriver</artifactId>
       <version>1.5</version>
     </dependency>
-    <dependency>
-      <groupId>org.seleniumhq.selenium</groupId>
-      <artifactId>selenium-chrome-driver</artifactId>
-      <version>2.14</version>
-    </dependency>
+
     <dependency>
 	    <groupId>com.codeborne</groupId>
 	    <artifactId>phantomjsdriver</artifactId>
