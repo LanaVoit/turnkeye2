@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
-<suite name="Tests" verbose="5" data-provider-thread-count="1">
-	<test name="Test1">
+<suite name="Smoke test" verbose="5" data-provider-thread-count="1">
+	<test name="JS Errors">
 		<parameter name="path" value="/"/>
 		<classes>
 			<class name="home.JS_error"/>
@@ -11,27 +11,57 @@
 			<class name="contact.JS_error"/>
 			<class name="blog.JS_error_blog"/>	
 			<class name="blog.JS_error_post"/>
-		
+		</classes>
+	</test>
+	
+	<test name="Homepage">
+		<parameter name="path" value="/"/>
+		<classes>
 			<class name="home.Newsletter_empty"/>
 		    <class name="home.Newsletter_invalid"/>
 		    <class name="home.Newsletter_valid"/>
 		    <class name="home.Banner"/>		   
-		    
+		</classes>
+	</test>
+	
+	<test name="About page">
+		<parameter name="path" value="/"/>
+		<classes>    
 		    <class name="about.Tabs"/>
 		    <class name="about.Contact_us"/>		    		    
-		   			
+		 </classes>
+	</test>
+	
+	<test name="Clients page">
+		<parameter name="path" value="/"/>
+		<classes>  			
 		    <class name="clients.Details"/>
 		    <class name="clients.Details_elements"/>
 		    <class name="clients.Navigation"/>
 		    <class name="clients.Website"/>	
-		    
+		 </classes>
+	</test>
+	
+	<test name="Services page">
+		<parameter name="path" value="/"/>
+		<classes>   
 		    <class name="services.Page"/>
-		    			    
+		 </classes>
+	</test>
+	
+	<test name="Contact page">
+		<parameter name="path" value="/"/>
+		<classes>   			    
 		    <class name="contact.Form_invalid"/>
 		    <class name="contact.Form_empty"/>
 		    <class name="contact.Form_valid"/>
 		    <class name="contact.Contact_email_change"/>
-		    			    
+		</classes>
+	</test>
+	
+	<test name="Blog page">
+		<parameter name="path" value="/"/>
+		<classes>    			    
 		    <class name="blog.Captcha_empty"/>
 			<class name="blog.Captcha_invalid"/>
 		    <class name="blog.Captcha_disable"/>
@@ -39,8 +69,7 @@
 		     <class name="blog.Captche_enable"/>
 		    <class name="blog.Details_page"/>
 			<class name="blog.Blog_page"/>	
-			<class name="blog.Search"/>		
-		    				
+			<class name="blog.Search"/>				    				
 		</classes>
 	</test>  
 </suite>
