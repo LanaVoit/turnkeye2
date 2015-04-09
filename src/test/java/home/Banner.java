@@ -25,7 +25,7 @@ public class Banner extends turnkeye2.pages.TestBase {
     driver.get(baseUrl);
 
     String img1 = "http://cdn.turnkeye.ru/skin/frontend/default/turnkeye/images/main-banner/large/slide1.jpg";
-    assertEquals("", img1, driver.findElement(By.cssSelector("img[src=\"http://cdn.turnkeye.ru/skin/frontend/default/turnkeye/images/main-banner/large/slide1.jpg\"]")).getAttribute("src"));  
+    assertEquals("", img1, driver.findElement(By.cssSelector("img[src=\"http://cdn.turnkeye.ru/skin/frontend/default/turnkeye/images/main-banner/large/slide1-moscow.jpg\"]")).getAttribute("src"));  
 
     
     driver.findElement(By.cssSelector("img[alt=\"Pinup Clothing\"]")).click();
