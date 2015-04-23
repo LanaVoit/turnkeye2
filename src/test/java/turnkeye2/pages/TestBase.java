@@ -100,7 +100,7 @@ public class TestBase {
 	        //capabillities.setCapability("platform", Platform.LINUX);
 	        //capabillities.setCapability("screen-resolution", "1280x1024");
 	        capabillities.setBrowserName("chrome");
-	        capabillities.setPlatform(org.openqa.selenium.Platform.LINUX);
+	       // capabillities.setPlatform(org.openqa.selenium.Platform.LINUX);
 		    System.setProperty("webdriver.chrome.driver", "/var/lib/jenkins/tools/chromedriver/chromedriver");
 	        driver = new RemoteWebDriver(
 	                    new URL("http://148.251.21.174:4444/wd/hub"),
