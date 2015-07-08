@@ -30,7 +30,7 @@ public class Form_invalid extends turnkeye2.pages.TestBase {
     driver.findElement(By.id("email")).clear();
     driver.findElement(By.id("email")).sendKeys("<script>alert();</script>");
     driver.findElement(By.cssSelector("button.button")).click();
-    assertEquals("Please enter a valid email address", driver.findElement(By.cssSelector("label.error")).getText());
+    assertEquals("Пожалуйста введите корректный email", driver.findElement(By.cssSelector("label.error")).getText());
   }
 
    private boolean isElementPresent(By by) {

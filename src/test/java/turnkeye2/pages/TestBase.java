@@ -81,7 +81,7 @@ public class TestBase {
 	
 	 
 
-	@BeforeClass
+	/*@BeforeClass
 	public void init() throws MalformedURLException {
 		baseUrl = PropertyLoader.loadProperty("site.url");
 		gridHubUrl = PropertyLoader.loadProperty("grid2.hub");
@@ -107,9 +107,35 @@ public class TestBase {
 	                    capabillities);
 	        driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 
-	}  
+	}  */
+	
+	@BeforeClass
+	public void init() {
+		baseUrl = PropertyLoader.loadProperty("site.url");
+		gridHubUrl = PropertyLoader.loadProperty("grid2.hub");
+
+		browser = new Browser();
+		browser.setName(PropertyLoader.loadProperty("browser.name"));
+		browser.setVersion(PropertyLoader.loadProperty("browser.version"));
+		browser.setPlatform(PropertyLoader.loadProperty("browser.platform"));
+
+		String username = PropertyLoader.loadProperty("user.username");
+		String password = PropertyLoader.loadProperty("user.password");
+		
+		driver = WebDriverFactory.getInstance(gridHubUrl, browser, username,
+				password);
+
+		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+	}
+	
+	@AfterSuite(alwaysRun = true)
+	public void tearDown() {
+		if (driver != null) {
+			driver.quit();
+		}
+	}
 	  
-	@AfterMethod
+	/*@AfterMethod
 	public void stopDriver()throws Exception{
 	driver.quit();
 	}
@@ -119,7 +145,7 @@ public class TestBase {
 		if (driver != null) {
 			driver.quit();
 		}
-	}
+	}*/
 
 //	@AfterMethod
 //	public void setScreenshot(ITestResult result) {

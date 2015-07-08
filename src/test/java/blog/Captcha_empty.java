@@ -24,7 +24,7 @@ public class Captcha_empty extends turnkeye2.pages.TestBase {
     
     driver.get(baseUrl + "/blog");
     driver.findElement(By.linkText("“≈—“»–Œ¬¿Õ»≈")).click();
-    driver.findElement(By.cssSelector("a[href=\"http://turnkeye.ru/blog/usability-testing/\"]")).click();
+    driver.findElement(By.cssSelector("a[href=\"http://astrio.ru/blog/usability-testing/\"]")).click();
     driver.findElement(By.id("user")).clear();
     driver.findElement(By.id("user")).sendKeys("test");
     driver.findElement(By.id("email")).clear();

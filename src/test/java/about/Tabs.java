@@ -30,12 +30,12 @@ public class Tabs extends turnkeye2.pages.TestBase {
     assertEquals("", driver.findElement(By.cssSelector("img[alt=\"Magento разработчики\"]")).getText());
     assertEquals("—¬я«ј“№—я — Ќјћ»", driver.findElement(By.cssSelector("a.see-more")).getText()); 
     
-    driver.findElement(By.cssSelector("a[href=\"http://turnkeye.ru/about/meet_the_team.html\"]")).click();
-    assertEquals("Turnkey Ecommerce Solutions (TurnkeyE.ru) Ц мы предлагаем целый комплекс интернет-решений в области онлайн-бизнеса и обладаем сильной командой сертифицированных разработчиков.", driver.findElement(By.cssSelector("h4")).getText());
+    driver.findElement(By.cssSelector("a[href=\"http://astrio.ru/about/meet_the_team.html\"]")).click();
+    assertEquals("ASTRIO (astrio.ru) Ц мы предлагаем целый комплекс интернет-решений в области онлайн-бизнеса и обладаем сильной командой сертифицированных разработчиков.", driver.findElement(By.cssSelector("h4")).getText());
     assertEquals("Ќаша команда", driver.findElement(By.cssSelector("h1")).getText());
     assertEquals("¬€чеслав ‘едоренко", driver.findElement(By.cssSelector("div.t-col-2 > h4")).getText());  
     
-    driver.findElement(By.cssSelector("a[href=\"http://turnkeye.ru/about/vacancy.html\"]")).click();
+    driver.findElement(By.cssSelector("a[href=\"http://astrio.ru/about/vacancy.html\"]")).click();
     assertEquals("Ќаши вакансии", driver.findElement(By.cssSelector("h1")).getText());
     assertEquals("—тать частью нашей команды легко.\nЌа данный момент нам нужны на посто€нную работу в ”ль€новске (центр разработки):", driver.findElement(By.cssSelector("h4")).getText());   
   }

@@ -25,8 +25,8 @@ public class Details_elements extends turnkeye2.pages.TestBase {
 	    driver.get(baseUrl + "/clients/pinup-girl-clothing");
 	    assertEquals("Наши клиенты - Pinup Girl Clothing", driver.getTitle());
 	    assertEquals("Pinup Girl Clothing", driver.findElement(By.cssSelector("h1")).getText());
-	    assertEquals("http://turnkeye.ru/media/wysiwyg/portfolio/PinupClothing/xtop-banner.jpg.pagespeed.ic.aR8LmQqed2.webp", driver.findElement(By.cssSelector("#content > div.turnkeye-portfolio > div.block-portfolio-banner > img.shadows-image")).getAttribute("src"));
-	    assertEquals("http://turnkeye.ru/media/wysiwyg/portfolio/PinupClothing/xtop-mobile.png.pagespeed.ic.xUAJzyVDP3.png", driver.findElement(By.xpath("//div[@id='content']/div[2]/div[3]/img[2]")).getAttribute("src"));
+	    assertEquals("http://cdn.astrio.ru/media/wysiwyg/portfolio/PinupClothing/top-banner.jpg", driver.findElement(By.cssSelector("#content > div.turnkeye-portfolio > div.block-portfolio-banner > img.shadows-image")).getAttribute("src"));
+	    assertEquals("http://cdn.astrio.ru/media/wysiwyg/portfolio/PinupClothing/top-mobile.png", driver.findElement(By.xpath("//div[@id='content']/div[2]/div[3]/img[2]")).getAttribute("src"));
 	    assertEquals("Обзор проекта", driver.findElement(By.cssSelector("h3")).getText());
 	    assertEquals("О проекте Pinup Girl Clothing", driver.findElement(By.cssSelector("div.block-about-project > h3")).getText());
 	    assertEquals("Примеры реализации", driver.findElement(By.cssSelector("div.block-have-done > h3")).getText());
@@ -43,7 +43,7 @@ public class Details_elements extends turnkeye2.pages.TestBase {
 	    assertEquals("EMAIL", driver.findElement(By.xpath("/html/body/div/section/div/div/div[2]/div[9]/div/a[2]")).getText());
 	    assertEquals("Skype", driver.findElement(By.cssSelector("a.block-skype > span")).getText());
 	    driver.findElement(By.cssSelector("span.icon-right-open")).click();
-	    assertEquals("Фабрика интерьеров IFAB", driver.findElement(By.cssSelector("h1")).getText());    
+	    assertEquals("First Boutique", driver.findElement(By.cssSelector("h1")).getText());    
 	    driver.findElement(By.cssSelector("span.icon-left-open")).click();
 	    assertEquals("Pinup Girl Clothing", driver.findElement(By.cssSelector("h1")).getText());
   }

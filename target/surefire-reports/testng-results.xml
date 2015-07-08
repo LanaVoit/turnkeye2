@@ -1,512 +1,327 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="30" failed="0" total="30" passed="0">
+<testng-results skipped="0" failed="0" total="30" passed="30">
   <reporter-output>
   </reporter-output>
-  <suite name="Tests" duration-ms="1038" started-at="2015-03-19T12:49:47Z" finished-at="2015-03-19T12:49:48Z">
+  <suite name="Tests" duration-ms="284743" started-at="2015-07-08T08:25:00Z" finished-at="2015-07-08T08:29:45Z">
     <groups>
     </groups>
-    <test name="Test1" duration-ms="1038" started-at="2015-03-19T12:49:47Z" finished-at="2015-03-19T12:49:48Z">
-      <class name="blog.Comment">
-        <test-method status="SKIP" signature="stopDriver()[pri:0, instance:blog.Comment@153f5a29]" name="stopDriver" is-config="true" duration-ms="0" started-at="2015-03-19T16:49:48Z" finished-at="2015-03-19T16:49:48Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- stopDriver -->
-        <test-method status="SKIP" signature="init()[pri:0, instance:blog.Comment@153f5a29]" name="init" is-config="true" duration-ms="0" started-at="2015-03-19T16:49:48Z" finished-at="2015-03-19T16:49:48Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- init -->
-        <test-method status="SKIP" signature="testUntitled4()[pri:0, instance:blog.Comment@153f5a29]" name="testUntitled4" duration-ms="0" started-at="2015-03-19T16:49:48Z" finished-at="2015-03-19T16:49:48Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testUntitled4 -->
-      </class> <!-- blog.Comment -->
-      <class name="blog.Captcha_empty">
-        <test-method status="SKIP" signature="init()[pri:0, instance:blog.Captcha_empty@b97c004]" name="init" is-config="true" duration-ms="0" started-at="2015-03-19T16:49:48Z" finished-at="2015-03-19T16:49:48Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- init -->
-        <test-method status="SKIP" signature="testUntitled()[pri:0, instance:blog.Captcha_empty@b97c004]" name="testUntitled" duration-ms="0" started-at="2015-03-19T16:49:48Z" finished-at="2015-03-19T16:49:48Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testUntitled -->
-        <test-method status="SKIP" signature="stopDriver()[pri:0, instance:blog.Captcha_empty@b97c004]" name="stopDriver" is-config="true" duration-ms="0" started-at="2015-03-19T16:49:48Z" finished-at="2015-03-19T16:49:48Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- stopDriver -->
-      </class> <!-- blog.Captcha_empty -->
+    <test name="JS Errors" duration-ms="17707" started-at="2015-07-08T08:25:00Z" finished-at="2015-07-08T08:25:18Z">
       <class name="home.JS_error">
-        <test-method status="FAIL" signature="init()[pri:0, instance:home.JS_error@35fb3008]" name="init" is-config="true" duration-ms="0" started-at="2015-03-19T16:49:47Z" finished-at="2015-03-19T16:49:47Z">
-          <exception class="org.openqa.selenium.WebDriverException">
-            <message>
-              <![CDATA[The path to the driver executable must be set by the webdriver.chrome.driver system property; for more information, see http://code.google.com/p/selenium/wiki/ChromeDriver. The latest version can be downloaded from http://chromedriver.storage.googleapis.com/index.html
-Command duration or timeout: 438 milliseconds
-Build info: version: '2.44.0', revision: '76d78cf', time: '2014-10-23 20:03:00'
-System info: host: 'PC-SBARANOVA', ip: '192.168.56.1', os.name: 'Windows 8', os.arch: 'amd64', os.version: '6.2', java.version: '1.8.0_25'
-Driver info: org.openqa.selenium.remote.RemoteWebDriver]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: The path to the driver executable must be set by the webdriver.chrome.driver system property; for more information, see http://code.google.com/p/selenium/wiki/ChromeDriver. The latest version can be downloaded from http://chromedriver.storage.googleapis.com/index.html
-Command duration or timeout: 438 milliseconds
-Build info: version: '2.44.0', revision: '76d78cf', time: '2014-10-23 20:03:00'
-System info: host: 'PC-SBARANOVA', ip: '192.168.56.1', os.name: 'Windows 8', os.arch: 'amd64', os.version: '6.2', java.version: '1.8.0_25'
-Driver info: org.openqa.selenium.remote.RemoteWebDriver
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:408)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
-	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:240)
-	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:126)
-	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:153)
-	at turnkeye2.pages.TestBase.init(TestBase.java:106)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:483)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
-	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:138)
-	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:175)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:107)
-	at org.testng.TestRunner.privateRun(TestRunner.java:767)
-	at org.testng.TestRunner.run(TestRunner.java:617)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:348)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:343)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:305)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:254)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
-	at org.testng.TestNG.run(TestNG.java:1057)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:217)
-	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:84)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:92)
-	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
-Caused by: java.lang.IllegalStateException: The path to the driver executable must be set by the webdriver.chrome.driver system property; for more information, see http://code.google.com/p/selenium/wiki/ChromeDriver. The latest version can be downloaded from http://chromedriver.storage.googleapis.com/index.html
-	at com.google.common.base.Preconditions.checkState(Preconditions.java:197)
-	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:110)
-	at org.openqa.selenium.chrome.ChromeDriverService.access$0(ChromeDriverService.java:1)
-	at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:118)
-	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:291)
-	at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:82)
-	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:139)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:526)
-	at org.openqa.selenium.remote.server.DefaultDriverProvider.callConstructor(DefaultDriverProvider.java:59)
-	at org.openqa.selenium.remote.server.DefaultDriverProvider.newInstance(DefaultDriverProvider.java:53)
-	at org.openqa.selenium.remote.server.DefaultDriverFactory.newInstance(DefaultDriverFactory.java:54)
-	at org.openqa.selenium.remote.server.DefaultSession$BrowserCreator.call(DefaultSession.java:214)
-	at org.openqa.selenium.remote.server.DefaultSession$BrowserCreator.call(DefaultSession.java:1)
-	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
-	at org.openqa.selenium.remote.server.DefaultSession$1.run(DefaultSession.java:168)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
-	at java.lang.Thread.run(Thread.java:745)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.WebDriverException -->
+        <test-method status="PASS" signature="init()[pri:0, instance:home.JS_error@21bcffb5]" name="init" is-config="true" duration-ms="2640" started-at="2015-07-08T11:25:00Z" finished-at="2015-07-08T11:25:02Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method status="SKIP" signature="testUntitled4()[pri:0, instance:home.JS_error@35fb3008]" name="testUntitled4" duration-ms="0" started-at="2015-03-19T16:49:48Z" finished-at="2015-03-19T16:49:48Z">
+        <test-method status="PASS" signature="testUntitled4()[pri:0, instance:home.JS_error@21bcffb5]" name="testUntitled4" duration-ms="4155" started-at="2015-07-08T11:25:02Z" finished-at="2015-07-08T11:25:07Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testUntitled4 -->
-        <test-method status="SKIP" signature="stopDriver()[pri:0, instance:home.JS_error@35fb3008]" name="stopDriver" is-config="true" duration-ms="0" started-at="2015-03-19T16:49:48Z" finished-at="2015-03-19T16:49:48Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- stopDriver -->
-        <test-method status="SKIP" signature="tearDown()[pri:0, instance:home.JS_error@35fb3008]" name="tearDown" is-config="true" duration-ms="0" started-at="2015-03-19T16:49:48Z" finished-at="2015-03-19T16:49:48Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
       </class> <!-- home.JS_error -->
-      <class name="home.Newsletter_invalid">
-        <test-method status="SKIP" signature="init()[pri:0, instance:home.Newsletter_invalid@97e1986]" name="init" is-config="true" duration-ms="0" started-at="2015-03-19T16:49:48Z" finished-at="2015-03-19T16:49:48Z">
+      <class name="contact.JS_error">
+        <test-method status="PASS" signature="init()[pri:0, instance:contact.JS_error@13fee20c]" name="init" is-config="true" duration-ms="11" started-at="2015-07-08T11:25:14Z" finished-at="2015-07-08T11:25:14Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method status="SKIP" signature="stopDriver()[pri:0, instance:home.Newsletter_invalid@97e1986]" name="stopDriver" is-config="true" duration-ms="0" started-at="2015-03-19T16:49:48Z" finished-at="2015-03-19T16:49:48Z">
+        <test-method status="PASS" signature="testUntitled4()[pri:0, instance:contact.JS_error@13fee20c]" name="testUntitled4" duration-ms="732" started-at="2015-07-08T11:25:14Z" finished-at="2015-07-08T11:25:15Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- stopDriver -->
-        <test-method status="SKIP" signature="testUntitled2()[pri:0, instance:home.Newsletter_invalid@97e1986]" name="testUntitled2" duration-ms="0" started-at="2015-03-19T16:49:48Z" finished-at="2015-03-19T16:49:48Z">
+        </test-method> <!-- testUntitled4 -->
+      </class> <!-- contact.JS_error -->
+      <class name="clients.JS_error">
+        <test-method status="PASS" signature="init()[pri:0, instance:clients.JS_error@180bc464]" name="init" is-config="true" duration-ms="10" started-at="2015-07-08T11:25:08Z" finished-at="2015-07-08T11:25:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="PASS" signature="testUntitled4()[pri:0, instance:clients.JS_error@180bc464]" name="testUntitled4" duration-ms="5552" started-at="2015-07-08T11:25:08Z" finished-at="2015-07-08T11:25:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testUntitled4 -->
+      </class> <!-- clients.JS_error -->
+      <class name="blog.JS_error_blog">
+        <test-method status="PASS" signature="init()[pri:0, instance:blog.JS_error_blog@735f7ae5]" name="init" is-config="true" duration-ms="19" started-at="2015-07-08T11:25:15Z" finished-at="2015-07-08T11:25:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="PASS" signature="testUntitled4()[pri:0, instance:blog.JS_error_blog@735f7ae5]" name="testUntitled4" duration-ms="1675" started-at="2015-07-08T11:25:15Z" finished-at="2015-07-08T11:25:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testUntitled4 -->
+      </class> <!-- blog.JS_error_blog -->
+      <class name="about.JS_error">
+        <test-method status="PASS" signature="init()[pri:0, instance:about.JS_error@4e04a765]" name="init" is-config="true" duration-ms="37" started-at="2015-07-08T11:25:07Z" finished-at="2015-07-08T11:25:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="PASS" signature="testUntitled4()[pri:0, instance:about.JS_error@4e04a765]" name="testUntitled4" duration-ms="1004" started-at="2015-07-08T11:25:07Z" finished-at="2015-07-08T11:25:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testUntitled4 -->
+      </class> <!-- about.JS_error -->
+      <class name="services.JS_error">
+        <test-method status="PASS" signature="init()[pri:0, instance:services.JS_error@17550481]" name="init" is-config="true" duration-ms="8" started-at="2015-07-08T11:25:13Z" finished-at="2015-07-08T11:25:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="PASS" signature="testUntitled4()[pri:0, instance:services.JS_error@17550481]" name="testUntitled4" duration-ms="722" started-at="2015-07-08T11:25:13Z" finished-at="2015-07-08T11:25:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testUntitled4 -->
+      </class> <!-- services.JS_error -->
+      <class name="blog.JS_error_post">
+        <test-method status="PASS" signature="init()[pri:0, instance:blog.JS_error_post@783e6358]" name="init" is-config="true" duration-ms="10" started-at="2015-07-08T11:25:16Z" finished-at="2015-07-08T11:25:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="PASS" signature="testUntitled4()[pri:0, instance:blog.JS_error_post@783e6358]" name="testUntitled4" duration-ms="1100" started-at="2015-07-08T11:25:16Z" finished-at="2015-07-08T11:25:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testUntitled4 -->
+      </class> <!-- blog.JS_error_post -->
+    </test> <!-- JS Errors -->
+    <test name="Homepahe" duration-ms="30160" started-at="2015-07-08T08:25:18Z" finished-at="2015-07-08T08:25:48Z">
+      <class name="home.Newsletter_invalid">
+        <test-method status="PASS" signature="init()[pri:0, instance:home.Newsletter_invalid@2096442d]" name="init" is-config="true" duration-ms="12" started-at="2015-07-08T11:25:26Z" finished-at="2015-07-08T11:25:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="PASS" signature="testUntitled2()[pri:0, instance:home.Newsletter_invalid@2096442d]" name="testUntitled2" duration-ms="5914" started-at="2015-07-08T11:25:26Z" finished-at="2015-07-08T11:25:32Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testUntitled2 -->
       </class> <!-- home.Newsletter_invalid -->
       <class name="home.Newsletter_valid">
-        <test-method status="SKIP" signature="stopDriver()[pri:0, instance:home.Newsletter_valid@61a485d2]" name="stopDriver" is-config="true" duration-ms="0" started-at="2015-03-19T16:49:48Z" finished-at="2015-03-19T16:49:48Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- stopDriver -->
-        <test-method status="SKIP" signature="init()[pri:0, instance:home.Newsletter_valid@61a485d2]" name="init" is-config="true" duration-ms="0" started-at="2015-03-19T16:49:48Z" finished-at="2015-03-19T16:49:48Z">
+        <test-method status="PASS" signature="init()[pri:0, instance:home.Newsletter_valid@735b478]" name="init" is-config="true" duration-ms="6" started-at="2015-07-08T11:25:32Z" finished-at="2015-07-08T11:25:32Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method status="SKIP" signature="testUntitled3()[pri:0, instance:home.Newsletter_valid@61a485d2]" name="testUntitled3" duration-ms="0" started-at="2015-03-19T16:49:48Z" finished-at="2015-03-19T16:49:48Z">
+        <test-method status="PASS" signature="testUntitled3()[pri:0, instance:home.Newsletter_valid@735b478]" name="testUntitled3" duration-ms="9544" started-at="2015-07-08T11:25:32Z" finished-at="2015-07-08T11:25:42Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testUntitled3 -->
       </class> <!-- home.Newsletter_valid -->
-      <class name="blog.Captcha_invalid">
-        <test-method status="SKIP" signature="testUntitled2()[pri:0, instance:blog.Captcha_invalid@69d9c55]" name="testUntitled2" duration-ms="0" started-at="2015-03-19T16:49:48Z" finished-at="2015-03-19T16:49:48Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testUntitled2 -->
-        <test-method status="SKIP" signature="stopDriver()[pri:0, instance:blog.Captcha_invalid@69d9c55]" name="stopDriver" is-config="true" duration-ms="0" started-at="2015-03-19T16:49:48Z" finished-at="2015-03-19T16:49:48Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- stopDriver -->
-        <test-method status="SKIP" signature="init()[pri:0, instance:blog.Captcha_invalid@69d9c55]" name="init" is-config="true" duration-ms="0" started-at="2015-03-19T16:49:48Z" finished-at="2015-03-19T16:49:48Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- init -->
-      </class> <!-- blog.Captcha_invalid -->
-      <class name="contact.JS_error">
-        <test-method status="SKIP" signature="stopDriver()[pri:0, instance:contact.JS_error@7946e1f4]" name="stopDriver" is-config="true" duration-ms="0" started-at="2015-03-19T16:49:48Z" finished-at="2015-03-19T16:49:48Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- stopDriver -->
-        <test-method status="SKIP" signature="testUntitled4()[pri:0, instance:contact.JS_error@7946e1f4]" name="testUntitled4" duration-ms="0" started-at="2015-03-19T16:49:48Z" finished-at="2015-03-19T16:49:48Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testUntitled4 -->
-        <test-method status="SKIP" signature="init()[pri:0, instance:contact.JS_error@7946e1f4]" name="init" is-config="true" duration-ms="0" started-at="2015-03-19T16:49:48Z" finished-at="2015-03-19T16:49:48Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- init -->
-      </class> <!-- contact.JS_error -->
-      <class name="home.Newsletter_empty">
-        <test-method status="SKIP" signature="stopDriver()[pri:0, instance:home.Newsletter_empty@2669b199]" name="stopDriver" is-config="true" duration-ms="0" started-at="2015-03-19T16:49:48Z" finished-at="2015-03-19T16:49:48Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- stopDriver -->
-        <test-method status="SKIP" signature="init()[pri:0, instance:home.Newsletter_empty@2669b199]" name="init" is-config="true" duration-ms="0" started-at="2015-03-19T16:49:48Z" finished-at="2015-03-19T16:49:48Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- init -->
-        <test-method status="SKIP" signature="testUntitled()[pri:0, instance:home.Newsletter_empty@2669b199]" name="testUntitled" duration-ms="0" started-at="2015-03-19T16:49:48Z" finished-at="2015-03-19T16:49:48Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testUntitled -->
-      </class> <!-- home.Newsletter_empty -->
-      <class name="contact.Form_invalid">
-        <test-method status="SKIP" signature="stopDriver()[pri:0, instance:contact.Form_invalid@3dd3bcd]" name="stopDriver" is-config="true" duration-ms="0" started-at="2015-03-19T16:49:48Z" finished-at="2015-03-19T16:49:48Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- stopDriver -->
-        <test-method status="SKIP" signature="testUntitled3()[pri:0, instance:contact.Form_invalid@3dd3bcd]" name="testUntitled3" duration-ms="0" started-at="2015-03-19T16:49:48Z" finished-at="2015-03-19T16:49:48Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testUntitled3 -->
-        <test-method status="SKIP" signature="init()[pri:0, instance:contact.Form_invalid@3dd3bcd]" name="init" is-config="true" duration-ms="0" started-at="2015-03-19T16:49:48Z" finished-at="2015-03-19T16:49:48Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- init -->
-      </class> <!-- contact.Form_invalid -->
-      <class name="blog.JS_error_blog">
-        <test-method status="SKIP" signature="init()[pri:0, instance:blog.JS_error_blog@26f67b76]" name="init" is-config="true" duration-ms="0" started-at="2015-03-19T16:49:48Z" finished-at="2015-03-19T16:49:48Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- init -->
-        <test-method status="SKIP" signature="testUntitled4()[pri:0, instance:blog.JS_error_blog@26f67b76]" name="testUntitled4" duration-ms="0" started-at="2015-03-19T16:49:48Z" finished-at="2015-03-19T16:49:48Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testUntitled4 -->
-        <test-method status="SKIP" signature="stopDriver()[pri:0, instance:blog.JS_error_blog@26f67b76]" name="stopDriver" is-config="true" duration-ms="0" started-at="2015-03-19T16:49:48Z" finished-at="2015-03-19T16:49:48Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- stopDriver -->
-      </class> <!-- blog.JS_error_blog -->
-      <class name="blog.Details_page">
-        <test-method status="SKIP" signature="init()[pri:0, instance:blog.Details_page@4590c9c3]" name="init" is-config="true" duration-ms="0" started-at="2015-03-19T16:49:48Z" finished-at="2015-03-19T16:49:48Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- init -->
-        <test-method status="SKIP" signature="testUntitled()[pri:0, instance:blog.Details_page@4590c9c3]" name="testUntitled" duration-ms="0" started-at="2015-03-19T16:49:48Z" finished-at="2015-03-19T16:49:48Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testUntitled -->
-        <test-method status="SKIP" signature="stopDriver()[pri:0, instance:blog.Details_page@4590c9c3]" name="stopDriver" is-config="true" duration-ms="0" started-at="2015-03-19T16:49:48Z" finished-at="2015-03-19T16:49:48Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- stopDriver -->
-      </class> <!-- blog.Details_page -->
-      <class name="about.Tabs">
-        <test-method status="SKIP" signature="testUntitled5()[pri:0, instance:about.Tabs@337d0578]" name="testUntitled5" duration-ms="0" started-at="2015-03-19T16:49:48Z" finished-at="2015-03-19T16:49:48Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testUntitled5 -->
-        <test-method status="SKIP" signature="init()[pri:0, instance:about.Tabs@337d0578]" name="init" is-config="true" duration-ms="0" started-at="2015-03-19T16:49:48Z" finished-at="2015-03-19T16:49:48Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- init -->
-        <test-method status="SKIP" signature="stopDriver()[pri:0, instance:about.Tabs@337d0578]" name="stopDriver" is-config="true" duration-ms="0" started-at="2015-03-19T16:49:48Z" finished-at="2015-03-19T16:49:48Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- stopDriver -->
-      </class> <!-- about.Tabs -->
-      <class name="blog.Search">
-        <test-method status="SKIP" signature="init()[pri:0, instance:blog.Search@59e84876]" name="init" is-config="true" duration-ms="0" started-at="2015-03-19T16:49:48Z" finished-at="2015-03-19T16:49:48Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- init -->
-        <test-method status="SKIP" signature="stopDriver()[pri:0, instance:blog.Search@59e84876]" name="stopDriver" is-config="true" duration-ms="0" started-at="2015-03-19T16:49:48Z" finished-at="2015-03-19T16:49:48Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- stopDriver -->
-        <test-method status="SKIP" signature="testUntitled3()[pri:0, instance:blog.Search@59e84876]" name="testUntitled3" duration-ms="0" started-at="2015-03-19T16:49:48Z" finished-at="2015-03-19T16:49:48Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testUntitled3 -->
-      </class> <!-- blog.Search -->
-      <class name="blog.JS_error_post">
-        <test-method status="SKIP" signature="stopDriver()[pri:0, instance:blog.JS_error_post@3c09711b]" name="stopDriver" is-config="true" duration-ms="0" started-at="2015-03-19T16:49:48Z" finished-at="2015-03-19T16:49:48Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- stopDriver -->
-        <test-method status="SKIP" signature="init()[pri:0, instance:blog.JS_error_post@3c09711b]" name="init" is-config="true" duration-ms="0" started-at="2015-03-19T16:49:48Z" finished-at="2015-03-19T16:49:48Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- init -->
-        <test-method status="SKIP" signature="testUntitled4()[pri:0, instance:blog.JS_error_post@3c09711b]" name="testUntitled4" duration-ms="0" started-at="2015-03-19T16:49:48Z" finished-at="2015-03-19T16:49:48Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testUntitled4 -->
-      </class> <!-- blog.JS_error_post -->
-      <class name="contact.Form_valid">
-        <test-method status="SKIP" signature="testUntitled6()[pri:0, instance:contact.Form_valid@2344fc66]" name="testUntitled6" duration-ms="0" started-at="2015-03-19T16:49:48Z" finished-at="2015-03-19T16:49:48Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testUntitled6 -->
-        <test-method status="SKIP" signature="init()[pri:0, instance:contact.Form_valid@2344fc66]" name="init" is-config="true" duration-ms="0" started-at="2015-03-19T16:49:48Z" finished-at="2015-03-19T16:49:48Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- init -->
-        <test-method status="SKIP" signature="stopDriver()[pri:0, instance:contact.Form_valid@2344fc66]" name="stopDriver" is-config="true" duration-ms="0" started-at="2015-03-19T16:49:48Z" finished-at="2015-03-19T16:49:48Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- stopDriver -->
-      </class> <!-- contact.Form_valid -->
-      <class name="clients.Website">
-        <test-method status="SKIP" signature="init()[pri:0, instance:clients.Website@6a024a67]" name="init" is-config="true" duration-ms="0" started-at="2015-03-19T16:49:48Z" finished-at="2015-03-19T16:49:48Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- init -->
-        <test-method status="SKIP" signature="testUntitled7()[pri:0, instance:clients.Website@6a024a67]" name="testUntitled7" duration-ms="0" started-at="2015-03-19T16:49:48Z" finished-at="2015-03-19T16:49:48Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testUntitled7 -->
-        <test-method status="SKIP" signature="stopDriver()[pri:0, instance:clients.Website@6a024a67]" name="stopDriver" is-config="true" duration-ms="0" started-at="2015-03-19T16:49:48Z" finished-at="2015-03-19T16:49:48Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- stopDriver -->
-      </class> <!-- clients.Website -->
-      <class name="contact.Form_empty">
-        <test-method status="SKIP" signature="init()[pri:0, instance:contact.Form_empty@6ea12c19]" name="init" is-config="true" duration-ms="0" started-at="2015-03-19T16:49:48Z" finished-at="2015-03-19T16:49:48Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- init -->
-        <test-method status="SKIP" signature="testUntitled4()[pri:0, instance:contact.Form_empty@6ea12c19]" name="testUntitled4" duration-ms="0" started-at="2015-03-19T16:49:48Z" finished-at="2015-03-19T16:49:48Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testUntitled4 -->
-        <test-method status="SKIP" signature="stopDriver()[pri:0, instance:contact.Form_empty@6ea12c19]" name="stopDriver" is-config="true" duration-ms="0" started-at="2015-03-19T16:49:48Z" finished-at="2015-03-19T16:49:48Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- stopDriver -->
-      </class> <!-- contact.Form_empty -->
-      <class name="clients.Details">
-        <test-method status="SKIP" signature="testUntitled8()[pri:0, instance:clients.Details@5afa04c]" name="testUntitled8" duration-ms="0" started-at="2015-03-19T16:49:48Z" finished-at="2015-03-19T16:49:48Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testUntitled8 -->
-        <test-method status="SKIP" signature="init()[pri:0, instance:clients.Details@5afa04c]" name="init" is-config="true" duration-ms="0" started-at="2015-03-19T16:49:48Z" finished-at="2015-03-19T16:49:48Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- init -->
-        <test-method status="SKIP" signature="stopDriver()[pri:0, instance:clients.Details@5afa04c]" name="stopDriver" is-config="true" duration-ms="0" started-at="2015-03-19T16:49:48Z" finished-at="2015-03-19T16:49:48Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- stopDriver -->
-      </class> <!-- clients.Details -->
-      <class name="clients.Details_elements">
-        <test-method status="SKIP" signature="testUntitled9()[pri:0, instance:clients.Details_elements@7f560810]" name="testUntitled9" duration-ms="0" started-at="2015-03-19T16:49:48Z" finished-at="2015-03-19T16:49:48Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testUntitled9 -->
-        <test-method status="SKIP" signature="init()[pri:0, instance:clients.Details_elements@7f560810]" name="init" is-config="true" duration-ms="0" started-at="2015-03-19T16:49:48Z" finished-at="2015-03-19T16:49:48Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- init -->
-        <test-method status="SKIP" signature="stopDriver()[pri:0, instance:clients.Details_elements@7f560810]" name="stopDriver" is-config="true" duration-ms="0" started-at="2015-03-19T16:49:48Z" finished-at="2015-03-19T16:49:48Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- stopDriver -->
-      </class> <!-- clients.Details_elements -->
-      <class name="about.Contact_us">
-        <test-method status="SKIP" signature="init()[pri:0, instance:about.Contact_us@39fb3ab6]" name="init" is-config="true" duration-ms="0" started-at="2015-03-19T16:49:48Z" finished-at="2015-03-19T16:49:48Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- init -->
-        <test-method status="SKIP" signature="testUntitled6()[pri:0, instance:about.Contact_us@39fb3ab6]" name="testUntitled6" duration-ms="0" started-at="2015-03-19T16:49:48Z" finished-at="2015-03-19T16:49:48Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testUntitled6 -->
-        <test-method status="SKIP" signature="stopDriver()[pri:0, instance:about.Contact_us@39fb3ab6]" name="stopDriver" is-config="true" duration-ms="0" started-at="2015-03-19T16:49:48Z" finished-at="2015-03-19T16:49:48Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- stopDriver -->
-      </class> <!-- about.Contact_us -->
-      <class name="blog.Captche_enable">
-        <test-method status="SKIP" signature="init()[pri:0, instance:blog.Captche_enable@6276ae34]" name="init" is-config="true" duration-ms="0" started-at="2015-03-19T16:49:48Z" finished-at="2015-03-19T16:49:48Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- init -->
-        <test-method status="SKIP" signature="stopDriver()[pri:0, instance:blog.Captche_enable@6276ae34]" name="stopDriver" is-config="true" duration-ms="0" started-at="2015-03-19T16:49:48Z" finished-at="2015-03-19T16:49:48Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- stopDriver -->
-        <test-method status="SKIP" signature="testUntitled3()[pri:0, instance:blog.Captche_enable@6276ae34]" name="testUntitled3" duration-ms="0" started-at="2015-03-19T16:49:48Z" finished-at="2015-03-19T16:49:48Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testUntitled3 -->
-      </class> <!-- blog.Captche_enable -->
-      <class name="blog.Blog_page">
-        <test-method status="SKIP" signature="stopDriver()[pri:0, instance:blog.Blog_page@6574b225]" name="stopDriver" is-config="true" duration-ms="0" started-at="2015-03-19T16:49:48Z" finished-at="2015-03-19T16:49:48Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- stopDriver -->
-        <test-method status="SKIP" signature="testUntitled2()[pri:0, instance:blog.Blog_page@6574b225]" name="testUntitled2" duration-ms="0" started-at="2015-03-19T16:49:48Z" finished-at="2015-03-19T16:49:48Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testUntitled2 -->
-        <test-method status="SKIP" signature="init()[pri:0, instance:blog.Blog_page@6574b225]" name="init" is-config="true" duration-ms="0" started-at="2015-03-19T16:49:48Z" finished-at="2015-03-19T16:49:48Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- init -->
-      </class> <!-- blog.Blog_page -->
-      <class name="services.Page">
-        <test-method status="SKIP" signature="stopDriver()[pri:0, instance:services.Page@5cc7c2a6]" name="stopDriver" is-config="true" duration-ms="0" started-at="2015-03-19T16:49:48Z" finished-at="2015-03-19T16:49:48Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- stopDriver -->
-        <test-method status="SKIP" signature="init()[pri:0, instance:services.Page@5cc7c2a6]" name="init" is-config="true" duration-ms="0" started-at="2015-03-19T16:49:48Z" finished-at="2015-03-19T16:49:48Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- init -->
-        <test-method status="SKIP" signature="testUntitled2()[pri:0, instance:services.Page@5cc7c2a6]" name="testUntitled2" duration-ms="0" started-at="2015-03-19T16:49:48Z" finished-at="2015-03-19T16:49:48Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testUntitled2 -->
-      </class> <!-- services.Page -->
-      <class name="clients.JS_error">
-        <test-method status="SKIP" signature="testUntitled4()[pri:0, instance:clients.JS_error@5056dfcb]" name="testUntitled4" duration-ms="0" started-at="2015-03-19T16:49:48Z" finished-at="2015-03-19T16:49:48Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testUntitled4 -->
-        <test-method status="SKIP" signature="init()[pri:0, instance:clients.JS_error@5056dfcb]" name="init" is-config="true" duration-ms="0" started-at="2015-03-19T16:49:48Z" finished-at="2015-03-19T16:49:48Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- init -->
-        <test-method status="SKIP" signature="stopDriver()[pri:0, instance:clients.JS_error@5056dfcb]" name="stopDriver" is-config="true" duration-ms="0" started-at="2015-03-19T16:49:48Z" finished-at="2015-03-19T16:49:48Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- stopDriver -->
-      </class> <!-- clients.JS_error -->
-      <class name="blog.Captcha_disable">
-        <test-method status="SKIP" signature="testUntitled3()[pri:0, instance:blog.Captcha_disable@32e6e9c3]" name="testUntitled3" duration-ms="0" started-at="2015-03-19T16:49:48Z" finished-at="2015-03-19T16:49:48Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testUntitled3 -->
-        <test-method status="SKIP" signature="init()[pri:0, instance:blog.Captcha_disable@32e6e9c3]" name="init" is-config="true" duration-ms="0" started-at="2015-03-19T16:49:48Z" finished-at="2015-03-19T16:49:48Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- init -->
-        <test-method status="SKIP" signature="stopDriver()[pri:0, instance:blog.Captcha_disable@32e6e9c3]" name="stopDriver" is-config="true" duration-ms="0" started-at="2015-03-19T16:49:48Z" finished-at="2015-03-19T16:49:48Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- stopDriver -->
-      </class> <!-- blog.Captcha_disable -->
       <class name="home.Banner">
-        <test-method status="SKIP" signature="init()[pri:0, instance:home.Banner@7ca48474]" name="init" is-config="true" duration-ms="0" started-at="2015-03-19T16:49:48Z" finished-at="2015-03-19T16:49:48Z">
+        <test-method status="PASS" signature="init()[pri:0, instance:home.Banner@2c9f9fb0]" name="init" is-config="true" duration-ms="6" started-at="2015-07-08T11:25:42Z" finished-at="2015-07-08T11:25:42Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method status="SKIP" signature="stopDriver()[pri:0, instance:home.Banner@7ca48474]" name="stopDriver" is-config="true" duration-ms="0" started-at="2015-03-19T16:49:48Z" finished-at="2015-03-19T16:49:48Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- stopDriver -->
-        <test-method status="SKIP" signature="testUntitled4()[pri:0, instance:home.Banner@7ca48474]" name="testUntitled4" duration-ms="0" started-at="2015-03-19T16:49:48Z" finished-at="2015-03-19T16:49:48Z">
+        <test-method status="PASS" signature="testUntitled4()[pri:0, instance:home.Banner@2c9f9fb0]" name="testUntitled4" duration-ms="5940" started-at="2015-07-08T11:25:42Z" finished-at="2015-07-08T11:25:48Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testUntitled4 -->
       </class> <!-- home.Banner -->
-      <class name="clients.Navigation">
-        <test-method status="SKIP" signature="testUntitled10()[pri:0, instance:clients.Navigation@12843fce]" name="testUntitled10" duration-ms="0" started-at="2015-03-19T16:49:48Z" finished-at="2015-03-19T16:49:48Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testUntitled10 -->
-        <test-method status="SKIP" signature="init()[pri:0, instance:clients.Navigation@12843fce]" name="init" is-config="true" duration-ms="0" started-at="2015-03-19T16:49:48Z" finished-at="2015-03-19T16:49:48Z">
+      <class name="home.Newsletter_empty">
+        <test-method status="PASS" signature="init()[pri:0, instance:home.Newsletter_empty@52af6cff]" name="init" is-config="true" duration-ms="33" started-at="2015-07-08T11:25:18Z" finished-at="2015-07-08T11:25:18Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method status="SKIP" signature="stopDriver()[pri:0, instance:clients.Navigation@12843fce]" name="stopDriver" is-config="true" duration-ms="0" started-at="2015-03-19T16:49:48Z" finished-at="2015-03-19T16:49:48Z">
+        <test-method status="PASS" signature="testUntitled()[pri:0, instance:home.Newsletter_empty@52af6cff]" name="testUntitled" duration-ms="8667" started-at="2015-07-08T11:25:18Z" finished-at="2015-07-08T11:25:26Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- stopDriver -->
-      </class> <!-- clients.Navigation -->
-      <class name="about.JS_error">
-        <test-method status="SKIP" signature="init()[pri:0, instance:about.JS_error@50f8360d]" name="init" is-config="true" duration-ms="0" started-at="2015-03-19T16:49:48Z" finished-at="2015-03-19T16:49:48Z">
+        </test-method> <!-- testUntitled -->
+      </class> <!-- home.Newsletter_empty -->
+    </test> <!-- Homepahe -->
+    <test name="About" duration-ms="7582" started-at="2015-07-08T08:25:48Z" finished-at="2015-07-08T08:25:55Z">
+      <class name="about.Contact_us">
+        <test-method status="PASS" signature="init()[pri:0, instance:about.Contact_us@12843fce]" name="init" is-config="true" duration-ms="8" started-at="2015-07-08T11:25:54Z" finished-at="2015-07-08T11:25:54Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method status="SKIP" signature="testUntitled4()[pri:0, instance:about.JS_error@50f8360d]" name="testUntitled4" duration-ms="0" started-at="2015-03-19T16:49:48Z" finished-at="2015-03-19T16:49:48Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testUntitled4 -->
-        <test-method status="SKIP" signature="stopDriver()[pri:0, instance:about.JS_error@50f8360d]" name="stopDriver" is-config="true" duration-ms="0" started-at="2015-03-19T16:49:48Z" finished-at="2015-03-19T16:49:48Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- stopDriver -->
-      </class> <!-- about.JS_error -->
-      <class name="contact.Contact_email_change">
-        <test-method status="SKIP" signature="stopDriver()[pri:0, instance:contact.Contact_email_change@13a57a3b]" name="stopDriver" is-config="true" duration-ms="0" started-at="2015-03-19T16:49:48Z" finished-at="2015-03-19T16:49:48Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- stopDriver -->
-        <test-method status="SKIP" signature="testUntitled6()[pri:0, instance:contact.Contact_email_change@13a57a3b]" name="testUntitled6" duration-ms="0" started-at="2015-03-19T16:49:48Z" finished-at="2015-03-19T16:49:48Z">
+        <test-method status="PASS" signature="testUntitled6()[pri:0, instance:about.Contact_us@12843fce]" name="testUntitled6" duration-ms="1396" started-at="2015-07-08T11:25:54Z" finished-at="2015-07-08T11:25:55Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testUntitled6 -->
-        <test-method status="SKIP" signature="init()[pri:0, instance:contact.Contact_email_change@13a57a3b]" name="init" is-config="true" duration-ms="0" started-at="2015-03-19T16:49:48Z" finished-at="2015-03-19T16:49:48Z">
+      </class> <!-- about.Contact_us -->
+      <class name="about.Tabs">
+        <test-method status="PASS" signature="init()[pri:0, instance:about.Tabs@3dd3bcd]" name="init" is-config="true" duration-ms="19" started-at="2015-07-08T11:25:48Z" finished-at="2015-07-08T11:25:48Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-      </class> <!-- contact.Contact_email_change -->
-      <class name="services.JS_error">
-        <test-method status="SKIP" signature="stopDriver()[pri:0, instance:services.JS_error@458ad742]" name="stopDriver" is-config="true" duration-ms="0" started-at="2015-03-19T16:49:48Z" finished-at="2015-03-19T16:49:48Z">
+        <test-method status="PASS" signature="testUntitled5()[pri:0, instance:about.Tabs@3dd3bcd]" name="testUntitled5" duration-ms="6159" started-at="2015-07-08T11:25:48Z" finished-at="2015-07-08T11:25:54Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- stopDriver -->
-        <test-method status="SKIP" signature="testUntitled4()[pri:0, instance:services.JS_error@458ad742]" name="testUntitled4" duration-ms="0" started-at="2015-03-19T16:49:48Z" finished-at="2015-03-19T16:49:48Z">
+        </test-method> <!-- testUntitled5 -->
+      </class> <!-- about.Tabs -->
+    </test> <!-- About -->
+    <test name="Clients" duration-ms="76694" started-at="2015-07-08T08:25:55Z" finished-at="2015-07-08T08:27:12Z">
+      <class name="clients.Website">
+        <test-method status="PASS" signature="init()[pri:0, instance:clients.Website@7946e1f4]" name="init" is-config="true" duration-ms="7" started-at="2015-07-08T11:27:09Z" finished-at="2015-07-08T11:27:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="PASS" signature="testUntitled7()[pri:0, instance:clients.Website@7946e1f4]" name="testUntitled7" duration-ms="3220" started-at="2015-07-08T11:27:09Z" finished-at="2015-07-08T11:27:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testUntitled7 -->
+      </class> <!-- clients.Website -->
+      <class name="clients.Navigation">
+        <test-method status="PASS" signature="init()[pri:0, instance:clients.Navigation@39fb3ab6]" name="init" is-config="true" duration-ms="19" started-at="2015-07-08T11:26:39Z" finished-at="2015-07-08T11:26:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="PASS" signature="testUntitled10()[pri:0, instance:clients.Navigation@39fb3ab6]" name="testUntitled10" duration-ms="29545" started-at="2015-07-08T11:26:39Z" finished-at="2015-07-08T11:27:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testUntitled10 -->
+      </class> <!-- clients.Navigation -->
+      <class name="clients.Details_elements">
+        <test-method status="PASS" signature="init()[pri:0, instance:clients.Details_elements@61a485d2]" name="init" is-config="true" duration-ms="8" started-at="2015-07-08T11:26:33Z" finished-at="2015-07-08T11:26:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="PASS" signature="testUntitled9()[pri:0, instance:clients.Details_elements@61a485d2]" name="testUntitled9" duration-ms="6429" started-at="2015-07-08T11:26:33Z" finished-at="2015-07-08T11:26:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testUntitled9 -->
+      </class> <!-- clients.Details_elements -->
+      <class name="clients.Details">
+        <test-method status="PASS" signature="init()[pri:0, instance:clients.Details@6276ae34]" name="init" is-config="true" duration-ms="6" started-at="2015-07-08T11:25:55Z" finished-at="2015-07-08T11:25:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="PASS" signature="testUntitled8()[pri:0, instance:clients.Details@6276ae34]" name="testUntitled8" duration-ms="37457" started-at="2015-07-08T11:25:55Z" finished-at="2015-07-08T11:26:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testUntitled8 -->
+      </class> <!-- clients.Details -->
+    </test> <!-- Clients -->
+    <test name="Services" duration-ms="1121" started-at="2015-07-08T08:27:12Z" finished-at="2015-07-08T08:27:13Z">
+      <class name="services.Page">
+        <test-method status="PASS" signature="init()[pri:0, instance:services.Page@6574b225]" name="init" is-config="true" duration-ms="5" started-at="2015-07-08T11:27:12Z" finished-at="2015-07-08T11:27:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="PASS" signature="testUntitled2()[pri:0, instance:services.Page@6574b225]" name="testUntitled2" duration-ms="1116" started-at="2015-07-08T11:27:12Z" finished-at="2015-07-08T11:27:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testUntitled2 -->
+      </class> <!-- services.Page -->
+    </test> <!-- Services -->
+    <test name="Contact" duration-ms="49070" started-at="2015-07-08T08:27:13Z" finished-at="2015-07-08T08:28:02Z">
+      <class name="contact.Form_valid">
+        <test-method status="PASS" signature="init()[pri:0, instance:contact.Form_valid@5f375618]" name="init" is-config="true" duration-ms="4" started-at="2015-07-08T11:27:15Z" finished-at="2015-07-08T11:27:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="PASS" signature="testUntitled6()[pri:0, instance:contact.Form_valid@5f375618]" name="testUntitled6" duration-ms="31506" started-at="2015-07-08T11:27:15Z" finished-at="2015-07-08T11:27:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testUntitled6 -->
+      </class> <!-- contact.Form_valid -->
+      <class name="contact.Form_invalid">
+        <test-method status="PASS" signature="init()[pri:0, instance:contact.Form_invalid@6d78f375]" name="init" is-config="true" duration-ms="5" started-at="2015-07-08T11:27:13Z" finished-at="2015-07-08T11:27:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="PASS" signature="testUntitled3()[pri:0, instance:contact.Form_invalid@6d78f375]" name="testUntitled3" duration-ms="1366" started-at="2015-07-08T11:27:13Z" finished-at="2015-07-08T11:27:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testUntitled3 -->
+      </class> <!-- contact.Form_invalid -->
+      <class name="contact.Form_empty">
+        <test-method status="PASS" signature="init()[pri:0, instance:contact.Form_empty@7ac7a4e4]" name="init" is-config="true" duration-ms="4" started-at="2015-07-08T11:27:15Z" finished-at="2015-07-08T11:27:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="PASS" signature="testUntitled4()[pri:0, instance:contact.Form_empty@7ac7a4e4]" name="testUntitled4" duration-ms="849" started-at="2015-07-08T11:27:15Z" finished-at="2015-07-08T11:27:15Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testUntitled4 -->
-        <test-method status="SKIP" signature="init()[pri:0, instance:services.JS_error@458ad742]" name="init" is-config="true" duration-ms="0" started-at="2015-03-19T16:49:48Z" finished-at="2015-03-19T16:49:48Z">
+      </class> <!-- contact.Form_empty -->
+      <class name="contact.Contact_email_change">
+        <test-method status="PASS" signature="init()[pri:0, instance:contact.Contact_email_change@50c87b21]" name="init" is-config="true" duration-ms="6" started-at="2015-07-08T11:27:47Z" finished-at="2015-07-08T11:27:47Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-      </class> <!-- services.JS_error -->
-    </test> <!-- Test1 -->
+        <test-method status="PASS" signature="testUntitled6()[pri:0, instance:contact.Contact_email_change@50c87b21]" name="testUntitled6" duration-ms="15328" started-at="2015-07-08T11:27:47Z" finished-at="2015-07-08T11:28:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testUntitled6 -->
+      </class> <!-- contact.Contact_email_change -->
+    </test> <!-- Contact -->
+    <test name="Blog" duration-ms="102201" started-at="2015-07-08T08:28:02Z" finished-at="2015-07-08T08:29:45Z">
+      <class name="blog.Comment">
+        <test-method status="PASS" signature="init()[pri:0, instance:blog.Comment@36d4b5c]" name="init" is-config="true" duration-ms="4" started-at="2015-07-08T11:28:36Z" finished-at="2015-07-08T11:28:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="PASS" signature="testUntitled4()[pri:0, instance:blog.Comment@36d4b5c]" name="testUntitled4" duration-ms="38078" started-at="2015-07-08T11:28:36Z" finished-at="2015-07-08T11:29:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testUntitled4 -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:blog.Comment@36d4b5c]" name="tearDown" is-config="true" duration-ms="1623" started-at="2015-07-08T11:29:45Z" finished-at="2015-07-08T11:29:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- blog.Comment -->
+      <class name="blog.Captche_enable">
+        <test-method status="PASS" signature="init()[pri:0, instance:blog.Captche_enable@51081592]" name="init" is-config="true" duration-ms="4" started-at="2015-07-08T11:29:14Z" finished-at="2015-07-08T11:29:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="PASS" signature="testUntitled3()[pri:0, instance:blog.Captche_enable@51081592]" name="testUntitled3" duration-ms="12227" started-at="2015-07-08T11:29:14Z" finished-at="2015-07-08T11:29:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testUntitled3 -->
+      </class> <!-- blog.Captche_enable -->
+      <class name="blog.Captcha_empty">
+        <test-method status="PASS" signature="init()[pri:0, instance:blog.Captcha_empty@7f9a81e8]" name="init" is-config="true" duration-ms="4" started-at="2015-07-08T11:28:02Z" finished-at="2015-07-08T11:28:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="PASS" signature="testUntitled()[pri:0, instance:blog.Captcha_empty@7f9a81e8]" name="testUntitled" duration-ms="10880" started-at="2015-07-08T11:28:02Z" finished-at="2015-07-08T11:28:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testUntitled -->
+      </class> <!-- blog.Captcha_empty -->
+      <class name="blog.Blog_page">
+        <test-method status="PASS" signature="init()[pri:0, instance:blog.Blog_page@396a51ab]" name="init" is-config="true" duration-ms="4" started-at="2015-07-08T11:29:31Z" finished-at="2015-07-08T11:29:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="PASS" signature="testUntitled2()[pri:0, instance:blog.Blog_page@396a51ab]" name="testUntitled2" duration-ms="7203" started-at="2015-07-08T11:29:31Z" finished-at="2015-07-08T11:29:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testUntitled2 -->
+      </class> <!-- blog.Blog_page -->
+      <class name="blog.Captcha_invalid">
+        <test-method status="PASS" signature="init()[pri:0, instance:blog.Captcha_invalid@6d00a15d]" name="init" is-config="true" duration-ms="5" started-at="2015-07-08T11:28:13Z" finished-at="2015-07-08T11:28:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="PASS" signature="testUntitled2()[pri:0, instance:blog.Captcha_invalid@6d00a15d]" name="testUntitled2" duration-ms="9536" started-at="2015-07-08T11:28:13Z" finished-at="2015-07-08T11:28:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testUntitled2 -->
+      </class> <!-- blog.Captcha_invalid -->
+      <class name="blog.Captcha_disable">
+        <test-method status="PASS" signature="init()[pri:0, instance:blog.Captcha_disable@9629756]" name="init" is-config="true" duration-ms="4" started-at="2015-07-08T11:28:23Z" finished-at="2015-07-08T11:28:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="PASS" signature="testUntitled3()[pri:0, instance:blog.Captcha_disable@9629756]" name="testUntitled3" duration-ms="13442" started-at="2015-07-08T11:28:23Z" finished-at="2015-07-08T11:28:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testUntitled3 -->
+      </class> <!-- blog.Captcha_disable -->
+      <class name="blog.Details_page">
+        <test-method status="PASS" signature="init()[pri:0, instance:blog.Details_page@5034c75a]" name="init" is-config="true" duration-ms="4" started-at="2015-07-08T11:29:27Z" finished-at="2015-07-08T11:29:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="PASS" signature="testUntitled()[pri:0, instance:blog.Details_page@5034c75a]" name="testUntitled" duration-ms="4177" started-at="2015-07-08T11:29:27Z" finished-at="2015-07-08T11:29:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testUntitled -->
+      </class> <!-- blog.Details_page -->
+      <class name="blog.Search">
+        <test-method status="PASS" signature="init()[pri:0, instance:blog.Search@51efea79]" name="init" is-config="true" duration-ms="4" started-at="2015-07-08T11:29:38Z" finished-at="2015-07-08T11:29:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="PASS" signature="testUntitled3()[pri:0, instance:blog.Search@51efea79]" name="testUntitled3" duration-ms="6621" started-at="2015-07-08T11:29:38Z" finished-at="2015-07-08T11:29:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testUntitled3 -->
+      </class> <!-- blog.Search -->
+    </test> <!-- Blog -->
   </suite> <!-- Tests -->
 </testng-results>

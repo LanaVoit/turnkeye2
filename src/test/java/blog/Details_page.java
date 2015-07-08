@@ -24,7 +24,7 @@ public class Details_page extends turnkeye2.pages.TestBase {
     
     driver.get(baseUrl + "blog/");
     driver.findElement(By.linkText("ÒÅÑÒÈĞÎÂÀÍÈÅ")).click();
-    driver.findElement(By.cssSelector("a[href=\"http://turnkeye.ru/blog/usability-testing/\"]")).click();
+    driver.findElement(By.cssSelector("a[href=\"http://astrio.ru/blog/usability-testing/\"]")).click();
     assertEquals("ŞÇÀÁÈËÈÒÈ-ÒÅÑÒÈĞÎÂÀÍÈÅ: ÊÀÊ ÓÂÅËÈ×ÈÒÜ ÏĞÈÁÛËÜÍÎÑÒÜ ÈÍÒÅĞÍÅÒ-ÌÀÃÀÇÈÍÀ?", driver.findElement(By.cssSelector("h1")).getText());
     assertEquals("", driver.findElement(By.cssSelector("img[alt=\"Şçàáèëèòè-òåñòèğîâàíèå èíòåğíåò-ìàãàçèíà\"]")).getText());
     assertEquals("", driver.findElement(By.cssSelector("input.gsc-search-button.gsc-search-button-v2")).getText());

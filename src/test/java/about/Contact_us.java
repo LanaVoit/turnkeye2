@@ -27,7 +27,7 @@ public class Contact_us extends turnkeye2.pages.TestBase {
     
     driver.findElement(By.cssSelector("a.see-more")).click();
     assertEquals("Обратная связь", driver.findElement(By.cssSelector("h1")).getText());
-    assertEquals("Вы можете использовать форму, приведенную ниже, чтобы связаться с нами. Вы также можете отправлять вопросы на электронную почту hello@turnkeye.com.", driver.findElement(By.cssSelector("h4")).getText());
+    assertEquals("Вы можете использовать форму, приведенную ниже, чтобы связаться с нами. Вы также можете отправлять вопросы на электронную почту hello@astrio.ru.", driver.findElement(By.cssSelector("h4")).getText());
     assertEquals("", driver.findElement(By.id("name")).getText());
     assertEquals("", driver.findElement(By.id("email")).getText());
     assertEquals("", driver.findElement(By.id("comment")).getText());
