@@ -23,24 +23,25 @@ import org.openqa.selenium.logging.Logs;
 
 import net.jsourcerer.webdriver.jserrorcollector.JavaScriptError;
 
-public class JS_error extends turnkeye2.pages.TestBase {
+public class JS_error_home extends turnkeye2.pages.TestBase {
 	
     @Test
   public void testUntitled4() throws Exception { 
     	driver.manage().window().setSize(new Dimension(1366, 1050));
     	
         driver.get(baseUrl);
-        
-        Logs log = driver.manage().logs();
-        List<LogEntry> logsEntries = log.get("browser").getAll();    
+        final List<JavaScriptError> jsErrors = JavaScriptError.readErrors(driver); 
+        //Logs log = driver.manage().logs();
+        //List<LogEntry> logsEntries = log.get("browser").getAll(); 
         List<String> list = new ArrayList<String>();
         list.isEmpty();
         
-        for (LogEntry entry: logsEntries) {        	
-    		System.out.println(entry.getMessage());  
-        }
+ //        for (LogEntry entry: logsEntries) {        	
+  //  		System.out.println(entry.getMessage());  
+  //      }
         
-		assertEquals(list, logsEntries);		 
+		//assertEquals(list, logsEntries);	
+        assertEquals(list, jsErrors);	
   }    
 }
 

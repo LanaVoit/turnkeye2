@@ -4,13 +4,8 @@
 	<test name="JS Errors">
 		<parameter name="path" value="/"/>
 		<classes>
-			<class name="home.JS_error"/>
-			<class name="about.JS_error"/>	
-			<class name="clients.JS_error"/>
-			<class name="services.JS_error"/>
-			<class name="contact.JS_error"/>
-			<class name="blog.JS_error_blog"/>	
-			<class name="blog.JS_error_post"/>
+			<class name="home.JS_error_home"/>
+			
 		</classes>
 	</test>  
 	<test name="Homepahe">
