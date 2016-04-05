@@ -4,8 +4,7 @@
 	 <test name="Contact">
 		<parameter name="path" value="/"/>
 		<classes>		    			    
-		    <class name="contact.Form_invalid"/>
-		    <class name="contact.Form_empty"/>
+		
 		    <class name="contact.Form_valid"/>
 		    <class name="contact.Contact_email_change"/>
 		</classes>
