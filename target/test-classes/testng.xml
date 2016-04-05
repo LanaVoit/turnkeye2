@@ -1,12 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 <suite name="Tests" verbose="5" data-provider-thread-count="1">
-	 <test name="Services">
+	 <test name="Contact">
 		<parameter name="path" value="/"/>
-		<classes>    
-		    <class name="services.Page"/>
+		<classes>		    			    
+		    <class name="contact.Form_invalid"/>
+		    <class name="contact.Form_empty"/>
+		    <class name="contact.Form_valid"/>
+		    <class name="contact.Contact_email_change"/>
 		</classes>
-	</test> 
+	</test>  
 	
 	
 </suite>
