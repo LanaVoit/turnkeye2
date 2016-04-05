@@ -30,8 +30,8 @@ public class Comment extends turnkeye2.pages.TestBase {
     	    driver.findElement(By.id("login")).clear();
     	    driver.findElement(By.id("login")).sendKeys("gbpljrhzxrf1530");
     	    driver.findElement(By.cssSelector("input.form-button")).click();*/
-    	    actions.moveToElement(driver.findElement(By.xpath("//ul[@id='nav']/li[9]/a/span"))).build().perform();
-    	    driver.findElement(By.xpath("//ul[@id='nav']/li[9]/ul/li[4]/a/span")).click();
+    	    actions.moveToElement(driver.findElement(By.xpath("//ul[@id='nav']/li[8]/a/span"))).build().perform();
+    	    driver.findElement(By.xpath("//ul[@id='nav']/li[8]/ul/li[4]/a/span")).click();
     	    driver.findElement(By.cssSelector("span.sort-title")).click();
     	    driver.findElement(By.cssSelector("span.sort-title")).click();    	    
     	    driver.findElement(By.cssSelector("td.a-left")).click();    	    
@@ -51,9 +51,9 @@ public class Comment extends turnkeye2.pages.TestBase {
     	    
     	    driver.get(baseUrl + "index.php/secretzone51/"); 
     	    TimeUnit.SECONDS.sleep(7);
-    	    actions.moveToElement(driver.findElement(By.xpath("//ul[@id='nav']/li[9]/a/span"))).build().perform();
+    	    actions.moveToElement(driver.findElement(By.xpath("//ul[@id='nav']/li[8]/a/span"))).build().perform();
     	    TimeUnit.SECONDS.sleep(3);
-    	    driver.findElement(By.xpath("//ul[@id='nav']/li[9]/ul/li[4]/a/span")).click(); 
+    	    driver.findElement(By.xpath("//ul[@id='nav']/li[8]/ul/li[4]/a/span")).click(); 
     	    driver.findElement(By.id("commentGrid_filter_comment")).clear();
     	    driver.findElement(By.id("commentGrid_filter_comment")).sendKeys("test comment");
     	    driver.findElement(By.cssSelector("button[title=\"Search\"]")).click();
