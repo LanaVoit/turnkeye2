@@ -36,7 +36,7 @@ public class JS_error_home extends turnkeye2.pages.TestBase {
         driver.get(baseUrl);
         TimeUnit.SECONDS.sleep(5);
         Logs log = driver.manage().logs();
-        List<LogEntry> logsEntries = (List<LogEntry>) log.get(LogType.BROWSER);
+        List<LogEntry> logsEntries =  driver.manage().logs().get("browser").filter(Level.SEVERE);
         List<String> list = new ArrayList<String>();
         list.isEmpty();
         
