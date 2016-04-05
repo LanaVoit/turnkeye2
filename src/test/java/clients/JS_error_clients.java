@@ -3,6 +3,7 @@ package clients;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
+import java.util.logging.Level;
 import java.util.regex.Pattern;
 import java.util.concurrent.TimeUnit;
 
@@ -19,25 +20,29 @@ import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.logging.LogEntry;
+import org.openqa.selenium.logging.LogType;
+import org.openqa.selenium.logging.LoggingPreferences;
 import org.openqa.selenium.logging.Logs;
 
 import net.jsourcerer.webdriver.jserrorcollector.JavaScriptError;
 
-public class JS_error extends turnkeye2.pages.TestBase {
+public class JS_error_clients extends turnkeye2.pages.TestBase {
 	
     @Test
   public void testUntitled4() throws Exception { 
     	driver.manage().window().setSize(new Dimension(1366, 1050));
     	
     	driver.get(baseUrl + "/portfolio");
-    	
+    	LoggingPreferences logPrefs = new LoggingPreferences();
+    	logPrefs.enable(LogType.BROWSER, Level.SEVERE);
+    	TimeUnit.SECONDS.sleep(5);
         Logs log = driver.manage().logs();
-        List<LogEntry> logsEntries = log.get("browser").getAll();    
+        List<LogEntry> logsEntries =  driver.manage().logs().get("browser").filter(Level.SEVERE);    
         List<String> list = new ArrayList<String>();
         list.isEmpty();
         
         for (LogEntry entry: logsEntries) {        	
-    		System.out.println(entry.getMessage()); 
+    		System.out.println(entry.getMessage());  
         }
         
 		assertEquals(list, logsEntries);		

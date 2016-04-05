@@ -5,9 +5,22 @@
 		<parameter name="path" value="/"/>
 		<classes>
 			<class name="home.JS_error_home"/>
-			
+			<class name="about.JS_error"/>	
+			<class name="clients.JS_error"/>
+			<class name="services.JS_error"/>
+			<class name="contact.JS_error"/>
+			<class name="blog.JS_error_blog"/>	
+			<class name="blog.JS_error_post"/>
 		</classes>
 	</test> 
-
+	<test name="Homepage">
+		<parameter name="path" value="/"/>
+		<classes>
+			<class name="home.Newsletter_empty"/>
+		    <class name="home.Newsletter_invalid"/>
+		    <class name="home.Newsletter_valid"/>
+		    <class name="home.Banner"/>		   
+		</classes>
+	</test>
 	
 </suite>
