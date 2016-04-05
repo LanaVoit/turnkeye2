@@ -8,7 +8,7 @@
 			
 		</classes>
 	</test>  
-	<test name="Homepahe">
+	<test name="Homepage">
 		<parameter name="path" value="/"/>
 		<classes>
 			<class name="home.Newsletter_empty"/>
