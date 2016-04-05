@@ -31,11 +31,13 @@ public class Tabs extends turnkeye2.pages.TestBase {
     assertEquals("СВЯЗАТЬСЯ С НАМИ", driver.findElement(By.cssSelector("a.see-more")).getText()); 
     
     driver.findElement(By.cssSelector("a[href=\"http://astrio.ru/about/meet_the_team.html\"]")).click();
+    TimeUnit.SECONDS.sleep(5);
     assertEquals("ASTRIO (astrio.ru) – мы предлагаем целый комплекс интернет-решений в области онлайн-бизнеса и обладаем сильной командой сертифицированных разработчиков.", driver.findElement(By.cssSelector("h4")).getText());
     assertEquals("Наша команда", driver.findElement(By.cssSelector("h1")).getText());
-    assertEquals("Вячеслав Федоренко", driver.findElement(By.cssSelector("div.t-col-2 > h4")).getText());  
+    assertEquals("Вячеслав Федоренко", driver.findElement(By.cssSelector("div.t-col-2 > h4")).getText());
     
     driver.findElement(By.cssSelector("a[href=\"http://astrio.ru/about/vacancy.html\"]")).click();
+    TimeUnit.SECONDS.sleep(5);
     assertEquals("Наши вакансии", driver.findElement(By.cssSelector("h1")).getText());
     assertEquals("Стать частью нашей команды легко.\nНа данный момент нам нужны на постоянную работу в Ульяновске (центр разработки):", driver.findElement(By.cssSelector("h4")).getText());   
   }
