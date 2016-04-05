@@ -55,12 +55,13 @@ public class Details extends turnkeye2.pages.TestBase {
         driver.findElement(By.cssSelector("#portfolio_set_id_filter_position")).sendKeys("10");
         driver.findElement(By.cssSelector("button[title='Search']")).click();
         TimeUnit.SECONDS.sleep(5);
-        driver.findElement(By.cssSelector("#portfolio_set_id_table > tbody > tr > td:nth-child(2)")).click();
+        driver.findElement(By.cssSelector("#portfolio_set_id_table > tbody > tr:nth-child(1) > td:nth-child(2)")).click(); 
         client = driver.findElement(By.cssSelector("#base_name")).getAttribute("value");
             
         driver.get(baseUrl + "clients");
         TimeUnit.SECONDS.sleep(5);
         driver.findElement(By.cssSelector("div.portfolio-item")).click();
+        TimeUnit.SECONDS.sleep(5);
         String client_test = driver.findElement(By.cssSelector("h1")).getText();
         assertEquals(client, client_test);
 
