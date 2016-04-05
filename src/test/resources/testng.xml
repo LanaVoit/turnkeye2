@@ -8,14 +8,6 @@
 			
 		</classes>
 	</test> 
-	<test name="Homepage">
-		<parameter name="path" value="/"/>
-		<classes>
-			<class name="home.Newsletter_empty"/>
-		    <class name="home.Newsletter_invalid"/>
-		    <class name="home.Newsletter_valid"/>
-		    <class name="home.Banner"/>		   
-		</classes>
-	</test>  
+
 	
 </suite>
