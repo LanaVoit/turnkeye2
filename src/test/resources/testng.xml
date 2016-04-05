@@ -22,5 +22,48 @@
 		    <class name="home.Banner"/>		   
 		</classes>
 	</test>
-	
+	<test name="About">
+		<parameter name="path" value="/"/>
+		<classes>   
+		    <class name="about.Tabs"/>
+		    <class name="about.Contact_us"/>		    		    
+		</classes>
+	</test>  
+	<test name="Clients">
+		<parameter name="path" value="/"/>
+		<classes>		   			
+		    <class name="clients.Details"/>
+		    <class name="clients.Details_elements"/>
+		    <class name="clients.Navigation"/>
+		    <class name="clients.Website"/>	
+				</classes>
+	</test>  
+	<test name="Services">
+		<parameter name="path" value="/"/>
+		<classes>    
+		    <class name="services.Page"/>
+		</classes>
+	</test>  
+	<test name="Contact">
+		<parameter name="path" value="/"/>
+		<classes>		    			    
+		    <class name="contact.Form_invalid"/>
+		    <class name="contact.Form_empty"/>
+		    <class name="contact.Form_valid"/>
+		    <class name="contact.Contact_email_change"/>
+		</classes>
+	</test>  
+	<test name="Blog">
+		<parameter name="path" value="/"/>
+		<classes>		    			    
+		    <class name="blog.Captcha_empty"/>
+			<class name="blog.Captcha_invalid"/>
+		    <class name="blog.Captcha_disable"/>
+		    <class name="blog.Comment"/>
+		     <class name="blog.Captche_enable"/>
+		    <class name="blog.Details_page"/>
+			<class name="blog.Blog_page"/>	
+			<class name="blog.Search"/>						
+		</classes>
+	</test>  
 </suite>
