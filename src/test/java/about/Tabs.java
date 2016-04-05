@@ -34,7 +34,7 @@ public class Tabs extends turnkeye2.pages.TestBase {
     TimeUnit.SECONDS.sleep(5);
     assertEquals("ASTRIO (astrio.ru) – мы предлагаем целый комплекс интернет-решений в области онлайн-бизнеса и обладаем сильной командой сертифицированных разработчиков.", driver.findElement(By.cssSelector("h4")).getText());
     assertEquals("Наша команда", driver.findElement(By.cssSelector("h1")).getText());
-    assertEquals("Вячеслав Федоренко", driver.findElement(By.cssSelector("div.t-col-2 > h4")).getText());
+    assertEquals("Сергей Двоскин", driver.findElement(By.cssSelector("div.t-col-2 > h4")).getText());
     
     driver.findElement(By.cssSelector("a[href=\"http://astrio.ru/about/vacancy.html\"]")).click();
     TimeUnit.SECONDS.sleep(5);
