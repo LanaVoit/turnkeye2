@@ -125,7 +125,7 @@ public class Form_valid extends turnkeye2.pages.TestBase {
     	   
     	           
     	        GetMulti gmulti = new GetMulti();
-    	        String textMessage = gmulti.getText(messages[0]);
+    	        String textMessage = gmulti.getText(messages[messages.length]);
     	        String regex = "Comment: test message";
     	        Pattern p = Pattern.compile(regex);
     	        Matcher m = p.matcher(textMessage);
