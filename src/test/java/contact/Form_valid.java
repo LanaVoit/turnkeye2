@@ -50,6 +50,7 @@ public class Form_valid extends turnkeye2.pages.TestBase {
         driver.findElement(By.id("login")).clear();
         driver.findElement(By.id("login")).sendKeys("gbpljrhzxrf1530");
         driver.findElement(By.cssSelector("input.form-button")).click();
+        TimeUnit.SECONDS.sleep(5);
         actions.moveToElement(driver.findElement(By.xpath("//ul[@id='nav']/li[11]/a/span"))).build().perform();    
         driver.findElement(By.xpath("//ul[@id='nav']/li[11]/ul/li[15]/a/span")).click();
         TimeUnit.SECONDS.sleep(5);
