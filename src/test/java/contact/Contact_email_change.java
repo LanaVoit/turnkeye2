@@ -49,6 +49,13 @@ public class Contact_email_change extends turnkeye2.pages.TestBase {
         driver.findElement(By.cssSelector("input.form-button")).click();*/
         actions.moveToElement(driver.findElement(By.xpath("//ul[@id='nav']/li[11]/a/span"))).build().perform();    
         driver.findElement(By.xpath("//ul[@id='nav']/li[11]/ul/li[15]/a/span")).click();
+        TimeUnit.SECONDS.sleep(5);
+        
+        WebElement mySelectElm = driver.findElement(By.cssSelector("#store_switcher")); 
+        Select mySelect= new Select(mySelectElm);
+        mySelect.selectByValue("website_rus");
+        TimeUnit.SECONDS.sleep(5);
+        
         driver.findElement(By.xpath("//ul[@id='system_config_tabs']/li/dl/dd[6]/a/span")).click();
         driver.findElement(By.id("contacts_email_recipient_email")).clear();
         driver.findElement(By.id("contacts_email_recipient_email")).sendKeys(contact_email);

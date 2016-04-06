@@ -53,7 +53,13 @@ public class Form_valid extends turnkeye2.pages.TestBase {
         actions.moveToElement(driver.findElement(By.xpath("//ul[@id='nav']/li[11]/a/span"))).build().perform();    
         driver.findElement(By.xpath("//ul[@id='nav']/li[11]/ul/li[15]/a/span")).click();
         TimeUnit.SECONDS.sleep(5);
-        driver.findElement(By.xpath("//ul[@id='system_config_tabs']/li[1]/dl/dd[6]/a/span")).click(); 
+        
+        WebElement mySelectElm = driver.findElement(By.cssSelector("#store_switcher")); 
+        Select mySelect= new Select(mySelectElm);
+        mySelect.selectByValue("website_rus");
+        TimeUnit.SECONDS.sleep(5);
+        
+        driver.findElement(By.xpath("//ul[@id='system_config_tabs']/li[1]/dl/dd[6]/a/span")).click();  
         driver.findElement(By.id("contacts_email_recipient_email")).clear();
         driver.findElement(By.id("contacts_email_recipient_email")).sendKeys("qatestingtestqa@gmail.com");
         driver.findElement(By.cssSelector("button[title=\"Save Config\"]")).click();
@@ -86,26 +92,33 @@ public class Form_valid extends turnkeye2.pages.TestBase {
         	
         	Properties props = new Properties();
         	
-        	props.put("mail.smtp.user", "qatestingtestqa@gmail.com");
-        	props.put("mail.host", "pop.gmail.com");
-        	props.put("mail.store.protocol", "pop3s");
-            props.put("mail.pop3s.auth", "true");
-            props.put("mail.pop3s.port", 995);
-        	props.put("mail.smtp.starttls.enable","true");
-        	props.put("mail.smtp.debug", "true");
-        	props.put("mail.smtp.auth", "true");
-        	props.put("mail.smtp.socketFactory.port", 995);
-        	props.put("mail.smtp.socketFactory.class", "javax.net.ssl.SSLSocketFactory");
-        	props.put("mail.smtp.socketFactory.fallback", "false");
+//        	props.put("mail.smtp.user", "qatestingtestqa@gmail.com");
+//        	props.put("mail.host", "pop.gmail.com");
+//        	props.put("mail.store.protocol", "pop3s");
+//            props.put("mail.pop3s.auth", "true");
+//            props.put("mail.pop3s.port", 995);
+//        	props.put("mail.smtp.starttls.enable","true");
+//        	props.put("mail.smtp.debug", "true");
+//        	props.put("mail.smtp.auth", "true");
+//        	props.put("mail.smtp.socketFactory.port", 995);
+//        	props.put("mail.smtp.socketFactory.class", "javax.net.ssl.SSLSocketFactory");
+//        	props.put("mail.smtp.socketFactory.fallback", "true");
 
+        	
         	Session session = Session.getInstance(props, new MailAuthenticator());
         	session.setDebug(true);
     	       	  
-        	
+        	 props.put("mail.imaps.host", "imap.gmail.com");
+        	 props.put("mail.imaps.port", "993");
+        	 props.put("mail.imaps.user", "qatestingtestqa@gmail.com");
+        	 props.put("mail.store.protocol", "imaps");
 
+        	 Session.getInstance(props, new MailAuthenticator());
         	
-    	        Store store = session.getStore("pop3s");
-    	        store.connect("pop.gmail.com", "qatestingtestqa@gmail.com", "parol123");
+    	       // Store store = session.getStore("pop3s");
+        	    Store store = session.getStore();
+    	       // store.connect("pop.gmail.com", "qatestingtestqa@gmail.com", "parol123");
+        	    store.connect();
     	 
     	        Folder inbox = store.getFolder("INBOX");
     	        inbox.open(Folder.READ_ONLY);
