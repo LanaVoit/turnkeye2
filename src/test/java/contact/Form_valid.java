@@ -52,7 +52,7 @@ public class Form_valid extends turnkeye2.pages.TestBase {
         driver.findElement(By.cssSelector("input.form-button")).click();
         actions.moveToElement(driver.findElement(By.xpath("//ul[@id='nav']/li[11]/a/span"))).build().perform();    
         driver.findElement(By.xpath("//ul[@id='nav']/li[11]/ul/li[15]/a/span")).click();
-        driver.findElement(By.xpath("//ul[@id='system_config_tabs']/li[1]/dl/dd[6]/a/span")).click(); 
+        driver.findElement(By.xpath("//ul[@id='system_config_tabs']/li/dl/dd[6]/a/span")).click(); 
         driver.findElement(By.id("contacts_email_recipient_email")).clear();
         driver.findElement(By.id("contacts_email_recipient_email")).sendKeys("qatestingtestqa@gmail.com");
         driver.findElement(By.cssSelector("button[title=\"Save Config\"]")).click();
