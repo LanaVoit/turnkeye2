@@ -121,11 +121,11 @@ public class Form_valid extends turnkeye2.pages.TestBase {
     	        Folder inbox = store.getFolder("INBOX");
     	        inbox.open(Folder.READ_ONLY);
     	        
-    	        Message[] messages = inbox.getMessages();
-    	   
+    	        Message message = inbox.getMessage(inbox.getMessageCount());
+  
     	           
     	        GetMulti gmulti = new GetMulti();
-    	        String textMessage = gmulti.getText(messages[messages.length]);
+    	        String textMessage = gmulti.getText(message);
     	        String regex = "Comment: test message";
     	        Pattern p = Pattern.compile(regex);
     	        Matcher m = p.matcher(textMessage);
