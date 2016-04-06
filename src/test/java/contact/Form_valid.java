@@ -44,45 +44,45 @@ public class Form_valid extends turnkeye2.pages.TestBase {
     	driver.manage().window().setSize(new Dimension(1366, 1050));
         Actions actions = new Actions(driver);
         
-        driver.get(baseUrl + "index.php/secretzone51");
-        driver.findElement(By.id("username")).clear();
-        driver.findElement(By.id("username")).sendKeys("admin");
-        driver.findElement(By.id("login")).clear();
-        driver.findElement(By.id("login")).sendKeys("gbpljrhzxrf1530");
-        driver.findElement(By.cssSelector("input.form-button")).click();
-        TimeUnit.SECONDS.sleep(5);
-        actions.moveToElement(driver.findElement(By.xpath("//ul[@id='nav']/li[11]/a/span"))).build().perform();    
-        driver.findElement(By.xpath("//ul[@id='nav']/li[11]/ul/li[15]/a/span")).click();
-        TimeUnit.SECONDS.sleep(5);
-        
-        WebElement mySelectElm = driver.findElement(By.cssSelector("#store_switcher")); 
-        Select mySelect= new Select(mySelectElm);
-        mySelect.selectByValue("store_rus");
-        TimeUnit.SECONDS.sleep(5);
-        
-        driver.findElement(By.xpath("//ul[@id='system_config_tabs']/li[1]/dl/dd[6]/a/span")).click(); 
-        driver.findElement(By.id("contacts_email_recipient_email")).clear();
-        driver.findElement(By.id("contacts_email_recipient_email")).sendKeys("qatestingtestqa@gmail.com");
-        driver.findElement(By.cssSelector("button[title=\"Save Config\"]")).click();
-        
-        assertEquals("The configuration has been saved.", driver.findElement(By.cssSelector("li > span")).getText());
-        actions.moveToElement(driver.findElement(By.xpath("//ul[@id='nav']/li[11]/a/span"))).build().perform();    
-        driver.findElement(By.xpath("//ul[@id='nav']/li[11]/ul/li[11]/a/span")).click();
-        driver.findElement(By.linkText("Select All")).click();
-        driver.findElement(By.cssSelector("button[title=\"Submit\"]")).click();
-        assertEquals("7 cache type(s) refreshed.", driver.findElement(By.cssSelector("li > span")).getText());
-        
-        driver.get(baseUrl + "/contact_us.html");
-        driver.findElement(By.id("name")).clear();
-        driver.findElement(By.id("name")).sendKeys("test");
-        driver.findElement(By.id("email")).clear();
-        driver.findElement(By.id("email")).sendKeys("qatestingtestqa@gmail.com");
-        driver.findElement(By.id("comment")).clear();
-        driver.findElement(By.id("comment")).sendKeys("test message");
-        driver.findElement(By.cssSelector("button.button")).click();
-        TimeUnit.SECONDS.sleep(5);
-        assertEquals("Ваше сообщение получено и мы ответим на него в ближайшее время. Спасибо за сообщение.", driver.findElement(By.cssSelector("li > span")).getText());
-        TimeUnit.SECONDS.sleep(10);
+//        driver.get(baseUrl + "index.php/secretzone51");
+//        driver.findElement(By.id("username")).clear();
+//        driver.findElement(By.id("username")).sendKeys("admin");
+//        driver.findElement(By.id("login")).clear();
+//        driver.findElement(By.id("login")).sendKeys("gbpljrhzxrf1530");
+//        driver.findElement(By.cssSelector("input.form-button")).click();
+//        TimeUnit.SECONDS.sleep(5);
+//        actions.moveToElement(driver.findElement(By.xpath("//ul[@id='nav']/li[11]/a/span"))).build().perform();    
+//        driver.findElement(By.xpath("//ul[@id='nav']/li[11]/ul/li[15]/a/span")).click();
+//        TimeUnit.SECONDS.sleep(5);
+//        
+//        WebElement mySelectElm = driver.findElement(By.cssSelector("#store_switcher")); 
+//        Select mySelect= new Select(mySelectElm);
+//        mySelect.selectByValue("store_rus");
+//        TimeUnit.SECONDS.sleep(5);
+//        
+//        driver.findElement(By.xpath("//ul[@id='system_config_tabs']/li[1]/dl/dd[6]/a/span")).click(); 
+//        driver.findElement(By.id("contacts_email_recipient_email")).clear();
+//        driver.findElement(By.id("contacts_email_recipient_email")).sendKeys("qatestingtestqa@gmail.com");
+//        driver.findElement(By.cssSelector("button[title=\"Save Config\"]")).click();
+//        
+//        assertEquals("The configuration has been saved.", driver.findElement(By.cssSelector("li > span")).getText());
+//        actions.moveToElement(driver.findElement(By.xpath("//ul[@id='nav']/li[11]/a/span"))).build().perform();    
+//        driver.findElement(By.xpath("//ul[@id='nav']/li[11]/ul/li[11]/a/span")).click();
+//        driver.findElement(By.linkText("Select All")).click();
+//        driver.findElement(By.cssSelector("button[title=\"Submit\"]")).click();
+//        assertEquals("7 cache type(s) refreshed.", driver.findElement(By.cssSelector("li > span")).getText());
+//        
+//        driver.get(baseUrl + "/contact_us.html");
+//        driver.findElement(By.id("name")).clear();
+//        driver.findElement(By.id("name")).sendKeys("test");
+//        driver.findElement(By.id("email")).clear();
+//        driver.findElement(By.id("email")).sendKeys("qatestingtestqa@gmail.com");
+//        driver.findElement(By.id("comment")).clear();
+//        driver.findElement(By.id("comment")).sendKeys("test message");
+//        driver.findElement(By.cssSelector("button.button")).click();
+//        TimeUnit.SECONDS.sleep(5);
+//        assertEquals("Ваше сообщение получено и мы ответим на него в ближайшее время. Спасибо за сообщение.", driver.findElement(By.cssSelector("li > span")).getText());
+//        TimeUnit.SECONDS.sleep(10);
         	driver.get(baseUrl + "/contact_us.html");
         	class MailAuthenticator extends Authenticator {
        		 
@@ -121,11 +121,14 @@ public class Form_valid extends turnkeye2.pages.TestBase {
     	        Folder inbox = store.getFolder("INBOX");
     	        inbox.open(Folder.READ_ONLY);
     	        
-    	        Message[] messages = inbox.getMessages();
+    	       // Message[] messages = inbox.getMessages();
+    	        Message messages2 = inbox.getMessage(inbox.getMessageCount());
+    	        Multipart mp = (Multipart) messages2.getContent();
+    	        BodyPart bp = mp.getBodyPart(0);
     	        
-    	           
     	        GetMulti gmulti = new GetMulti();
-    	        String textMessage = gmulti.getText(messages[messages.length - 1]);
+    	        String textMessage = gmulti.getText(bp);
+    	       // String textMessage = gmulti.getText(messages[messages.length - 1]);
     	        String regex = "Comment: test message";
     	        Pattern p = Pattern.compile(regex);
     	        Matcher m = p.matcher(textMessage);
