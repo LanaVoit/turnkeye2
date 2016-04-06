@@ -53,7 +53,7 @@ public class Contact_email_change extends turnkeye2.pages.TestBase {
         
         WebElement mySelectElm = driver.findElement(By.cssSelector("#store_switcher")); 
         Select mySelect= new Select(mySelectElm);
-        mySelect.selectByValue("website_rus");
+        mySelect.selectByValue("store_rus");
         TimeUnit.SECONDS.sleep(5);
         
         driver.findElement(By.xpath("//ul[@id='system_config_tabs']/li/dl/dd[6]/a/span")).click();

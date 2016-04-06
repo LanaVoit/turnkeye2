@@ -57,7 +57,7 @@ public class Form_valid extends turnkeye2.pages.TestBase {
         
         WebElement mySelectElm = driver.findElement(By.cssSelector("#store_switcher")); 
         Select mySelect= new Select(mySelectElm);
-        mySelect.selectByValue("website_rus");
+        mySelect.selectByValue("store_rus");
         TimeUnit.SECONDS.sleep(5);
         
         driver.findElement(By.xpath("//ul[@id='system_config_tabs']/li[1]/dl/dd[6]/a/span")).click(); 
