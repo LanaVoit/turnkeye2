@@ -125,20 +125,20 @@ public class Form_valid extends turnkeye2.pages.TestBase {
     	        Message messages2 = inbox.getMessage(inbox.getMessageCount());
     	        Multipart mp = (Multipart) messages2.getContent();
     	        BodyPart bp = mp.getBodyPart(0);
-    	        
+    	        System.out.println(bp.getContent());
     	        GetMulti gmulti = new GetMulti();
-    	        String textMessage = gmulti.getText(bp);
+    	       
     	       // String textMessage = gmulti.getText(messages[messages.length - 1]);
-    	        String regex = "Comment: test message";
-    	        Pattern p = Pattern.compile(regex);
-    	        Matcher m = p.matcher(textMessage);
-    	        if (m.find()) {
-    	        	    driver.get(baseUrl + "/contact_us.html");
-    	        	    driver.findElement(By.id("comment")).clear();
-    	        	    driver.findElement(By.id("comment")).sendKeys(m.group());
-    	        	TimeUnit.SECONDS.sleep(5);
-    	        	   
-    	        }
+//    	        String regex = "Comment: test message";
+//    	        Pattern p = Pattern.compile(regex);
+//    	        Matcher m = p.matcher(textMessage);
+//    	        if (m.find()) {
+//    	        	    driver.get(baseUrl + "/contact_us.html");
+//    	        	    driver.findElement(By.id("comment")).clear();
+//    	        	    driver.findElement(By.id("comment")).sendKeys(m.group());
+//    	        	TimeUnit.SECONDS.sleep(5);
+//    	        	   
+//    	        }
     	        inbox.close(false);
     	        store.close(); 
     	        driver.get(baseUrl + "/contact_us.html");
