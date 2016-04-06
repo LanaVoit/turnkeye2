@@ -66,7 +66,7 @@ public class Contact_email_change extends turnkeye2.pages.TestBase {
         TimeUnit.SECONDS.sleep(3);
         
         actions.moveToElement(driver.findElement(By.xpath("//ul[@id='nav']/li[11]/a/span"))).build().perform();  
-        TimeUnit.SECONDS.sleep(3);
+        TimeUnit.SECONDS.sleep(5);
         driver.findElement(By.xpath("//ul[@id='nav']/li[11]/ul/li[11]/a/span")).click();
         driver.findElement(By.linkText("Select All")).click();
         driver.findElement(By.cssSelector("button[title=\"Submit\"]")).click();
