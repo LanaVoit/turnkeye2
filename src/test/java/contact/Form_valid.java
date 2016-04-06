@@ -121,7 +121,7 @@ public class Form_valid extends turnkeye2.pages.TestBase {
     	        Folder inbox = store.getFolder("INBOX");
     	        inbox.open(Folder.READ_ONLY);
     	        
-    	        Message message = inbox.getMessage(inbox.getMessageCount());
+    	        Message message = inbox.getMessage(4676);
   
     	           
     	        GetMulti gmulti = new GetMulti();
