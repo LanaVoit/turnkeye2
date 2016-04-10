@@ -16,6 +16,7 @@ import static org.hamcrest.CoreMatchers.*;
 import org.openqa.selenium.*;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxProfile;
+import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -30,6 +31,8 @@ public class JS_error_home extends turnkeye2.pages.TestBase {
 	
     @Test
   public void testUntitled4() throws Exception { 
+    	DesiredCapabilities caps = DesiredCapabilities.chrome();
+		caps.setCapability("name", "JS_error_home");
     	driver.manage().window().setSize(new Dimension(1366, 1050));
     	LoggingPreferences logPrefs = new LoggingPreferences();
     	logPrefs.enable(LogType.BROWSER, Level.SEVERE);
