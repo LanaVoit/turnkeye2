@@ -86,17 +86,17 @@ public class TestBase {
 		baseUrl = PropertyLoader.loadProperty("site.url");
 		gridHubUrl = PropertyLoader.loadProperty("grid2.hub");
 
-		browser = new Browser();
-		browser.setName(PropertyLoader.loadProperty("browser.name"));
-		browser.setVersion(PropertyLoader.loadProperty("browser.version"));
-		browser.setPlatform(PropertyLoader.loadProperty("browser.platform"));
+//		browser = new Browser();
+//		browser.setName(PropertyLoader.loadProperty("browser.name"));
+//		browser.setVersion(PropertyLoader.loadProperty("browser.version"));
+//		browser.setPlatform(PropertyLoader.loadProperty("browser.platform"));
 
 		String username = PropertyLoader.loadProperty("user.username");
 		String password = PropertyLoader.loadProperty("user.password");
 		
 		
 		DesiredCapabilities caps = DesiredCapabilities.chrome();
-		caps.setCapability("platform", "Windows 7");
+//		caps.setCapability("platform", "Windows 7");
 		caps.setCapability("version", "49.0");
 		//System.setProperty("webdriver.chrome.driver", "/var/lib/jenkins/tools/chromedriver/chromedriver");
 	        driver = new RemoteWebDriver(
