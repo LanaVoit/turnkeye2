@@ -12,6 +12,7 @@ import static org.hamcrest.CoreMatchers.*;
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.Select;
 
 public class Captcha_empty extends turnkeye2.pages.TestBase {
@@ -20,9 +21,13 @@ public class Captcha_empty extends turnkeye2.pages.TestBase {
 
     @Test
   public void testUntitled() throws Exception {
-    driver.manage().window().setSize(new Dimension(1366, 1050));
+    	driver.manage().window().setSize(new Dimension(1366, 1050));
+    	Actions actions = new Actions(driver);
+    	
+    	driver.get(baseUrl + "/blog");
+        TimeUnit.SECONDS.sleep(5);
     
-    driver.get(baseUrl + "/blog");
+    
     driver.findElement(By.linkText("“≈—“»–Œ¬¿Õ»≈")).click();
     driver.findElement(By.cssSelector("a[href=\"http://astrio.ru/blog/usability-testing/\"]")).click();
     driver.findElement(By.id("user")).clear();

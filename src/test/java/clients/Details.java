@@ -25,12 +25,13 @@ public class Details extends turnkeye2.pages.TestBase {
     	Actions actions = new Actions(driver);
     	
         driver.get(baseUrl + "index.php/secretzone51");
+        TimeUnit.SECONDS.sleep(5);
         driver.findElement(By.id("username")).clear();
         driver.findElement(By.id("username")).sendKeys("admin");
         driver.findElement(By.id("login")).clear();
         driver.findElement(By.id("login")).sendKeys("gbpljrhzxrf1530");
         driver.findElement(By.cssSelector("input.form-button")).click();
-        TimeUnit.SECONDS.sleep(3);
+        TimeUnit.SECONDS.sleep(5);
         actions.moveToElement(driver.findElement(By.xpath("//ul[@id='nav']/li[9]/a/span"))).build().perform();
         TimeUnit.SECONDS.sleep(3);
         driver.findElement(By.xpath("//ul[@id='nav']/li[9]/ul/li/a/span")).click();
@@ -61,7 +62,7 @@ public class Details extends turnkeye2.pages.TestBase {
         driver.get(baseUrl + "clients");
         TimeUnit.SECONDS.sleep(5);
         driver.findElement(By.cssSelector("div.portfolio-item")).click();
-        TimeUnit.SECONDS.sleep(5);
+        TimeUnit.SECONDS.sleep(7);
         String client_test = driver.findElement(By.cssSelector("h1")).getText();
         assertEquals(client, client_test);
 

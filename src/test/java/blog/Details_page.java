@@ -24,13 +24,17 @@ public class Details_page extends turnkeye2.pages.TestBase {
     
     driver.get(baseUrl + "blog/");
     driver.findElement(By.linkText("ТЕСТИРОВАНИЕ")).click();
+    TimeUnit.SECONDS.sleep(5);
     driver.findElement(By.cssSelector("a[href=\"http://astrio.ru/blog/usability-testing/\"]")).click();
+    TimeUnit.SECONDS.sleep(5);
     assertEquals("ЮЗАБИЛИТИ-ТЕСТИРОВАНИЕ: КАК УВЕЛИЧИТЬ ПРИБЫЛЬНОСТЬ ИНТЕРНЕТ-МАГАЗИНА?", driver.findElement(By.cssSelector("h1")).getText());
     assertEquals("", driver.findElement(By.cssSelector("img[alt=\"Юзабилити-тестирование интернет-магазина\"]")).getText());
-    assertEquals("", driver.findElement(By.cssSelector("input.gsc-search-button.gsc-search-button-v2")).getText());
-    assertEquals("Разделы", driver.findElement(By.cssSelector("div.block-title > span")).getText());
-    assertEquals("Метки", driver.findElement(By.cssSelector("div.block-tags > div.block-title > span")).getText());
-    assertEquals("", driver.findElement(By.cssSelector("img[alt=\"Magento разработка\"]")).getText());
+    TimeUnit.SECONDS.sleep(5);
+    assertEquals("", driver.findElement(By.id("blog-search")).getText());
+    assertEquals("", driver.findElement(By.xpath("//*[@id='blog_search_mini_form']/div/button")).getText());
+    assertEquals("Поиск", driver.findElement(By.cssSelector("div.block-title > span")).getText());
+    assertEquals("Разделы", driver.findElement(By.xpath("//*[@id='sideRight']/div/div[1]/div[1]/div/span")).getText());
+    
     assertEquals("СВЕТЛАНА БАРАНОВА", driver.findElement(By.cssSelector("div.author-name")).getText());
     assertEquals("ОПУБЛИКОВАНО В", driver.findElement(By.cssSelector("div.post-posted-title")).getText());
     assertEquals("МЕТКИ", driver.findElement(By.cssSelector("div.post-tags-title")).getText());

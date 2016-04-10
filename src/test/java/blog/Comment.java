@@ -30,11 +30,16 @@ public class Comment extends turnkeye2.pages.TestBase {
     	    driver.findElement(By.id("login")).clear();
     	    driver.findElement(By.id("login")).sendKeys("gbpljrhzxrf1530");
     	    driver.findElement(By.cssSelector("input.form-button")).click();*/
+    	    TimeUnit.SECONDS.sleep(5);
     	    actions.moveToElement(driver.findElement(By.xpath("//ul[@id='nav']/li[8]/a/span"))).build().perform();
     	    driver.findElement(By.xpath("//ul[@id='nav']/li[8]/ul/li[4]/a/span")).click();
+    	    TimeUnit.SECONDS.sleep(5);
     	    driver.findElement(By.cssSelector("span.sort-title")).click();
-    	    driver.findElement(By.cssSelector("span.sort-title")).click();    	    
-    	    driver.findElement(By.cssSelector("td.a-left")).click();    	    
+    	    TimeUnit.SECONDS.sleep(5);
+    	    driver.findElement(By.cssSelector("span.sort-title")).click();   
+    	    TimeUnit.SECONDS.sleep(5);
+    	    driver.findElement(By.cssSelector("td.a-left")).click();    	
+    	    TimeUnit.SECONDS.sleep(5);
     	    assertEquals("test comment", driver.findElement(By.id("comment")).getText());
     	    new Select(driver.findElement(By.id("status"))).selectByVisibleText("Approved");
     	    driver.findElement(By.cssSelector("button[title=\"Save Comment\"]")).click();
@@ -42,8 +47,10 @@ public class Comment extends turnkeye2.pages.TestBase {
     	    
     	    actions.moveToElement(driver.findElement(By.xpath("//ul[@id='nav']/li[11]/a/span"))).build().perform();    
     	    driver.findElement(By.xpath("//ul[@id='nav']/li[11]/ul/li[11]/a/span")).click();
+    	    TimeUnit.SECONDS.sleep(5);
     	    driver.findElement(By.linkText("Select All")).click();
     	    driver.findElement(By.cssSelector("button[title=\"Submit\"]")).click();
+    	    TimeUnit.SECONDS.sleep(5);
     	    assertEquals("7 cache type(s) refreshed.", driver.findElement(By.cssSelector("li > span")).getText());
     	    
     	    driver.get(baseUrl + "blog/usability-testing/");
@@ -67,8 +74,10 @@ public class Comment extends turnkeye2.pages.TestBase {
     	    
     	    actions.moveToElement(driver.findElement(By.xpath("//ul[@id='nav']/li[11]/a/span"))).build().perform();    
     	    driver.findElement(By.xpath("//ul[@id='nav']/li[11]/ul/li[11]/a/span")).click();
+    	    TimeUnit.SECONDS.sleep(5);
     	    driver.findElement(By.linkText("Select All")).click();
     	    driver.findElement(By.cssSelector("button[title=\"Submit\"]")).click();
+    	    TimeUnit.SECONDS.sleep(5);
     	    assertEquals("7 cache type(s) refreshed.", driver.findElement(By.cssSelector("li > span")).getText());
     	    driver.get(baseUrl + "blog/usability-testing/");
     	    assertEquals("0 комментарии", driver.findElement(By.cssSelector("div.comment-box > div.post-title")).getText());    	 

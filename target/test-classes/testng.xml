@@ -1,20 +1,68 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
-<suite name="Tests" verbose="5" data-provider-thread-count="1">
- 
- 
-	
+<suite name="Tests" verbose="5" data-provider-thread-count="1"> 
+ <test name="JS Errors">
+		<parameter name="path" value="/"/>
+		<classes>
+			<class name="home.JS_error_home"/>
+			<class name="about.JS_error_about"/>	
+			<class name="clients.JS_error_clients"/>
+			<class name="services.JS_error_services"/>
+			<class name="contact.JS_error_contact"/>
+			<class name="blog.JS_error_blog"/>	
+			<class name="blog.JS_error_post"/>
+		</classes>
+	</test> 
+	<test name="Homepage">
+		<parameter name="path" value="/"/>
+		<classes>
+			<class name="home.Newsletter_empty"/>
+		    <class name="home.Newsletter_invalid"/>
+		    <class name="home.Newsletter_valid"/>
+		    <class name="home.Banner"/>		   
+		</classes>
+	</test>
+	<test name="About">
+		<parameter name="path" value="/"/>
+		<classes>   
+		    <class name="about.Tabs"/>
+		    <class name="about.Contact_us"/>		    		    
+		</classes>
+	</test>  
+	<test name="Clients">
+		<parameter name="path" value="/"/>
+		<classes>		   			
+		    <class name="clients.Details"/>
+		    <class name="clients.Details_elements"/>
+		    <class name="clients.Navigation"/>
+		    <class name="clients.Website"/>	
+				</classes>
+	</test>  
+	<test name="Services">
+		<parameter name="path" value="/"/>
+		<classes>    
+		    <class name="services.Page"/>
+		</classes>
+	</test>  
 	<test name="Contact">
 		<parameter name="path" value="/"/>
 		<classes>		    			    
-		    
+		    <class name="contact.Form_invalid"/>
+		    <class name="contact.Form_empty"/>
 		    <class name="contact.Form_valid"/>
-	
+		    <class name="contact.Contact_email_change"/>
 		</classes>
-	</test>  
-	
-
- 
-	
-	
+	</test>
+	<test name="Blog">
+		<parameter name="path" value="/"/>
+		<classes>		    			    
+		    <class name="blog.Captcha_empty"/>
+		    <class name="blog.Captcha_disable"/>
+		    <class name="blog.Comment"/>
+		     <class name="blog.Captche_enable"/>
+		    <class name="blog.Details_page"/>
+			<class name="blog.Blog_page"/>	
+			<class name="blog.Search"/>						
+		</classes>
+	</test>  	
 </suite>

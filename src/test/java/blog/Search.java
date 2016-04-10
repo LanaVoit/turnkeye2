@@ -23,15 +23,15 @@ public class Search extends turnkeye2.pages.TestBase {
       driver.manage().window().setSize(new Dimension(1366, 1050));
       
       driver.get(baseUrl + "blog/");
-      assertEquals("", driver.findElement(By.id("gsc-i-id1")).getText());
-      assertEquals("", driver.findElement(By.cssSelector("input.gsc-search-button.gsc-search-button-v2")).getText());
-      driver.findElement(By.id("gsc-i-id1")).clear();
-      driver.findElement(By.id("gsc-i-id1")).sendKeys("ТЕСТИРОВАНИЕ");
-      driver.findElement(By.cssSelector("input.gsc-search-button.gsc-search-button-v2")).click();
       TimeUnit.SECONDS.sleep(5);
-      assertEquals("Юзабилити-тестирование: как увеличить прибыльность ...", driver.findElement(By.linkText("Юзабилити-тестирование: как увеличить прибыльность ...")).getText());
-      driver.findElement(By.cssSelector("div.gsc-results-close-btn.gsc-results-close-btn-visible")).click();
-      assertEquals("Статьи", driver.findElement(By.cssSelector("h1")).getText());
+      assertEquals("", driver.findElement(By.id("blog-search")).getText());
+      assertEquals("", driver.findElement(By.xpath("//*[@id='blog_search_mini_form']/div/button")).getText());
+      driver.findElement(By.id("blog-search")).clear();
+      driver.findElement(By.id("blog-search")).sendKeys("ТЕСТИРОВАНИЕ");
+      driver.findElement(By.xpath("//*[@id='blog_search_mini_form']/div/button")).click();
+      TimeUnit.SECONDS.sleep(5);
+      assertEquals("Тестирование", driver.findElement(By.cssSelector("h1")).getText());
+      driver.findElement(By.cssSelector("a[href=\"http://astrio.ru/blog/usability-testing/\"]")).click();
   }
 
    private boolean isElementPresent(By by) {

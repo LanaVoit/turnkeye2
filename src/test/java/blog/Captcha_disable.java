@@ -25,22 +25,30 @@ public class Captcha_disable extends turnkeye2.pages.TestBase {
     	Actions actions = new Actions(driver);
     	
         driver.get(baseUrl + "index.php/secretzone51");
+        TimeUnit.SECONDS.sleep(5);
         /*driver.findElement(By.id("username")).clear();
         driver.findElement(By.id("username")).sendKeys("admin");
         driver.findElement(By.id("login")).clear();
         driver.findElement(By.id("login")).sendKeys("gbpljrhzxrf1530");
-        driver.findElement(By.cssSelector("input.form-button")).click();*/
-        
+        driver.findElement(By.cssSelector("input.form-button")).click();
+        TimeUnit.SECONDS.sleep(7);*/
         actions.moveToElement(driver.findElement(By.xpath("//ul[@id='nav']/li[8]/a/span"))).build().perform(); 
         driver.findElement(By.xpath("//ul[@id='nav']/li[8]/ul/li[6]/a/span")).click();
+        TimeUnit.SECONDS.sleep(5);
         new Select(driver.findElement(By.id("blog_recaptcha_enabled"))).selectByVisibleText("No");
+        ((JavascriptExecutor)driver).executeScript("arguments[0].scrollIntoView();"
+                ,driver.findElement(By.cssSelector("button[title=\"Save Config\"]")));
+        TimeUnit.SECONDS.sleep(5);
         driver.findElement(By.cssSelector("button[title=\"Save Config\"]")).click();
+        TimeUnit.SECONDS.sleep(5);
         assertEquals("The configuration has been saved.", driver.findElement(By.cssSelector("li > span")).getText());   
         
         actions.moveToElement(driver.findElement(By.xpath("//ul[@id='nav']/li[11]/a/span"))).build().perform();    
         driver.findElement(By.xpath("//ul[@id='nav']/li[11]/ul/li[11]/a/span")).click();
+        TimeUnit.SECONDS.sleep(5);
         driver.findElement(By.linkText("Select All")).click();
         driver.findElement(By.cssSelector("button[title=\"Submit\"]")).click();
+        TimeUnit.SECONDS.sleep(5);
         assertEquals("7 cache type(s) refreshed.", driver.findElement(By.cssSelector("li > span")).getText());
         
         driver.get(baseUrl + "blog/usability-testing/");        

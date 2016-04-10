@@ -25,13 +25,15 @@ public class Blog_page extends turnkeye2.pages.TestBase {
     	driver.get(baseUrl + "blog/");
     	TimeUnit.SECONDS.sleep(5);
         assertEquals("Статьи", driver.findElement(By.cssSelector("h1")).getText());
-        assertEquals("", driver.findElement(By.id("gsc-i-id1")).getText());
-        assertEquals("", driver.findElement(By.cssSelector("input.gsc-search-button.gsc-search-button-v2")).getText());
-        assertEquals("Разделы", driver.findElement(By.cssSelector("div.block-title > span")).getText());
+        assertEquals("", driver.findElement(By.id("blog-search")).getText());
+        assertEquals("", driver.findElement(By.xpath("//*[@id='blog_search_mini_form']/div/button")).getText());
+        assertEquals("Поиск", driver.findElement(By.cssSelector("div.block-title > span")).getText());
+        assertEquals("Разделы", driver.findElement(By.xpath("//*[@id='sideRight']/div/div[1]/div[1]/div/span")).getText());
         assertEquals("Архив", driver.findElement(By.cssSelector("div.block-archives > div.block-title > span")).getText());
         assertEquals("Метки", driver.findElement(By.cssSelector("div.block-tags > div.block-title > span")).getText());
         
         driver.findElement(By.linkText("ТЕСТИРОВАНИЕ")).click();
+        TimeUnit.SECONDS.sleep(5);
         assertEquals("ЮЗАБИЛИТИ-ТЕСТИРОВАНИЕ: КАК УВЕЛИЧИТЬ ПРИБЫЛЬНОСТЬ ИНТЕРНЕТ-МАГАЗИНА?", driver.findElement(By.linkText("ЮЗАБИЛИТИ-ТЕСТИРОВАНИЕ: КАК УВЕЛИЧИТЬ ПРИБЫЛЬНОСТЬ ИНТЕРНЕТ-МАГАЗИНА?")).getText());   
         assertEquals("", driver.findElement(By.cssSelector("img[alt=\"Юзабилити-тестирование интернет-магазина\"]")).getText());
         assertEquals("SEE MORE", driver.findElement(By.linkText("SEE MORE")).getText());
