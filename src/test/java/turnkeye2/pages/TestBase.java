@@ -100,7 +100,7 @@ public class TestBase {
 		caps.setCapability("version", "49.0");
 		//System.setProperty("webdriver.chrome.driver", "/var/lib/jenkins/tools/chromedriver/chromedriver");
 	        driver = new RemoteWebDriver(
-	                    new URL("http://148.251.21.174:4444/wd/hub"),
+	                    new URL("http://qatestingtestqa:7d7d449c-27c0-45c7-9339-3aad563a5cc0@ondemand.saucelabs.com:80/wd/hub"),
 	                    caps);
 	        driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 
