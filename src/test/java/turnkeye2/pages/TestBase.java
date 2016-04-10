@@ -95,15 +95,13 @@ public class TestBase {
 		String password = PropertyLoader.loadProperty("user.password");
 		
 		
-		
-		DesiredCapabilities capabillities = DesiredCapabilities.chrome();
 		DesiredCapabilities caps = DesiredCapabilities.chrome();
 		caps.setCapability("platform", "Windows 7");
 		caps.setCapability("version", "49.0");
 		//System.setProperty("webdriver.chrome.driver", "/var/lib/jenkins/tools/chromedriver/chromedriver");
 	        driver = new RemoteWebDriver(
 	                    new URL("http://148.251.21.174:4444/wd/hub"),
-	                    capabillities);
+	                    caps);
 	        driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 
 	}  
