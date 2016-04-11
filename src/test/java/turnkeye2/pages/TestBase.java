@@ -54,6 +54,7 @@ import java.net.URL;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
+import junit.framework.TestCase;
 import static org.testng.Assert.assertEquals;
 
 import com.saucelabs.common.SauceOnDemandAuthentication;
@@ -102,7 +103,7 @@ public class TestBase {
 		caps.setCapability("version", "49.0");
 		caps.setCapability("passed", "true");
 		caps.setCapability("failed", "false");
-		caps.setCapability("name", TestName.class);
+		caps.setCapability("name", TestCase.class);
 		//System.setProperty("webdriver.chrome.driver", "/var/lib/jenkins/tools/chromedriver/chromedriver");
 	        driver = new RemoteWebDriver(
 	                    new URL("http://qatestingtestqa:7d7d449c-27c0-45c7-9339-3aad563a5cc0@ondemand.saucelabs.com:80/wd/hub"),
