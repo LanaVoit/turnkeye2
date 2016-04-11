@@ -32,7 +32,8 @@ public class JS_error_home extends turnkeye2.pages.TestBase {
 
     @Test
   public void testUntitled4() throws Exception { 
-    	
+    	DesiredCapabilities caps = new DesiredCapabilities();
+    	caps.setCapability("name", "JS_error_home");
     	driver.manage().window().setSize(new Dimension(1366, 1050));
     	LoggingPreferences logPrefs = new LoggingPreferences();
     	logPrefs.enable(LogType.BROWSER, Level.SEVERE);
