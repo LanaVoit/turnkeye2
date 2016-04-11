@@ -31,11 +31,13 @@ public class Banner extends turnkeye2.pages.TestBase {
     
     driver.findElement(By.cssSelector("img[alt=\"Ювелирный дом Эстет\"]")).click();
     //String img2 = "http://cdn.astrio.ru/media/wysiwyg//home-page/slide-estet-0001.jpg";
+    TimeUnit.SECONDS.sleep(5);
     String img2 = "http://astrio.ru/media/wysiwyg/main-banner/home-original/Nx520xslide-estet.jpg.pagespeed.ic.a1zdO-4m4e.webp";
     assertEquals("", img2, driver.findElement(By.cssSelector("img[src=\"http://astrio.ru/media/wysiwyg/main-banner/home-original/Nx520xslide-estet.jpg.pagespeed.ic.a1zdO-4m4e.webp\"]")).getAttribute("src")); 
     
     TimeUnit.SECONDS.sleep(5);
     driver.findElement(By.cssSelector("img[alt=\"Группа компаний Автоэксперт\"]")).click();
+    TimeUnit.SECONDS.sleep(5);
     //String img4 = "http://cdn.astrio.ru/media/wysiwyg//home-page/slide-autoexpert-001.jpg";
     String img4 = "http://astrio.ru/media/wysiwyg/main-banner/home-original/Nx520xslide-autoexpert.jpg.pagespeed.ic.Yjxfai3-Cu.webp";
     assertEquals("", img4, driver.findElement(By.cssSelector("img[src=\"http://astrio.ru/media/wysiwyg/main-banner/home-original/Nx520xslide-autoexpert.jpg.pagespeed.ic.Yjxfai3-Cu.webp\"]")).getAttribute("src")); 
