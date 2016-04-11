@@ -31,8 +31,7 @@ public class JS_error_about extends turnkeye2.pages.TestBase {
 	
     @Test
   public void testUntitled4() throws Exception { 
-    	DesiredCapabilities caps = DesiredCapabilities.chrome();
-		caps.setCapability("name", "JS_error_home");
+    	
     	driver.manage().window().setSize(new Dimension(1366, 1050));
     	LoggingPreferences logPrefs = new LoggingPreferences();
     	logPrefs.enable(LogType.BROWSER, Level.SEVERE);

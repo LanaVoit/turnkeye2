@@ -1,5 +1,6 @@
 package home;
 
+import java.net.MalformedURLException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
@@ -28,11 +29,14 @@ import org.openqa.selenium.logging.Logs;
 import net.jsourcerer.webdriver.jserrorcollector.JavaScriptError;
 
 public class JS_error_home extends turnkeye2.pages.TestBase {
-	
+	@BeforeClass
+	public void init() throws MalformedURLException {
+		DesiredCapabilities caps = DesiredCapabilities.chrome();
+		caps.setCapability("name", "JS_error_home");
+	}
     @Test
   public void testUntitled4() throws Exception { 
-    	DesiredCapabilities caps = DesiredCapabilities.chrome();
-		caps.setCapability("name", "JS_error_home");
+    	
     	driver.manage().window().setSize(new Dimension(1366, 1050));
     	LoggingPreferences logPrefs = new LoggingPreferences();
     	logPrefs.enable(LogType.BROWSER, Level.SEVERE);

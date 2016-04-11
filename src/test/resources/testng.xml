@@ -5,7 +5,7 @@
 		<parameter name="path" value="/"/>
 		<classes>
 			<class name="home.JS_error_home"/>
-			<class name="about.JS_error_about"/>	
+
 	
 		</classes>
 	</test> 
