@@ -6,6 +6,7 @@ import java.util.concurrent.TimeUnit;
 
 import org.apache.commons.io.FileUtils;
 import org.junit.Before;
+import org.junit.rules.TestName;
 import org.openqa.selenium.Dimension;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
@@ -93,6 +94,7 @@ public class TestBase {
 
 		String username = PropertyLoader.loadProperty("user.username");
 		String password = PropertyLoader.loadProperty("user.password");
+
 		
 		
 		DesiredCapabilities caps = DesiredCapabilities.chrome();
@@ -100,6 +102,7 @@ public class TestBase {
 		caps.setCapability("version", "49.0");
 		caps.setCapability("passed", "true");
 		caps.setCapability("failed", "false");
+		caps.setCapability("name", TestName.class);
 		//System.setProperty("webdriver.chrome.driver", "/var/lib/jenkins/tools/chromedriver/chromedriver");
 	        driver = new RemoteWebDriver(
 	                    new URL("http://qatestingtestqa:7d7d449c-27c0-45c7-9339-3aad563a5cc0@ondemand.saucelabs.com:80/wd/hub"),

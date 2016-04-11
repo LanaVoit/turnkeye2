@@ -29,7 +29,7 @@ import org.openqa.selenium.logging.Logs;
 import net.jsourcerer.webdriver.jserrorcollector.JavaScriptError;
 
 public class JS_error_home extends turnkeye2.pages.TestBase {
-	
+
     @Test
   public void testUntitled4() throws Exception { 
     	
