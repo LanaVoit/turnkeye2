@@ -103,6 +103,7 @@ public class TestBase {
 		caps.setCapability("version", "49.0");
 		caps.setCapability("passed", "true");
 		caps.setCapability("failed", "false");
+		caps.setCapability("name", "test123");
 
 		//System.setProperty("webdriver.chrome.driver", "/var/lib/jenkins/tools/chromedriver/chromedriver");
 	        driver = new RemoteWebDriver(
