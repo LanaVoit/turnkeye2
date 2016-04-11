@@ -47,7 +47,7 @@ public class Form_valid extends turnkeye2.pages.TestBase {
     	driver.manage().window().setSize(new Dimension(1366, 1050));
         Actions actions = new Actions(driver);
         
-        driver.get(baseUrl + "index.php/secretzone51");
+        /*driver.get(baseUrl + "index.php/secretzone51");
         TimeUnit.SECONDS.sleep(5);
         driver.findElement(By.id("username")).clear();
         driver.findElement(By.id("username")).sendKeys("admin");
@@ -86,12 +86,12 @@ public class Form_valid extends turnkeye2.pages.TestBase {
         driver.findElement(By.cssSelector("button.button")).click();
         TimeUnit.SECONDS.sleep(5);
         assertEquals("Ваше сообщение получено и мы ответим на него в ближайшее время. Спасибо за сообщение.", driver.findElement(By.cssSelector("li > span")).getText());
-        TimeUnit.SECONDS.sleep(10);
+        TimeUnit.SECONDS.sleep(10);*/
         	driver.get(baseUrl + "/contact_us.html");
         	class MailAuthenticator extends Authenticator {
        		 
         	    public PasswordAuthentication getPasswordAuthentication() {
-        	         return new PasswordAuthentication("qatestingtestqa@gmail.com", "parol123");
+        	         return new PasswordAuthentication("qatestingtestqa@gmail.com", "uaPha8tuAvo160302fr");
         	    }
         	}
         	
@@ -117,7 +117,7 @@ public class Form_valid extends turnkeye2.pages.TestBase {
         	session.setDebug(true);
         	
     	        Store store = session.getStore("pop3s");
-    	        store.connect("pop.gmail.com", "qatestingtestqa@gmail.com", "parol123");
+    	        store.connect("pop.gmail.com", "qatestingtestqa@gmail.com", "uaPha8tuAvo160302fr");
 
     	        Folder inbox = store.getFolder("INBOX");
     			
