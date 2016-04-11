@@ -103,7 +103,7 @@ public class TestBase {
 		caps.setCapability("version", "49.0");
 		caps.setCapability("passed", "true");
 		caps.setCapability("failed", "false");
-		caps.setCapability("name", Test.class.getName());
+		caps.setCapability("name", TestName.class.getName());
 		//System.setProperty("webdriver.chrome.driver", "/var/lib/jenkins/tools/chromedriver/chromedriver");
 	        driver = new RemoteWebDriver(
 	                    new URL("http://qatestingtestqa:7d7d449c-27c0-45c7-9339-3aad563a5cc0@ondemand.saucelabs.com:80/wd/hub"),
