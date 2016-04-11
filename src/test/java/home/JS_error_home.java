@@ -29,11 +29,7 @@ import org.openqa.selenium.logging.Logs;
 import net.jsourcerer.webdriver.jserrorcollector.JavaScriptError;
 
 public class JS_error_home extends turnkeye2.pages.TestBase {
-	@BeforeClass
-	public void init() throws MalformedURLException {
-		DesiredCapabilities caps = DesiredCapabilities.chrome();
-		caps.setCapability("name", "JS_error_home");
-	}
+	
     @Test
   public void testUntitled4() throws Exception { 
     	
