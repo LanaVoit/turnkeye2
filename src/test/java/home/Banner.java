@@ -32,7 +32,7 @@ public class Banner extends turnkeye2.pages.TestBase {
     driver.findElement(By.cssSelector("img[alt=\"ёвелирный дом Ёстет\"]")).click();
     //String img2 = "http://cdn.astrio.ru/media/wysiwyg//home-page/slide-estet-0001.jpg";
     TimeUnit.SECONDS.sleep(5);
-    String img2 = "http://astrio.ru/media/wysiwyg/main-banner/home-original/Nx520xslide-estet.jpg.pagespeed.ic.a1zdO-4m4e.webp";
+    String img2 = "http://astrio.ru/media/wysiwyg/main-banner/home-original/xslide-estet.jpg.pagespeed.ic.DUq4u9T2xS.webp";
     assertEquals("", img2, driver.findElement(By.cssSelector("#container > div.block-main-banner.block-main-banner-rus > header > div.carousel-wrapper > div > ul > li.active > img")).getAttribute("src")); 
     
     TimeUnit.SECONDS.sleep(5);
