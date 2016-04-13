@@ -25,7 +25,7 @@ public class Banner extends turnkeye2.pages.TestBase {
     driver.get(baseUrl);
 
     //String img1 = "http://cdn.astrio.ru/skin/frontend/default/turnkeye/images/main-banner/large/slide1-moscow.jpg";
-    String img1 = "http://astrio.ru/skin/frontend/default/turnkeye/images/main-banner/large/2000x520xslide1-moscow.jpg.pagespeed.ic.6QQP1U0tX-.webp";
+    String img1 = "http://astrio.ru/skin/frontend/default/turnkeye/images/main-banner/large/xslide1-moscow.jpg.pagespeed.ic.S_XOMwWK_i.webp";
     assertEquals("", img1, driver.findElement(By.cssSelector("#container > div.block-main-banner.block-main-banner-rus > header > div.carousel-wrapper > div > ul > li:nth-child(1) > img")).getAttribute("src"));  
 
     

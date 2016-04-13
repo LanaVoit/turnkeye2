@@ -25,7 +25,7 @@ public class Details_elements extends turnkeye2.pages.TestBase {
 	    driver.get(baseUrl + "/clients/pinup-girl-clothing");
 	    assertEquals("Наши клиенты - Pinup Girl Clothing", driver.getTitle());
 	    assertEquals("Pinup Girl Clothing", driver.findElement(By.cssSelector("h1")).getText());
-	    assertEquals("http://astrio.ru/media/wysiwyg/portfolio/PinupClothing/top-banner.jpg", driver.findElement(By.cssSelector("#content > div.turnkeye-portfolio > div.block-portfolio-banner > img.shadows-image")).getAttribute("src"));
+	    assertEquals("http://astrio.ru/media/wysiwyg/portfolio/PinupClothing/xtop-banner.jpg.pagespeed.ic.1EMUFl8R3K", driver.findElement(By.cssSelector("#content > div.turnkeye-portfolio > div.block-portfolio-banner > img.shadows-image")).getAttribute("src"));
 	    assertEquals("http://astrio.ru/media/wysiwyg/portfolio/PinupClothing/xtop-mobile.png", driver.findElement(By.xpath("//div[@id='content']/div[2]/div[3]/img[2]")).getAttribute("src"));
 	    assertEquals("Обзор проекта", driver.findElement(By.cssSelector("h3")).getText()); 
 	    assertEquals("О проекте Pinup Girl Clothing", driver.findElement(By.cssSelector("div.block-about-project > h3")).getText());
