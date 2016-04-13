@@ -39,7 +39,7 @@ public class Banner extends turnkeye2.pages.TestBase {
     driver.findElement(By.cssSelector("img[alt=\"Группа компаний Автоэксперт\"]")).click();
     TimeUnit.SECONDS.sleep(5);
     //String img4 = "http://cdn.astrio.ru/media/wysiwyg//home-page/slide-autoexpert-001.jpg";
-    String img4 = "http://astrio.ru/media/wysiwyg/main-banner/home-original/Nx520xslide-autoexpert.jpg.pagespeed.ic.Yjxfai3-Cu.webp";
+    String img4 = "http://astrio.ru/media/wysiwyg/main-banner/home-original/xslide-autoexpert.jpg.pagespeed.ic.49vj8KFzAw.webp";
     assertEquals("", img4, driver.findElement(By.cssSelector("#container > div.block-main-banner.block-main-banner-rus > header > div.carousel-wrapper > div > ul > li.active > img")).getAttribute("src")); 
   }
 
