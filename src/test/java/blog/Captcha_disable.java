@@ -31,14 +31,14 @@ public class Captcha_disable extends turnkeye2.pages.TestBase {
         driver.findElement(By.id("login")).clear();
         driver.findElement(By.id("login")).sendKeys("gbpljrhzxrf1530");
         driver.findElement(By.cssSelector("input.form-button")).click();
-        TimeUnit.SECONDS.sleep(7);
+        TimeUnit.SECONDS.sleep(5);
         actions.moveToElement(driver.findElement(By.xpath("//ul[@id='nav']/li[8]/a/span"))).build().perform(); 
         driver.findElement(By.xpath("//ul[@id='nav']/li[8]/ul/li[6]/a/span")).click();
         TimeUnit.SECONDS.sleep(5);
         new Select(driver.findElement(By.id("blog_recaptcha_enabled"))).selectByVisibleText("No");
         ((JavascriptExecutor)driver).executeScript("arguments[0].scrollIntoView();"
                 ,driver.findElement(By.cssSelector("button[title=\"Save Config\"]")));
-        TimeUnit.SECONDS.sleep(5);
+       
         driver.findElement(By.cssSelector("button[title=\"Save Config\"]")).click();
         TimeUnit.SECONDS.sleep(5);
         assertEquals("The configuration has been saved.", driver.findElement(By.cssSelector("li > span")).getText());   
