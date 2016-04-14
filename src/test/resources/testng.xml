@@ -7,6 +7,7 @@
 			<class name="home.JS_error_home"/>
 			<class name="about.JS_error_about"/>	
 			<class name="clients.JS_error_clients"/>
+			<class name="clients.JS_error_detail_clients"/>
 			<class name="services.JS_error_services"/>
 			<class name="contact.JS_error_contact"/>
 			<class name="blog.JS_error_blog"/>	
