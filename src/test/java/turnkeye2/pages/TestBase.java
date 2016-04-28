@@ -132,24 +132,19 @@ public class TestBase {
 //		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 //	}
 	
-	@AfterSuite(alwaysRun = true)
-	public void tearDown() {
-		if (driver != null) {
-			driver.quit();
-		}
-	}
+//	@AfterSuite(alwaysRun = true)
+//	public void tearDown() {
+//		if (driver != null) {
+//			driver.quit();
+//		}
+//	}
 	  
-	/*@AfterMethod
+	@AfterMethod
 	public void stopDriver()throws Exception{
 	driver.quit();
 	}
 	
-	@AfterSuite
-	public void tearDown() {
-		if (driver != null) {
-			driver.quit();
-		}
-	}*/
+
 
 //	@AfterMethod
 //	public void setScreenshot(ITestResult result) {
