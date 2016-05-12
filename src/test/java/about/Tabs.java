@@ -36,10 +36,10 @@ public class Tabs extends turnkeye2.pages.TestBase {
     assertEquals("Наша команда", driver.findElement(By.cssSelector("h1")).getText());
     assertEquals("Сергей Двоскин", driver.findElement(By.cssSelector("div.t-col-2 > h4")).getText());
     
-    driver.findElement(By.cssSelector("a[href=\"http://astrio.ru/about/vacancy.html\"]")).click();
-    TimeUnit.SECONDS.sleep(5);
-    assertEquals("Наши вакансии", driver.findElement(By.cssSelector("h1")).getText());
-    assertEquals("Стать частью нашей команды легко.\nНа данный момент нам нужны на постоянную работу в Ульяновске (центр разработки):", driver.findElement(By.cssSelector("h4")).getText());   
+//    driver.findElement(By.cssSelector("a[href=\"http://astrio.ru/about/vacancy.html\"]")).click();
+//    TimeUnit.SECONDS.sleep(5);
+//    assertEquals("Наши вакансии", driver.findElement(By.cssSelector("h1")).getText());
+//    assertEquals("Стать частью нашей команды легко.\nНа данный момент нам нужны на постоянную работу в Ульяновске (центр разработки):", driver.findElement(By.cssSelector("h4")).getText());   
   }
 
    private boolean isElementPresent(By by) {
