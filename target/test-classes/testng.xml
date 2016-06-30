@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 <suite name="Tests" verbose="5" data-provider-thread-count="1"> 
- <test name="JS Errors">
+
+	<test name="Homepage">
 		<parameter name="path" value="/"/>
 		<classes>
-			<class name="home.JS_error_home"/>
-			<class name="about.JS_error_about"/>	
-
+	
+		    <class name="home.Banner"/>		   
 		</classes>
-	</test> 
+	</test>
 
 </suite>
