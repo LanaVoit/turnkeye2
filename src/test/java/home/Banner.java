@@ -20,6 +20,10 @@ public class Banner extends turnkeye2.pages.TestBase {
 
     @Test
   public void testUntitled4() throws Exception {
+    	if (1 == 1) {
+    		throw new NoSuchElementException("ololo");
+    	}
+    	
     driver.manage().window().setSize(new Dimension(1366, 1050));
     
     driver.get(baseUrl);
