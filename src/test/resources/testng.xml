@@ -36,7 +36,8 @@
 		    <class name="clients.Details_elements"/>
 		    <class name="clients.Navigation"/>
 		    <class name="clients.Website"/>	
-				</classes>
+		    <class name="clients.Link_visit_website"/>	
+		</classes>
 	</test>  
 	<test name="Services">
 		<parameter name="path" value="/"/>
