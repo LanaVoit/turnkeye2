@@ -30,7 +30,7 @@ public class Tabs extends turnkeye2.pages.TestBase {
     assertEquals("", driver.findElement(By.cssSelector("img[alt=\"Magento разработчики\"]")).getText());
     assertEquals("—¬я«ј“№—я — Ќјћ»", driver.findElement(By.cssSelector("a.see-more")).getText()); 
     
-    driver.findElement(By.cssSelector("a[href=\"http://astrio.ru/about/meet_the_team.html\"]")).click();
+    driver.findElement(By.cssSelector("a[href=\"https://astrio.ru/about/meet_the_team.html\"]")).click();
     TimeUnit.SECONDS.sleep(5);
     assertEquals("ASTRIO (astrio.ru) Ц мы предлагаем целый комплекс интернет-решений в области онлайн-бизнеса и обладаем сильной командой сертифицированных разработчиков.", driver.findElement(By.cssSelector("h4")).getText());
     assertEquals("Ќаша команда", driver.findElement(By.cssSelector("h1")).getText());
