@@ -23,7 +23,7 @@ public class Website extends turnkeye2.pages.TestBase {
     	driver.manage().window().setSize(new Dimension(1366, 1050));
     	
         driver.get(baseUrl + "/clients/pinup-girl-clothing");
-        assertEquals("Наши клиенты - Pinup Girl Clothing", driver.getTitle());
+        assertEquals("Наши клиенты - Pinup Girl Clothing | ASTRIO", driver.getTitle());
         assertEquals("Pinup Girl Clothing", driver.findElement(By.cssSelector("h1")).getText());
         String parentHandle = driver.getWindowHandle();
         driver.findElement(By.xpath("/html/body/div/section/div/div/div[2]/div[2]/p/a")).click();
