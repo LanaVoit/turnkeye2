@@ -25,22 +25,22 @@ public class Banner extends turnkeye2.pages.TestBase {
     driver.get(baseUrl);
 
     //String img1 = "http://cdn.astrio.ru/skin/frontend/default/turnkeye/images/main-banner/large/slide1-moscow.jpg";
-    String img1 = "https://astrio.ru/skin/frontend/default/turnkeye/images/main-banner/large/xslide1-moscow.jpg.pagespeed.ic.S_XOMwWK_i.webp";
-    assertEquals("", img1, driver.findElement(By.cssSelector("#container > div.block-main-banner.block-main-banner-rus > header > div.carousel-wrapper > div > ul > li:nth-child(1) > img")).getAttribute("src"));  
+    String img1 = "1";
+    assertEquals("", img1, driver.findElement(By.cssSelector("#container > div.block-main-banner.block-main-banner-rus > header > div.carousel-wrapper > div > ul > li:nth-child(1)")).getAttribute("data-init-position"));  
 
     
     driver.findElement(By.cssSelector("img[alt=\"Ювелирный дом Эстет\"]")).click();
     //String img2 = "http://cdn.astrio.ru/media/wysiwyg//home-page/slide-estet-0001.jpg";
     TimeUnit.SECONDS.sleep(5);
-    String img2 = "https://astrio.ru/media/wysiwyg/main-banner/home-original/xslide-estet.jpg.pagespeed.ic.DUq4u9T2xS.webp";
-    assertEquals("", img2, driver.findElement(By.cssSelector("#container > div.block-main-banner.block-main-banner-rus > header > div.carousel-wrapper > div > ul > li.active > img")).getAttribute("src")); 
+    String img2 = "2";
+    assertEquals("", img2, driver.findElement(By.cssSelector("#container > div.block-main-banner.block-main-banner-rus > header > div.carousel-wrapper > div > ul > li.active")).getAttribute("data-init-position")); 
     
     TimeUnit.SECONDS.sleep(5);
     driver.findElement(By.cssSelector("img[alt=\"Группа компаний Автоэксперт\"]")).click();
     TimeUnit.SECONDS.sleep(5);
     //String img4 = "http://cdn.astrio.ru/media/wysiwyg//home-page/slide-autoexpert-001.jpg";
-    String img4 = "https://astrio.ru/media/wysiwyg/main-banner/home-original/xslide-autoexpert.jpg.pagespeed.ic.49vj8KFzAw.webp";
-    assertEquals("", img4, driver.findElement(By.cssSelector("#container > div.block-main-banner.block-main-banner-rus > header > div.carousel-wrapper > div > ul > li.active > img")).getAttribute("src")); 
+    String img4 = "3";
+    assertEquals("", img4, driver.findElement(By.cssSelector("#container > div.block-main-banner.block-main-banner-rus > header > div.carousel-wrapper > div > ul > li.active")).getAttribute("data-init-position")); 
   }
 
     private boolean isElementPresent(By by) {
