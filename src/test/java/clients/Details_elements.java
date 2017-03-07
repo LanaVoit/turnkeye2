@@ -28,9 +28,9 @@ public class Details_elements extends turnkeye2.pages.TestBase {
 	    assertEquals("Pinup Girl Clothing", driver.findElement(By.cssSelector("h1")).getText());
 //	    assertEquals("https://astrio.ru/media/wysiwyg/portfolio/PinupClothing/top-banner.jpg", driver.findElement(By.cssSelector("#content > div.turnkeye-portfolio > div.block-portfolio-banner > img.shadows-image")).getAttribute("src"));
 //	    assertEquals("https://astrio.ru/media/wysiwyg/portfolio/PinupClothing/top-mobile.png", driver.findElement(By.xpath("//div[@id='content']/div[2]/div[3]/img[2]")).getAttribute("src"));
-	    assertEquals("Îáçîð ïðîåêòà", driver.findElement(By.cssSelector("h3")).getText()); 
-	    assertEquals("Î ïðîåêòå Pinup Girl Clothing", driver.findElement(By.cssSelector("div.block-about-project > h3")).getText());
-	    assertEquals("Ïðèìåðû ðåàëèçàöèè", driver.findElement(By.cssSelector("div.block-have-done > h3")).getText());
+	    assertEquals("ÎÁÇÎÐ ÏÐÎÅÊÒÀ", driver.findElement(By.cssSelector("h3")).getText()); 
+	    assertEquals("Î ÏÐÎÅÊÒÅ PINUP GIRL CLOTHING", driver.findElement(By.cssSelector("div.block-about-project > h3")).getText());
+	    assertEquals("ÏÐÈÌÅÐÛ ÐÅÀËÈÇÀÖÈÈ", driver.findElement(By.cssSelector("div.block-have-done > h3")).getText());
 	    assertEquals("Àäàïòèâíûé äèçàéí", driver.findElement(By.cssSelector("h4")).getText());
 	    assertEquals("Âõîä ÷åðåç ñîöèàëüíûå ñåòè", driver.findElement(By.xpath("//div[@id='content']/div[2]/div[6]/div[2]/div/div/h4")).getText());
 	    assertEquals("Áëîê ñîöèàëüíûõ àêòèâíîñòåé", driver.findElement(By.xpath("//div[@id='content']/div[2]/div[6]/div[3]/div/div/h4")).getText());
@@ -41,8 +41,10 @@ public class Details_elements extends turnkeye2.pages.TestBase {
 	    assertEquals("ÎÒÇÛÂ ÊËÈÅÍÒÀ", driver.findElement(By.cssSelector("h3 > span")).getText());
 	    assertEquals("Î ÍÀØÅÉ ÐÀÁÎÒÅ", driver.findElement(By.xpath("//div[@id='content']/div[2]/div[7]/h3/span[2]/span")).getText());
 	    assertEquals("Êîíòàêòû", driver.findElement(By.linkText("Êîíòàêòû")).getText());
-	    assertEquals("EMAIL", driver.findElement(By.xpath("/html/body/div/section/div/div/div[2]/div[9]/div/a[2]")).getText());
+	    assertEquals("Email", driver.findElement(By.xpath("/html/body/div/section/div/div/div[2]/div[9]/div/a[2]")).getText());
 	    assertEquals("Skype", driver.findElement(By.cssSelector("a.block-skype > span")).getText());
+	    ((JavascriptExecutor)driver).executeScript("arguments[0].scrollIntoView();"
+	            ,driver.findElement(By.cssSelector("h1")));
 	    driver.findElement(By.cssSelector("span.icon-right-open")).click();
 	    TimeUnit.SECONDS.sleep(5);
 	    assertEquals("First Boutique", driver.findElement(By.cssSelector("h1")).getText());    

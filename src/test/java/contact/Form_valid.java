@@ -85,7 +85,7 @@ public class Form_valid extends turnkeye2.pages.TestBase {
         driver.findElement(By.id("comment")).sendKeys("test message");
         driver.findElement(By.cssSelector("button.button")).click();
         TimeUnit.SECONDS.sleep(5);
-        assertEquals("Ваше сообщение получено и мы ответим на него в ближайшее время. Спасибо за сообщение.", driver.findElement(By.cssSelector("li > span")).getText());
+        assertEquals("Ваше сообщение получено и мы ответим на него в ближайшее время. Спасибо за сообщение.", driver.findElement(By.cssSelector("#noty_top_layout_container > li > div > div > span > ul > li > ul > li > span")).getText());
         TimeUnit.SECONDS.sleep(10);
         	driver.get(baseUrl + "/contact_us.html");
         	class MailAuthenticator extends Authenticator {

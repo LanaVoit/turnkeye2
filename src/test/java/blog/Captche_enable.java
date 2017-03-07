@@ -57,7 +57,7 @@ public class Captche_enable extends turnkeye2.pages.TestBase {
         driver.findElement(By.id("comment")).sendKeys("test comment");
         driver.findElement(By.cssSelector("input.button.form-button")).click();
         TimeUnit.SECONDS.sleep(5);
-        assertEquals("Your Recaptcha solution was incorrect, please try again", driver.findElement(By.cssSelector("li > span")).getText());     
+        assertEquals("Your Recaptcha solution was incorrect, please try again", driver.findElement(By.cssSelector("#noty_top_layout_container >li > div > div > span > ul > li > ul > li > span")).getText());     
   }
 
    private boolean isElementPresent(By by) {
