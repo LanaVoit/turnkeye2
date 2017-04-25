@@ -29,7 +29,7 @@ public class Blog_page extends turnkeye2.pages.TestBase {
         assertEquals("", driver.findElement(By.xpath("//*[@id='blog_search_mini_form']/div/button")).getText());
         assertEquals("Поиск", driver.findElement(By.cssSelector("div.block-title > span")).getText());
         assertEquals("Разделы", driver.findElement(By.xpath("//*[@id='sideRight']/div/div[1]/div[1]/div/span")).getText());
-        assertEquals("Архив", driver.findElement(By.cssSelector("div.block-archives > div.block-title > span")).getText());
+        //assertEquals("Архив", driver.findElement(By.cssSelector("div.block-archives > div.block-title > span")).getText());
         assertEquals("Метки", driver.findElement(By.cssSelector("div.block-tags > div.block-title > span")).getText());
         
         driver.findElement(By.linkText("ТЕСТИРОВАНИЕ")).click();
@@ -39,7 +39,7 @@ public class Blog_page extends turnkeye2.pages.TestBase {
         assertEquals("SEE MORE", driver.findElement(By.linkText("SEE MORE")).getText());
         assertEquals("МЕТКИ", driver.findElement(By.cssSelector("div.post-tags-title")).getText());
         assertEquals("РАЗДЕЛЫ:", driver.findElement(By.cssSelector("div.post-posted-title")).getText());
-        assertEquals("Авторы", driver.findElement(By.cssSelector("div.block-blog-authors > div.block-title")).getText());
+        //assertEquals("Авторы", driver.findElement(By.cssSelector("div.block-blog-authors > div.block-title")).getText());
         assertEquals("", driver.findElement(By.cssSelector("img[alt=\"Magento разработка\"]")).getText());
   }
 

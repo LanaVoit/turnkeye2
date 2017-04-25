@@ -12,6 +12,7 @@ import static org.hamcrest.CoreMatchers.*;
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.Select;
 
 public class Tabs extends turnkeye2.pages.TestBase {
@@ -20,6 +21,7 @@ public class Tabs extends turnkeye2.pages.TestBase {
 
     @Test
   public void testUntitled5() throws Exception {
+    Actions actions = new Actions(driver);
     driver.manage().window().setSize(new Dimension(1366, 1050));
     
     driver.get(baseUrl + "/about");
@@ -34,7 +36,9 @@ public class Tabs extends turnkeye2.pages.TestBase {
     TimeUnit.SECONDS.sleep(5);
     assertEquals("ASTRIO (astrio.ru) – мы предлагаем целый комплекс интернет-решений в области онлайн-бизнеса и обладаем сильной командой сертифицированных разработчиков.", driver.findElement(By.cssSelector("h4")).getText());
     assertEquals("Наша команда", driver.findElement(By.cssSelector("h1")).getText());
-    assertEquals("Сергей Двоскин", driver.findElement(By.cssSelector("div.t-col-2 > h4")).getText());
+    actions.moveToElement(driver.findElement(By.xpath("//*[@id=\"content\"]/div[3]/ul/li[1]"))).build().perform();
+    assertEquals("Сергей Двоскин", driver.findElement(By.cssSelector("#content > div.std > ul > li:nth-child(1) > div > div > div > div > h4")).getText());
+    //assertEquals("Сергей Двоскин", driver.findElement(By.cssSelector("div.t-col-2 > h4")).getText());
     
 //    driver.findElement(By.cssSelector("a[href=\"http://astrio.ru/about/vacancy.html\"]")).click();
 //    TimeUnit.SECONDS.sleep(5);
