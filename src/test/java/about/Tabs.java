@@ -36,8 +36,8 @@ public class Tabs extends turnkeye2.pages.TestBase {
     TimeUnit.SECONDS.sleep(5);
     assertEquals("ASTRIO (astrio.ru) – мы предлагаем целый комплекс интернет-решений в области онлайн-бизнеса и обладаем сильной командой сертифицированных разработчиков.", driver.findElement(By.cssSelector("h4")).getText());
     assertEquals("Наша команда", driver.findElement(By.cssSelector("h1")).getText());
-    actions.moveToElement(driver.findElement(By.xpath("//*[@id=\"content\"]/div[3]/ul/li[5]"))).build().perform();
-    assertEquals("Светлана Баранова\nСпециалист по QA", driver.findElement(By.cssSelector("#content > div.std > ul > li:nth-child(5) > div > div > div > div > h4")).getText());
+    actions.moveToElement(driver.findElement(By.xpath("//*[@id=\"content\"]/div[3]/ul/li[4]"))).build().perform();
+    assertEquals("Светлана\nСпециалист по QA", driver.findElement(By.cssSelector("#content > div.std > ul > li:nth-child(4) > div > div > div > div > h4")).getText());
     //assertEquals("Сергей Двоскин", driver.findElement(By.cssSelector("div.t-col-2 > h4")).getText());
     
 //    driver.findElement(By.cssSelector("a[href=\"http://astrio.ru/about/vacancy.html\"]")).click();
