@@ -46,7 +46,7 @@ public class Form_valid extends turnkeye2.pages.TestBase {
   public void testUntitled6() throws Exception {
     	driver.manage().window().setSize(new Dimension(1366, 1050));
         Actions actions = new Actions(driver);
-        
+
         driver.get(baseUrl + "index.php/secretzone51");
         TimeUnit.SECONDS.sleep(5);
         driver.findElement(By.id("username")).clear();
@@ -55,27 +55,27 @@ public class Form_valid extends turnkeye2.pages.TestBase {
         driver.findElement(By.id("login")).sendKeys("gbpljrhzxrf1530");
         driver.findElement(By.cssSelector("input.form-button")).click();
         TimeUnit.SECONDS.sleep(5);
-        actions.moveToElement(driver.findElement(By.xpath("//ul[@id='nav']/li[11]/a/span"))).build().perform();    
+        actions.moveToElement(driver.findElement(By.xpath("//ul[@id='nav']/li[11]/a/span"))).build().perform();
         driver.findElement(By.xpath("//ul[@id='nav']/li[11]/ul/li[15]/a/span")).click();
         TimeUnit.SECONDS.sleep(5);
-        
-        WebElement mySelectElm = driver.findElement(By.cssSelector("#store_switcher")); 
+
+        WebElement mySelectElm = driver.findElement(By.cssSelector("#store_switcher"));
         Select mySelect= new Select(mySelectElm);
         mySelect.selectByValue("store_rus");
         TimeUnit.SECONDS.sleep(5);
-        
-        driver.findElement(By.xpath("//ul[@id='system_config_tabs']/li[1]/dl/dd[6]/a/span")).click(); 
+
+        driver.findElement(By.xpath("//ul[@id='system_config_tabs']/li[1]/dl/dd[6]/a/span")).click();
         driver.findElement(By.id("contacts_email_recipient_email")).clear();
         driver.findElement(By.id("contacts_email_recipient_email")).sendKeys("qatestingtestqa@gmail.com");
         driver.findElement(By.cssSelector("button[title=\"Save Config\"]")).click();
-        
+
         assertEquals("The configuration has been saved.", driver.findElement(By.cssSelector("li > span")).getText());
-        actions.moveToElement(driver.findElement(By.xpath("//ul[@id='nav']/li[11]/a/span"))).build().perform();    
+        actions.moveToElement(driver.findElement(By.xpath("//ul[@id='nav']/li[11]/a/span"))).build().perform();
         driver.findElement(By.xpath("//ul[@id='nav']/li[11]/ul/li[11]/a/span")).click();
         driver.findElement(By.linkText("Select All")).click();
         driver.findElement(By.cssSelector("button[title=\"Submit\"]")).click();
         assertEquals("7 cache type(s) refreshed.", driver.findElement(By.cssSelector("li > span")).getText());
-        
+
         driver.get(baseUrl + "/contact_us.html");
         driver.findElement(By.id("name")).clear();
         driver.findElement(By.id("name")).sendKeys("test");
@@ -85,18 +85,18 @@ public class Form_valid extends turnkeye2.pages.TestBase {
         driver.findElement(By.id("comment")).sendKeys("test message");
         driver.findElement(By.cssSelector("button.button")).click();
         TimeUnit.SECONDS.sleep(5);
-        assertEquals("Ваше сообщение получено и мы ответим на него в ближайшее время. Спасибо за сообщение.", driver.findElement(By.cssSelector("#noty_top_layout_container > li > div > div > span > ul > li > ul > li > span")).getText());
+        assertEquals("пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ. пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ.", driver.findElement(By.cssSelector("#noty_top_layout_container > li > div > div > span > ul > li > ul > li > span")).getText());
         TimeUnit.SECONDS.sleep(10);
         	driver.get(baseUrl + "/contact_us.html");
         	class MailAuthenticator extends Authenticator {
-       		 
+
         	    public PasswordAuthentication getPasswordAuthentication() {
-        	         return new PasswordAuthentication("qatestingtestqa@gmail.com", "uaPha8tuAvo160302fr");
+        	         return new PasswordAuthentication("qatestingtestqa@gmail.com", "uaPha8tuAvo160302fr1");
         	    }
         	}
-        	
+
         	Properties props = new Properties();
-        	
+
         	props.put("mail.smtp.user", "qatestingtestqa@gmail.com");
         	props.put("mail.host", "pop.gmail.com");
         	props.put("mail.store.protocol", "pop3s");
@@ -104,7 +104,7 @@ public class Form_valid extends turnkeye2.pages.TestBase {
             props.put("mail.pop3s.port", 995);
         	props.put("mail.smtp.starttls.enable","true");
         	props.put("mail.smtp.debug", "true");
-        	
+
         	props.put("mail.smtp.auth", "true");
         	props.put("mail.smtp.starttls.enable", "true");
     		props.put("mail.smtp.host", "smtp.gmail.com");
@@ -115,12 +115,12 @@ public class Form_valid extends turnkeye2.pages.TestBase {
 
         	Session session = Session.getInstance(props, new MailAuthenticator());
         	session.setDebug(true);
-        	
+
     	        Store store = session.getStore("pop3s");
-    	        store.connect("pop.gmail.com", "qatestingtestqa@gmail.com", "uaPha8tuAvo160302fr");
+    	        store.connect("pop.gmail.com", "qatestingtestqa@gmail.com", "uaPha8tuAvo160302fr1");
 
     	        Folder inbox = store.getFolder("INBOX");
-    			
+
     			if (inbox == null) {
     				System.out.println("No INBOX");
     				System.exit(1);
@@ -128,9 +128,9 @@ public class Form_valid extends turnkeye2.pages.TestBase {
 
     			inbox.open(Folder.READ_ONLY);
     			Message message = inbox.getMessage(inbox.getMessageCount());
- 
 
-    			    				  			
+
+
     				String content = message.getContent().toString();
     				System.out.println(content);
     				GetMulti gmulti = new GetMulti();
@@ -140,13 +140,13 @@ public class Form_valid extends turnkeye2.pages.TestBase {
         	        Matcher m = p.matcher(textMessage);
         	        m.find();
         	        System.out.println(m.group());
-    	        
 
-    			
+
+
     			inbox.close(false);
     	        store.close();
     	        driver.get(baseUrl + "/contact_us.html");
-    	  
+
   }
 
    private boolean isElementPresent(By by) {
@@ -158,7 +158,7 @@ public class Form_valid extends turnkeye2.pages.TestBase {
     }
   }
 
-  
+
   private String closeAlertAndGetItsText() {
     try {
       Alert alert = driver.switchTo().alert();
@@ -174,9 +174,9 @@ public class Form_valid extends turnkeye2.pages.TestBase {
     }
   }
   public class GetMulti {
-	    
+
 	    public  boolean textIsHtml = false;
-	 
+
 	    /**
 	     * Return the primary text content of the message.
 	     */
@@ -186,7 +186,7 @@ public class Form_valid extends turnkeye2.pages.TestBase {
 	            textIsHtml = p.isMimeType("text/html");
 	            return s;
 	        }
-	 
+
 	        if (p.isMimeType("multipart/alternative")) {
 	            // prefer html text over plain text
 	            Multipart mp = (Multipart)p.getContent();
@@ -214,9 +214,9 @@ public class Form_valid extends turnkeye2.pages.TestBase {
 	                    return s;
 	            }
 	        }
-	 
+
 	        return null;
 	    }
-	 
+
 	}
 }
