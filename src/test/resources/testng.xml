@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 <suite name="Tests" verbose="5" data-provider-thread-count="1">
- <!-- <test name="JS Errors">
+  <test name="JS Errors">
 		<parameter name="path" value="/"/>
 		<classes>
 			<class name="home.JS_error_home"/>
@@ -44,7 +44,7 @@
 		<classes>
 		    <class name="services.Page"/>
 		</classes>
-	</test>   -->
+	</test>   
 	<test name="Contact">
 		<parameter name="path" value="/"/>
 		<classes>
@@ -54,7 +54,7 @@
 		    <class name="contact.Contact_email_change"/>
 		</classes>
 	</test>
-	<!-- <test name="Blog">
+	<test name="Blog">
 		<parameter name="path" value="/"/>
 		<classes>
 		    <class name="blog.Captcha_empty"/>
@@ -65,5 +65,5 @@
 			<class name="blog.Blog_page"/>
 			<class name="blog.Search"/>
 		</classes>
-	</test>   -->
+	</test>   
 </suite>
